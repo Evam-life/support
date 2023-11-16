@@ -1,0 +1,219 @@
+# Vehicle Services - The platform
+
+Evam is an emergency vehicle platform with a collection of apps. It is optimized for the needs of first responders. Helps you to stay in control. Is usable. And powers you into the digital world.
+
+
+## User instructions
+
+![Vehicle services platform](../_static/assets/img/png/Vehicle-services-1.png)
+
+1. The application bar
+2. The notification center
+3. The shortcut center
+
+### The application bar
+**Locate the App Bar:** At the bottom of your screen, find the application bar. This is your command center for accessing installed apps in your vehicle.
+
+**App Selection in a Click:** Click on an app to bring it into view. First click brings the app to half-screen mode. Clicking again brings the app to full-screen mode. 
+
+**Navigation app is always visible:** The navigation app stays visible, no matter what. Seamless guidance, always at your service, even while using other apps.
+
+**Tailor Your View:** Need a specific screen mode? Grab the orange triangle and drag it. Snap the app to your preferred half or full-screen mode. 
+
+### The notification center
+The applications on the platform uses notifications to notify the user and to give the right information at the right time. 
+
+**Locate the notification center:** The notification center is located in the lower left corner of the screen. It has the symbol of a bell, and here you will find all notifications that you have not interacted with. An orange dot indicates that there are unread notifications. 
+
+### The shortcut center
+
+In the shortcut center the user can configure shortcuts to commonly used parts of the platform. 
+
+**Locate the shortcut center:** The notification center is located in the lower right corner of the screen. It has the symbol of a grid, and here you will find all shortcuts that you have configured. 
+
+**The functions in the shortcut center:** The content of the shortcut center is configurable but includes the following:
+
+![Shortcut center](../_static/assets/img/png/Vehicle-services-2.png)
+
+1.	**Settings:** Includes vehicle settings, multiple screen settings and possibility to send detailed support logs to Evam. 
+2.	**TNA (Optional):** Support for SOS Alarm’s (Sweden) TNA functionality.
+3.	**Garage doors:** Includes all garage doors for which the vehicle is within the geofence. 
+4.	**Screen brightness:** Adjust the screen brightness or set it to “Auto” to be adjusted based on the ambient brightness. 
+5.	**Screen mode:** Select between Day and Night mode colors. If auto is selected the screen mode will be adjusted based on sunrise and sunset as well as setting it to Night when in tunnels. 
+6.	**Current status:** Shows your currently selected status. 
+7.	**Next suggested status:** Shows your suggested next status based on the configured status flow. 
+8.	**Custom buttons:** Up to six custom buttons can be programmed. The custom buttons can include any type of Tetra command as well as certain shortcuts to specific apps.
+
+### Utilizing multiple screens
+The platform supports multiple screens. A large number of screens can be connected together through a peer-to-peer Wi-Fi network secured by a PKI infrastructure. 
+
+The multiple screen mode is configured through the initial setups flow or from the settings menu which can be reached from the shortcut center. 
+
+Once paired in multiple screen mode the devices will share all data between the devices but the views (what you see on the screen) are completely independent from each other. For example: 
+-	You may send a status from any screen in the setup. 
+-	Changing the destination in the navigation app on one screen will change the destination on all screens. 
+-	Opening one app on one screen will not open the same app on other screens – the views are independent. 
+
+### TNA functionality (Optional)
+Support for SOS Alarm’s (Sweden) TNA functionality may be enabled. If enabled the TNA Functionality is reach from the top bar of the shortcut center. 
+
+**Seeing login status:** If logged in the MSISDN (Call-sign) to which you are logged in will be displayed within the shortcut center. If you are not logged in a logged-out icon will be displayed instead. 
+
+**Loggin in or out to the TNA server:** By clicking on the TNA status field in the shortcut center you will bring up a list of the available and preconfigured callsigns to which you can log in. Clicking log in will log you in to the selected call-sign. A confirmation or any failure code will confirm the login status. 
+
+**Getting logged out by another user:** If another vehicle logs in to the call-sign that you currently are logged in to you will be automatically logged out. The logged-out user will be notified about that it has been logged out through a notification and the status of the TNA status field in the shortcut center will be updated accordingly. 
+
+
+
+## FAQ
+
+<details>
+
+<summary>I have many notifications in the notification center and want to close all of them at once, how do I do that?</summary>
+
+In the Notification Center, you'll find all notifications you haven't interacted with. By scrolling down among these notifications, you'll come across a button labeled “Clear All”. Press this to remove all notifications.
+
+</details>
+
+
+<details>
+
+<summary> How many shortcut buttons may I have? </summary>
+
+You may have up to six shortcut buttons in the shortcut center. The buttons can be styled with different colors to highlight and differentiate different functions. 
+
+</details>
+
+
+<details>
+
+<summary> Where do I find all the organization's gates? </summary>
+
+Gates are defined by geofences. Therefore, you can only see the gates for which you are within the geofence of. These gates can be found though the gates menu in the shortcut center. 
+
+</details>
+
+
+<details>
+
+<summary> I cannot log in to Vehicle Services </summary>
+
+Failure to login to Vehicle Services can depend on multiple different factors. 
+1.	No internet connection – please confirm that you have a working internet connection. 
+2.	Wrong credentials – Please contact support@evam.life to request new credentials. Please include your vehicle username or call-sign in your request. 
+3.	No certificate or wrong certificate selected – Apart from your login credentials your connection is also secured by a device certificate distributed by Evam. The device certificate must be selected and available. If you are missing the certificate please contact support@evam.life. 
+
+</details>
+
+
+<details>
+
+<summary> How do I remove an open notification? </summary>
+
+Any open notification on the screen can be removed by pressing on the notification and then simply swiping it away either to the right or to the left on the screen.
+
+</details>
+
+
+
+## Configuration
+
+
+<details>
+
+<summary>Overall structure of vehicle configuration</summary>
+
+All applications and the platform can be configured centrally. The configuration can be set on organization level, and/or sub-organization (normally stations) and/or vehicle level. It is advisable to keep as many settings as possible on top organization level to simplify administration management. 
+
+Vehicle configurations can be made run-time and will take effect in the vehicles within a few minutes. No interaction is required in the vehicle. 
+
+Configuration changes are made through request to support@evam.life. Please include what part of the organization that should be affected by the configuration change. 
+
+</details>
+
+
+<details>
+
+<summary>Adding an application </summary>
+
+Any available application on the platform may be added to any part of the organization. To request a new application contact support@evam.life. 
+
+</details>
+
+<details>
+
+<summary>Notification settings </summary>
+
+The display time of the notifications may be configured. All notifications are grouped into one of the following groups: 
+
+- Mission statuses
+- Gate openings
+- Other
+
+The notification display time can be configured individually per group. 
+To request a change, contact support@evam.life.
+
+</details>
+
+
+<details>
+
+<summary>Tetra devices </summary>
+
+The platform supports integration with the following brands of Tetra devices: 
+- Sepura
+- Motorola
+- Airbus
+
+The tetra device integration is configured as part of the device settings.
+
+To request a change, contact support@evam.life.
+
+</details>
+
+
+<details>
+
+<summary>Shortcut center buttons </summary>
+
+Up to six custom shortcut center buttons may be configured. The buttons can be configured to do the following: 
+-	Engage a preconfigured status.
+-	Engage the predefined “patient loaded” flow for ambulances.
+-	Conduct any interaction/command towards the Tetra radio. 
+
+The shortcut buttons may be styled independently with a selected color. 
+
+To configure or change a shortcut button contact support@evam.life.
+
+</details>
+
+
+<details>
+
+<summary>TNA functionality </summary>
+
+Support for the SOS Alarm’s (Sweden) TNA functionality may be enabled. Any number of active MSISDNs may be configured to be possible for login. 
+
+To configure or change the TNA functionality contact support@evam.life and include the MSISDNs that you which to configure. 
+
+</details>
+
+<details>
+
+<summary>Gates </summary>
+
+Any number of Tetra controlled gates, traffic lights or other devices may be controlled from Vehicle Services. 
+
+The configuration of a gate includes the following: 
+
+- **Recipent:** MSISDN, ISSI or GSSI
+- **Status code:** 
+- **Geofence:** Configured as a rectangle defined by two GPS points, Southwest and Northeast in WGS84 decimal format. 
+
+
+To configure or change a gate contact support@evam.life and include recipient, status code and geofence. 
+
+
+</details>
+
+

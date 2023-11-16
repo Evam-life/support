@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Application: Navigation &#8212; Evam Support  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Application: V2I" href="v2i_app.html" />
+    <link rel="prev" title="Application: Operation" href="operations_app.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=white data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#en/navigation_app" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Evam Support  documentation"
+           class="md-header-nav__button md-logo">
+          
+              <img src="../_static/evam-black.png" height="26"
+                   alt="Evam Support documentation logo">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Evam Support  documentation</span>
+          <span class="md-header-nav__topic"> Application: Navigation </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Evam Support  documentation</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Evam Support documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/evam-black.png" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Evam Support documentation">Evam Support  documentation</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="Welcome_to_the_support_portal.html" class="md-nav__link">Welcome to the Evam Support Portal!</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Vehicle_Services_The_Platform.html" class="md-nav__link">Vehicle Services - The platform</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="operations_app.html" class="md-nav__link">Application: Operation</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Application: Navigation </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Application: Navigation</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#en-navigation-app--page-root" class="md-nav__link">Application: Navigation</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#user-instructions" class="md-nav__link">User instructions</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#starting-a-navigation" class="md-nav__link">Starting a navigation</a>
+        </li>
+        <li class="md-nav__item"><a href="#adding-a-breakpoint-or-middle-stop" class="md-nav__link">Adding a breakpoint or middle stop</a>
+        </li>
+        <li class="md-nav__item"><a href="#cancelling-a-navigation-route" class="md-nav__link">Cancelling a navigation route</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#faq" class="md-nav__link">FAQ</a>
+        </li>
+        <li class="md-nav__item"><a href="#configuration" class="md-nav__link">Configuration</a>
+        </li></ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="v2i_app.html" class="md-nav__link">Application: V2I</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="vehicle_installation.html" class="md-nav__link">Vehicle installation</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#en-navigation-app--page-root" class="md-nav__link">Application: Navigation</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#user-instructions" class="md-nav__link">User instructions</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#starting-a-navigation" class="md-nav__link">Starting a navigation</a>
+        </li>
+        <li class="md-nav__item"><a href="#adding-a-breakpoint-or-middle-stop" class="md-nav__link">Adding a breakpoint or middle stop</a>
+        </li>
+        <li class="md-nav__item"><a href="#cancelling-a-navigation-route" class="md-nav__link">Cancelling a navigation route</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#faq" class="md-nav__link">FAQ</a>
+        </li>
+        <li class="md-nav__item"><a href="#configuration" class="md-nav__link">Configuration</a>
+        </li></ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="application-navigation">
+<h1 id="en-navigation-app--page-root">Application: Navigation<a class="headerlink" href="#en-navigation-app--page-root" title="Permalink to this heading">¶</a></h1>
+<p><strong>Developer:</strong> Evam</p>
+<p><strong>Availability</strong>: World-wide</p>
+<p><strong>Description:</strong> Navigation is central to driving. We designed the Navigation app from the ground up to get first responders swiftly and safely to the scene. With real-time maps and a user-friendly design, it shortens response times and improves traffic safety for first responders globally.</p>
+<section id="user-instructions">
+<h2 id="user-instructions">User instructions<a class="headerlink" href="#user-instructions" title="Permalink to this heading">¶</a></h2>
+<p>The overall functionalities of the Navigation app are as follows:</p>
+<p><img alt="navigation overview" src="../_images/navigation_overview.png"/></p>
+<ol class="arabic simple">
+<li><p><strong>Route card:</strong> The route card shows the next turn, second to next turn, Estimated Time of Arrival and distance to destination.</p></li>
+<li><p><strong>Route overview:</strong> Pressing the button zooms out the map to show the full route overview.</p></li>
+<li><p><strong>Destination overview:</strong> Pressing the button zooms in the map on the destination.</p></li>
+<li><p><strong>Audio guidance:</strong> Turns on and off audio guidance.</p></li>
+<li><p><strong>Map-mode:</strong> Pressing the button toggles the map between following the car with the map oriented in North/South mode and the map oriented in the direction of travel. I red arrow in the icon always indicates North direction.</p></li>
+<li><p><strong>Zoom:</strong> Zooms the map in and out without disconnecting the map from following the vehicle.</p></li>
+<li><p><strong>Base maps and layers:</strong> Opens a menu to select base maps and map layers to be displayed.</p></li>
+<li><p><strong>Center:</strong> The center button appears as soon as the map has been moved to no longer follow the vehicle. Pressing center will zoom the map back to following the vehicle.</p></li>
+</ol>
+<section id="starting-a-navigation">
+<h3 id="starting-a-navigation">Starting a navigation<a class="headerlink" href="#starting-a-navigation" title="Permalink to this heading">¶</a></h3>
+<p>Starting a navigation can be made in three ways:</p>
+<ul class="simple">
+<li><p><strong>Accepting a case:</strong> Accepting a case in the Operation app with a destination will launch a navigation to the destination.</p></li>
+<li><p><strong>Searching for a destination:</strong> Search is reached from the magnifier glass icon in the top left corner of the navigation app. You may search for both addresses or points of interest.</p></li>
+<li><p><strong>Selecting destination in the address book:</strong> The address book is configurable and may be reached through the magnifier glass icon in the top left corner of the navigation app.</p></li>
+<li><p><strong>Pinning a position in the map:</strong> By pressing and holding somewhere in the map while you have no current active navigation you may launch a navigation to a pinned spot.</p></li>
+</ul>
+</section>
+<section id="adding-a-breakpoint-or-middle-stop">
+<h3 id="adding-a-breakpoint-or-middle-stop">Adding a breakpoint or middle stop<a class="headerlink" href="#adding-a-breakpoint-or-middle-stop" title="Permalink to this heading">¶</a></h3>
+<p>Adding a breakpoint or middle stoop can be made in two ways:</p>
+<p><strong>Option 1:</strong> Through the dispatch.
+The dispatch may include a breakpoint. This will be added as a middle stop in the navigation route and can be viewed and removed by expanding the route card.</p>
+<p><img alt="Navigation added stop" src="../_images/navigation_cancel.png"/></p>
+<p><strong>Option 2:</strong> By expanding the route card and clicking “Add stop”.</p>
+<p><img alt="Navigation add stop" src="../_images/navigation_route_card.png"/></p>
+</section>
+<section id="cancelling-a-navigation-route">
+<h3 id="cancelling-a-navigation-route">Cancelling a navigation route<a class="headerlink" href="#cancelling-a-navigation-route" title="Permalink to this heading">¶</a></h3>
+<p>To cancel a navigation route, expand the route card and click “Cancel navigation”</p>
+<p><img alt="Navigation cancel navigation" src="../_images/navigation_cancel.png"/></p>
+</section>
+</section>
+<section id="faq">
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permalink to this heading">¶</a></h2>
+<details>
+<summary> The navigation app suggested a route that was not optimal  </summary>
+<p>The routing engine takes traffic into account and will route you on what is counted as the quickest route. Even though we work hard to always provide the most optimal route there may be cases where you believe that another route would have been better.</p>
+<p>We are happy to adjust the routing engine based on your feedback. To provide feedback on a route please contact support@evam.life and include the following information:</p>
+<ul class="simple">
+<li><p>Starting coordinate</p></li>
+<li><p>Destination coordinate</p></li>
+<li><p>Description of the route that was suggested by the navigation app</p></li>
+<li><p>Description of the route that you believe would bet better</p></li>
+<li><p>Time at which the non-optimal route was generated.</p></li>
+</ul>
+</details>
+<details>
+<summary> The map in the navigation app has an error  </summary>
+<p>The maps are continuously updated, and we work hard providing you with the most accurate maps. If you encounter an error in any map material, we are happy to receive feedback so we can update the map material for you.</p>
+<p>If you have encountered an error in the map please contact support@evam.life and provide the following information:</p>
+<ul class="simple">
+<li><p>Name of faulty map e.g.  “Nav”</p></li>
+<li><p>Description of what is wrong</p></li>
+<li><p>Description of how the map should look like</p></li>
+</ul>
+<p>Depending on the affected map it may take up to 3 weeks for us to improve the map and make it available for you.</p>
+</details>
+<details>
+<summary> The positioning is not precise or is lagging behind  </summary>
+<p>If the positioning is not precise or is lagging behind the cause may be one of the following:</p>
+<ul class="simple">
+<li><p><strong>Inaccurate sensors:</strong> The position is made with support from several sensors such as GPS, Accelerometer, Gyroscope and Magnetometer. One of the sensors may be inaccurate.</p></li>
+<li><p><strong>Disturbing equipment:</strong> There may be disturbing equipment placed close to the device. For example, devices utilizing USB 3.0 are well know for disturbing GPS signals.</p></li>
+</ul>
+<p>Evam may help you identify and solve the problems through the advanced support logs. Please send the advanced support logs from the settings menu reached through the shortcut center and contact support@evam.life including the following information:</p>
+<ul class="simple">
+<li><p>Vehicle username</p></li>
+<li><p>Time at which the logs were sent</p></li>
+<li><p>Description of the problem</p></li>
+<li><p>Time at which the problem was observed.</p></li>
+</ul>
+</details>
+<details>
+<summary> What map layers can I get access to:   </summary>
+<p>The navigation app can handle any map material in any of the following formats:</p>
+<ul class="simple">
+<li><p>KML</p></li>
+<li><p>KMZ</p></li>
+<li><p>GeoJSON</p></li>
+<li><p>Shapefile</p></li>
+<li><p>MBtile</p></li>
+<li><p>TAB</p></li>
+</ul>
+<p>Other map formats can also be handled at an extra cost. Please contact support@evam.life</p>
+<p>Evam is a developer of maps from Swedish Ordnance Survey (Sv. Lantmäteriet) and the Swedish Traffic Department and may process maps from them at your request. <strong>Please note that the end-user still must have necessary map licenses.</strong></p>
+<p>To request a new base map or map-layer please contact support@evam.life.</p>
+</details>
+</section>
+<section id="configuration">
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<details>
+<summary> The address book </summary>
+<p>Adresses may be added to the address book. The addresses may include any of the following data:</p>
+<ul class="simple">
+<li><p><strong>Name:</strong> The displayed name of the adress</p></li>
+<li><p><strong>Category name:</strong> The category which the address should exist under in the address book.</p></li>
+<li><p><strong>Sub category name:</strong> The sub category which the address should exist under in the address book.</p></li>
+<li><p><strong>Icon:</strong> Any icon from Material Icons library that should be displayed next to the address.</p></li>
+<li><p><strong>Coordinate:</strong> Destination Coordinate in WGS84 Decimal</p></li>
+<li><p><strong>Tetra actions:</strong> Any Tetra based actions e.g. sending a status, that should be done when selecting the status.</p></li>
+</ul>
+<p>To add adresses to the adress book contact support@evam.life.</p>
+</details>
+<details>
+<summary> Base maps </summary>
+<p>The available base maps may be configured. Furthermore, automatic base map layers changes may be configured. Each base map can be configured to either active or deactivate based on the following events:</p>
+<ul class="simple">
+<li><p>Operation complete</p></li>
+<li><p>Operation confirmed</p></li>
+<li><p>At site (Case address)</p></li>
+<li><p>Exit site (Case address)</p></li>
+<li><p>At breakpoint</p></li>
+<li><p>Exit breakpoint</p></li>
+<li><p>At home station</p></li>
+<li><p>Exit home station</p></li>
+<li><p>At Hospital</p></li>
+<li><p>Exit hospital</p></li>
+</ul>
+<p>Only one base map may be active at a time.</p>
+</details>
+<details>
+<summary> Map layers / Overlays </summary>
+<p>The available map layers / overlays may be configured. Furthermore, automatic map layers changes may be configured. Each map layer can be configured to either active or deactivate based on the following events:</p>
+<ul class="simple">
+<li><p>Operation complete</p></li>
+<li><p>Operation confirmed</p></li>
+<li><p>At site (Case address)</p></li>
+<li><p>Exit site (Case address)</p></li>
+<li><p>At breakpoint</p></li>
+<li><p>Exit breakpoint</p></li>
+<li><p>At home station</p></li>
+<li><p>Exit home station</p></li>
+<li><p>At Hospital</p></li>
+<li><p>Exit hospital</p></li>
+</ul>
+<p>Multiple map layers / overlays may be active at the same time.</p>
+</details>
+<details>
+<summary> Offline area </summary>
+<p>An offline area may be configured to always have all maps available no matter if you are online or offline. As standard an offline area equal to 650 tiles and 30GB of data is included. That is equal to an offline area equal to the size of e.g., greater Stockholm at highest resolution.</p>
+<p>Larger offline areas may be achieved through an extra cost/service or by lowering the resolution of the offline maps.</p>
+</details>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="operations_app.html" title="Application: Operation"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> "Previous" </span> Application: Operation </span>
+              </div>
+            </a>
+          
+          
+            <a href="v2i_app.html" title="Application: V2I"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> "Next" </span> Application: V2I </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2023, Evam.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>

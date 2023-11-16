@@ -1,0 +1,243 @@
+# Application: Operation
+
+**Developer:** Evam
+
+**Availability**: World-wide
+
+**Description:** Your Operation is our mission. As a spider in the web the Operation app sits at the center and handles your call-out. Integrated with the dispatch central it gives you the information that you need. In the way you want it.
+
+## User instructions
+The operations app handles the full mission and integrates with your dispatch solution. The operations app includes the following tabs: 
+
+![Operation overview](../_static/assets/img/png/operation_overview.png)
+
+1. Info
+2. Units
+3. Status
+4. All operations
+
+### Info
+
+![Operation info](../_static/assets/img/png/operation_info.PNG)
+
+In the "Info" tab, you'll access comprehensive details about ongoing cases, including but not limited to:
+
+**Case Overview:** Gain insights into pertinent information regarding the alarm.
+
+**Address Details:**  Explore the address associated with the alarm location. Easily navigate the surroundings by pressing the "Destination Overview" button.
+
+**Assigned Radio Group:** Identify and change to the assigned radio group. 
+
+**Other:** All other information that is sent from the dispatcher is also displayed for the user depending on the case type. 
+
+### Units
+
+![Operation units](../_static/assets/img/png/operation_units.PNG)
+
+In the units tab the units connected to the same case are displayed. If the other units are also equipped with the Evam platform the Estimated Time of Arrival (ETA) and current status is also displayed. If not, only the call sign is displayed assuming it has been delivered as part of the dispatch. 
+
+### Status: 
+
+![Operation status](../_static/assets/img/png/operation_status.PNG)
+
+In the status tab the available statuses are shown. The view is fully configurable as part of the settings. Pressing the status will send the status. 
+
+### All operations: 
+
+![Operation info](../_static/assets/img/png/operation_all_operations.PNG)
+
+The “All operations” tab shows the current cases. You may handle several cases simultaneously, however, only one case can be active at a time.  In the “All operations” tab you select the case that should be active if there are multiple ones available. If only one case is available that case will be activated by default. 
+
+Furthermore, data from historic cases are shown. Previous cases are stored for 24h before they are automatically removed. 
+
+### Confirming a case: 
+
+![Operation info](../_static/assets/img/png/operation_hun.PNG)
+
+Confirming a case is made through accepting the notification which is shown when a case is received or through activating the case from the “All operations” tab. Once a case is activated it can be tied to automatically conduct the following operations: 
+
+- Confirm the case towards the dispatcher
+- Start navigation to the case destination and/or assigned breakpoint
+- Change to the assigned talk group
+- Any other predefined action in the Tetra network. 
+
+### Dismissing a case:
+To dismiss a case, you simply swipe the associated notification away from the screen. Once swiped away the case will land in the “All operations” tab and can be activated at a later point. 
+
+## FAQ: 
+
+<details>
+
+<summary> How do I confirm a case? </summary>
+
+Confirming a case is made through accepting the notification which is shown when a case is received or through activating the case from the “All operations” tab.
+
+</details>
+
+
+<details>
+
+<summary> I have received a notification about an assigned case that I am unable to accept. How do I remove the notification and dismiss the case? </summary>
+
+To dismiss a case, you simply swipe the associated notification away from the screen. Once swiped away the case will land in the “All operations” tab and can be activated at a later point. 
+
+</details>
+
+
+<details>
+
+<summary> I want to see my current status; how do I do that? </summary>
+
+To view your current status, you can either look in the “Status tab” of the Operations app or preferably under “Current status” in the shortcut center. 
+
+</details>
+
+
+<details>
+
+<summary> How do I change my status most easily? </summary>
+
+You can easily change your status through the notification that appears on the screen, suggesting a status based on your organization's status configuration. You can also change to the suggested status in the Shortcut center. Press the suggested status to move directly to the next status.
+
+You can also switch to any status in the Operations app “Status tab”. For example, if the suggested upcoming status is not relevant. 
+
+</details>
+
+
+<details>
+
+<summary> I have no connection the Tetra Radio </summary>
+
+If you have no connection to the Tetra radio please try the following to resolve the problem: 
+
+- Confirm that the PEI-cable between the Radio and the device is intact and connected. 
+- Try to reboot your Tetra radio. 
+- Confirm that the correct radio type/brand is configured as part of your vehicle settings. 
+
+If any of the above did not solve your problem. Please contact support@evam.life
+
+</details>
+
+
+<details>
+
+<summary> I cannot change talk group from the operations app – Motorola radio </summary>
+
+For the operations app to be able to change talk group on the Motorola radio you must ensure that the talk group that you want to change to is in a talk group list with the subscriber configuration. This needs to be done via the Motorola tool "Customer Programming Software" (CPS) or through your Motorola distributor. 
+
+</details>
+
+
+<details>
+
+<summary> I cannot change talk group from the operations app – Airbus radio </summary>
+
+For the operations app to be able to change the talk group of your Airbus radio you must program the radio so that all available talk groups are situated in the same talk group folder. Furthermore, your radio configuration in vehicle services must include a pointer to the talk group folder ID#. Contact support@evam.life to setup your configuration appropriately. 
+
+</details>
+
+
+<details>
+
+<summary> I cannot receive any cases from my dispatch central </summary>
+
+`````{attention}
+The answer provided is related to dispatched received from Swedish SOS Alarm.  
+`````
+
+To receive dispatches in the operations app you must ensure that the following configuration is made for your organization at SOS Alarm: 
+
+**Sending profile:** 
+
+*Fire and rescue:* 10200 is recommended. However, the following sending profiles are also supported by the operations app: 10020, 10021, 10024, 10026. 
+
+*Ambulance:* 10036 needs to be selected. 
+
+
+**Format template:**
+
+In all cases format template 21 must be configured. 
+
+
+</details>
+
+## Configuration
+
+
+<details>
+
+<summary> Statuses  </summary>
+
+A status can be configured with the following fields: 
+
+- **Name:** The displayed name
+
+- **Event:** A event at which the status should become recommended. The available events are: At home station, Exit home station, At site, Exit Site, At Breakpoint, Exit Breakpoint, At Hospital and Exit Hospital.
+
+- **Tetra Actions:** The actions in the tetra network e.g. sending a status. Multiple actions may be configured as part of one status.
+
+- **Start status:** Defines if the status is to be engaged when an operation starts, used for status recommendation as well as automatically sent when accepting a case
+
+- **End status:** Defines if the status being engaged means the operations ends.
+
+- **Successor name:** What status should typically come after this one, used for status recommendation.
+
+- **Notification:** Whether or not the operations app should notify the user with a notification when this status is recommended
+
+
+</details>
+
+
+
+<details>
+
+<summary> Case Priority </summary>
+
+The available priorities for an active case may be configured. E.g. Prio 1, Prio 2, Prio 3 etc. 
+
+A priority can be configured with the following fields: 
+
+- **Name:** The display name
+
+- **Tetra actions:** The actions in the tetra network e.g. sending a status. Multiple actions may be configured as part of one priority.
+
+- **Button style Day:** The color of the priority button in day-mode
+
+- **Button night Day:** The color of the priority button in night-mode
+
+
+</details>
+
+
+<details>
+
+<summary> Share vehicle position </summary>
+
+How the vehicle position is shared between units is configurable. The options are the following: 
+
+- **No position sharing**
+
+- **By organization:** Share the position to other vehicles in the same organization
+
+- **By case:** Share the position to other vehicles assigned to the same case as the vehicle. 
+
+“By organization” and “By case” may be enabled simultaneously. 
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

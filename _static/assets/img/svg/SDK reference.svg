@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+  <g id="SDK_reference" data-name="SDK reference" transform="translate(9350 -2648)">
+    <rect id="Rectangle_1738" data-name="Rectangle 1738" width="76" height="76" rx="12" transform="translate(-9350 2648)" fill="#dadce0"/>
+    <g id="Group_14576" data-name="Group 14576" transform="translate(-9902.47 969.248)">
+      <g id="dvr_black_24dp" transform="translate(567.064 1697.572)">
+        <path id="Path_10488" data-name="Path 10488" d="M0,0H44.018V44.018H0Z" fill="none"/>
+        <path id="Path_10489" data-name="Path 10489" d="M37.682,3H4.668A3.679,3.679,0,0,0,1,6.668V28.677a3.679,3.679,0,0,0,3.668,3.668h9.17V34.18a1.839,1.839,0,0,0,1.834,1.834h11a1.839,1.839,0,0,0,1.834-1.834V32.345h9.17a3.679,3.679,0,0,0,3.668-3.668V6.668A3.679,3.679,0,0,0,37.682,3ZM35.848,28.677H6.5a1.839,1.839,0,0,1-1.834-1.834V8.5A1.839,1.839,0,0,1,6.5,6.668H35.848A1.839,1.839,0,0,1,37.682,8.5V26.843A1.839,1.839,0,0,1,35.848,28.677Z" transform="translate(0.834 2.502)" fill="#3c4043"/>
+      </g>
+      <g id="Group_14437" data-name="Group 14437" transform="translate(585.304 1691.913)">
+        <g id="zoom_in_black_24dp_1_" data-name="zoom_in_black_24dp (1)">
+          <path id="Path_10490" data-name="Path 10490" d="M0,0H38.617V42.826H0Z" fill="none"/>
+          <path id="Path_10491" data-name="Path 10491" d="M27.564,24.618H26.012l-.55-.531a12.81,12.81,0,1,0-1.376,1.376l.531.55v1.553l8.372,8.352a2.052,2.052,0,0,0,2.909,0l.02-.02a2.052,2.052,0,0,0,0-2.909Zm-11.791,0a8.843,8.843,0,1,1,8.843-8.843A8.832,8.832,0,0,1,15.773,24.618Z" transform="translate(2.096 2.895)" fill="#3c4043"/>
+        </g>
+        <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(8.909 9.515)" fill="#dadce0" stroke="#3c4043" stroke-width="1">
+          <circle cx="9.325" cy="9.325" r="9.325" stroke="none"/>
+          <circle cx="9.325" cy="9.325" r="8.825" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

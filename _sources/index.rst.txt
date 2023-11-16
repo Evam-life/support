@@ -1,0 +1,29 @@
+.. Evam developer documentation documentation master file, created by
+   sphinx-quickstart on Fri Jul 29 10:15:07 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Support
+=======
+
+.. raw:: html
+   :file: index-inner.html
+
+Contents
+--------
+
+This is a list of all articles in the documentation.
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   
+   en/Welcome_to_the_support_portal
+   en/Vehicle_Services_The_Platform
+   en/operations_app
+   en/navigation_app
+   en/v2i_app
+   en/vehicle_installation
+
+
+

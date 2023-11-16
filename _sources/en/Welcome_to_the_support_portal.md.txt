@@ -1,0 +1,21 @@
+# Welcome to the Evam Support Portal!
+
+At Evam, we're revolutionizing the capabilities of first responders through our cutting-edge emergency vehicle software platform. Designed with you in mind, Evam brings together a suite of powerful applications to keep you in control and seamlessly transition you into the digital era.
+
+## Explore the Essentials:
+
+[Vehicle Services - The Platform:](#Vehicle_Services_The_Platform) Gain insights into the core of our innovative platform, understanding how it serves as the backbone for transforming emergency response.
+
+[Application - Operation:](#operations_app) Dive into the functionalities that enhance operational efficiency, providing you with the tools you need when every second counts.
+
+[Application - Navigation:](#navigation_app) Navigate through the details of our navigation application, ensuring you reach your destination swiftly and accurately.
+
+[Application - V2I (Vehicle-to-Infrastructure)](#v2i_app): Uncover the potential of our V2I application, facilitating seamless communication between your vehicle and the infrastructure around.
+
+[Vehicle Installation](#vehicle_installation): Learn the ropes of installing and optimizing Evam in your emergency vehicle, ensuring a smooth integration into your operations.
+
+## Get in Touch:
+
+Need assistance or have questions? Our dedicated support team is here for you. Contact us through support@evam.life or give us a call at +46 10 209 40 90.
+
+Empower yourself with Evam!

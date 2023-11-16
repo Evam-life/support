@@ -1,0 +1,36 @@
+# Application: V2I 
+
+**Developer:** Evam
+
+**Availability:** On request, contact support@evam.life
+
+**Description:** Connects you to the growing amount of connected European infrastructure. Automatically control traffic lights giving you green light when approaching an intersection.
+
+## User instructions
+
+The app works in the background an utilizes data from the Operation and Navigation apps. As a user you don’t have to do anything xtra besides using the Operation app and Navigation app as usual. 
+
+![V2I Illustration](../_static/assets/img/png/v2i_illustration.PNG)
+
+**Gives you green light.** Based on your active navigation, intersections ahead are cleared well-in time, giving you a smoother, safer, and faster journey. 
+
+**Improved traffic safety.** Avoiding red-light driving improves traffic safety by up to 70% while shortening the response times
+
+**Standardised and growing.** The V2I app is based on the latest C-Roads standards and connects you to the growing amount of connected European infrastructure. It is standardized and the number of controllable intersections grows continuously.
+
+## FAQ
+
+<details>
+
+<summary>What is needed to use the V2I app?  </summary>
+
+To utilize the V2I app you must have both the Operation and Navigation app installed. Furthermore, you should operate in an area with connected infrastructure. 
+
+To check if your area is available, please contact support@evam.life. 
+
+</details>
+
+
+
+## Configuration
+The V2I app offers no user available configurations. Please contact support@evam.life for support. 

@@ -1,0 +1,213 @@
+# Application: Navigation
+
+**Developer:** Evam
+
+**Availability**: World-wide
+
+**Description:** Navigation is central to driving. We designed the Navigation app from the ground up to get first responders swiftly and safely to the scene. With real-time maps and a user-friendly design, it shortens response times and improves traffic safety for first responders globally.
+
+## User instructions
+The overall functionalities of the Navigation app are as follows: 
+
+![navigation overview](../_static/assets/img/png/navigation_overview.png)
+
+1. **Route card:** The route card shows the next turn, second to next turn, Estimated Time of Arrival and distance to destination. 
+2. **Route overview:** Pressing the button zooms out the map to show the full route overview. 
+3. **Destination overview:** Pressing the button zooms in the map on the destination. 
+4. **Audio guidance:** Turns on and off audio guidance. 
+5. **Map-mode:** Pressing the button toggles the map between following the car with the map oriented in North/South mode and the map oriented in the direction of travel. I red arrow in the icon always indicates North direction. 
+6. **Zoom:** Zooms the map in and out without disconnecting the map from following the vehicle. 
+7. **Base maps and layers:** Opens a menu to select base maps and map layers to be displayed. 
+8. **Center:** The center button appears as soon as the map has been moved to no longer follow the vehicle. Pressing center will zoom the map back to following the vehicle. 
+
+### Starting a navigation
+Starting a navigation can be made in three ways: 
+
+- **Accepting a case:** Accepting a case in the Operation app with a destination will launch a navigation to the destination. 
+- **Searching for a destination:** Search is reached from the magnifier glass icon in the top left corner of the navigation app. You may search for both addresses or points of interest. 
+- **Selecting destination in the address book:** The address book is configurable and may be reached through the magnifier glass icon in the top left corner of the navigation app.
+- **Pinning a position in the map:** By pressing and holding somewhere in the map while you have no current active navigation you may launch a navigation to a pinned spot. 
+
+### Adding a breakpoint or middle stop
+Adding a breakpoint or middle stoop can be made in two ways: 
+
+**Option 1:** Through the dispatch.
+The dispatch may include a breakpoint. This will be added as a middle stop in the navigation route and can be viewed and removed by expanding the route card. 
+
+![Navigation added stop](../_static/assets/img/png/navigation_cancel.png)
+
+
+**Option 2:** By expanding the route card and clicking “Add stop”. 
+
+![Navigation add stop](../_static/assets/img/png/navigation_route_card.png)
+
+### Cancelling a navigation route
+To cancel a navigation route, expand the route card and click “Cancel navigation”
+
+![Navigation cancel navigation](../_static/assets/img/png/navigation_cancel.png)
+
+
+
+## FAQ
+
+<details>
+
+<summary> The navigation app suggested a route that was not optimal  </summary>
+
+The routing engine takes traffic into account and will route you on what is counted as the quickest route. Even though we work hard to always provide the most optimal route there may be cases where you believe that another route would have been better. 
+
+We are happy to adjust the routing engine based on your feedback. To provide feedback on a route please contact support@evam.life and include the following information: 
+- Starting coordinate
+- Destination coordinate 
+- Description of the route that was suggested by the navigation app
+- Description of the route that you believe would bet better
+- Time at which the non-optimal route was generated. 
+
+
+</details>
+
+
+<details>
+
+<summary> The map in the navigation app has an error  </summary>
+
+The maps are continuously updated, and we work hard providing you with the most accurate maps. If you encounter an error in any map material, we are happy to receive feedback so we can update the map material for you. 
+
+If you have encountered an error in the map please contact support@evam.life and provide the following information: 
+
+- Name of faulty map e.g.  “Nav”
+- Description of what is wrong
+- Description of how the map should look like
+
+Depending on the affected map it may take up to 3 weeks for us to improve the map and make it available for you. 
+
+
+</details>
+
+
+<details>
+
+<summary> The positioning is not precise or is lagging behind  </summary>
+
+If the positioning is not precise or is lagging behind the cause may be one of the following: 
+
+- **Inaccurate sensors:** The position is made with support from several sensors such as GPS, Accelerometer, Gyroscope and Magnetometer. One of the sensors may be inaccurate. 
+- **Disturbing equipment:** There may be disturbing equipment placed close to the device. For example, devices utilizing USB 3.0 are well know for disturbing GPS signals. 
+
+Evam may help you identify and solve the problems through the advanced support logs. Please send the advanced support logs from the settings menu reached through the shortcut center and contact support@evam.life including the following information: 
+
+- Vehicle username
+- Time at which the logs were sent
+- Description of the problem
+- Time at which the problem was observed. 
+
+
+</details>
+
+
+
+<details>
+
+<summary> What map layers can I get access to:   </summary>
+
+The navigation app can handle any map material in any of the following formats: 
+- KML
+- KMZ
+- GeoJSON
+- Shapefile
+- MBtile
+- TAB
+
+Other map formats can also be handled at an extra cost. Please contact support@evam.life
+
+Evam is a developer of maps from Swedish Ordnance Survey (Sv. Lantmäteriet) and the Swedish Traffic Department and may process maps from them at your request. **Please note that the end-user still must have necessary map licenses.** 
+
+To request a new base map or map-layer please contact support@evam.life. 
+
+
+</details>
+
+## Configuration
+
+<details>
+
+<summary> The address book </summary>
+
+Adresses may be added to the address book. The addresses may include any of the following data: 
+
+- **Name:** The displayed name of the adress
+- **Category name:** The category which the address should exist under in the address book. 
+- **Sub category name:** The sub category which the address should exist under in the address book. 
+- **Icon:** Any icon from Material Icons library that should be displayed next to the address. 
+- **Coordinate:** Destination Coordinate in WGS84 Decimal
+- **Tetra actions:** Any Tetra based actions e.g. sending a status, that should be done when selecting the status. 
+
+To add adresses to the adress book contact support@evam.life. 
+
+</details>
+
+
+<details>
+
+<summary> Base maps </summary>
+
+The available base maps may be configured. Furthermore, automatic base map layers changes may be configured. Each base map can be configured to either active or deactivate based on the following events: 
+
+- Operation complete
+- Operation confirmed
+- At site (Case address)
+- Exit site (Case address)
+- At breakpoint
+- Exit breakpoint
+- At home station
+- Exit home station
+- At Hospital
+- Exit hospital
+
+Only one base map may be active at a time.
+
+</details>
+
+
+ <details>
+
+<summary> Map layers / Overlays </summary>
+
+The available map layers / overlays may be configured. Furthermore, automatic map layers changes may be configured. Each map layer can be configured to either active or deactivate based on the following events: 
+
+- Operation complete
+- Operation confirmed
+- At site (Case address)
+- Exit site (Case address)
+- At breakpoint
+- Exit breakpoint
+- At home station
+- Exit home station
+- At Hospital
+- Exit hospital
+
+Multiple map layers / overlays may be active at the same time. 
+
+</details>
+
+
+ <details>
+
+<summary> Offline area </summary>
+
+An offline area may be configured to always have all maps available no matter if you are online or offline. As standard an offline area equal to 650 tiles and 30GB of data is included. That is equal to an offline area equal to the size of e.g., greater Stockholm at highest resolution. 
+
+Larger offline areas may be achieved through an extra cost/service or by lowering the resolution of the offline maps. 
+
+</details>
+
+
+
+
+
+
+
+
+
+
+

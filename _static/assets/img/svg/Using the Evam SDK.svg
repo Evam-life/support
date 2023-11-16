@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+  <g id="Using_the_Evam_SDK" data-name="Using the Evam SDK" transform="translate(9948 -2651)">
+    <g id="Group_12796" data-name="Group 12796" transform="translate(-10059 1798)">
+      <rect id="Rectangle_1738" data-name="Rectangle 1738" width="76" height="76" rx="12" transform="translate(111 853)" fill="#dadce0"/>
+      <g id="dvr_black_24dp" transform="translate(124.429 866.429)">
+        <path id="Path_10488" data-name="Path 10488" d="M0,0H49.142V49.142H0Z" fill="none"/>
+        <path id="Path_10489" data-name="Path 10489" d="M41.951,3H5.1A4.107,4.107,0,0,0,1,7.1V31.666a4.107,4.107,0,0,0,4.1,4.1H15.333v2.048a2.054,2.054,0,0,0,2.048,2.048H29.666a2.054,2.054,0,0,0,2.048-2.048V35.761H41.951a4.107,4.107,0,0,0,4.1-4.1V7.1A4.107,4.107,0,0,0,41.951,3ZM39.9,31.666H7.143A2.054,2.054,0,0,1,5.1,29.618V9.143A2.054,2.054,0,0,1,7.143,7.1H39.9a2.054,2.054,0,0,1,2.048,2.048V29.618A2.054,2.054,0,0,1,39.9,31.666Zm-4.1-18.428H17.381a2.048,2.048,0,0,0,0,4.1H35.809a2.048,2.048,0,1,0,0-4.1Zm0,8.19H17.381a2.048,2.048,0,0,0,0,4.1H35.809a2.048,2.048,0,1,0,0-4.1Zm-22.523-8.19H9.19v4.1h4.1Zm0,8.19H9.19v4.1h4.1Z" transform="translate(1.048 3.143)" fill="#3c4043"/>
+      </g>
+    </g>
+  </g>
+</svg>
