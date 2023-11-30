@@ -307,7 +307,7 @@
 <p><strong>Description:</strong> Your Operation is our mission. As a spider in the web the Operation app sits at the center and handles your call-out. Integrated with the dispatch central it gives you the information that you need. In the way you want it.</p>
 <section id="user-instructions">
 <h2 id="user-instructions">User instructions<a class="headerlink" href="#user-instructions" title="Permalink to this heading">¶</a></h2>
-<p>The operations app handles the full mission and integrates with your dispatch solution. The operations app includes the following tabs:</p>
+<p>The operations app handles the full mission and integrates with your dispatch central. The operations app includes the following tabs:</p>
 <p><img alt="Operation overview" src="../_images/operation_overview.png"/></p>
 <ol class="arabic simple">
 <li><p>Info</p></li>
@@ -319,8 +319,8 @@
 <h3 id="info">Info<a class="headerlink" href="#info" title="Permalink to this heading">¶</a></h3>
 <p><img alt="Operation info" src="../_images/operation_info.PNG"/></p>
 <p>In the “Info” tab, you’ll access comprehensive details about ongoing cases, including but not limited to:</p>
-<p><strong>Case Overview:</strong> Gain insights into pertinent information regarding the alarm.</p>
-<p><strong>Address Details:</strong>  Explore the address associated with the alarm location. Easily navigate the surroundings by pressing the “Destination Overview” button.</p>
+<p><strong>Case Overview:</strong> Gain insights into pertinent information regarding the case.</p>
+<p><strong>Address Details:</strong>  Explore the address associated with the case location. Easily navigate the surroundings by pressing the “Destination Overview” button.</p>
 <p><strong>Assigned Radio Group:</strong> Identify and change to the assigned radio group.</p>
 <p><strong>Other:</strong> All other information that is sent from the dispatcher is also displayed for the user depending on the case type.</p>
 </section>
@@ -332,13 +332,13 @@
 <section id="status">
 <h3 id="status">Status:<a class="headerlink" href="#status" title="Permalink to this heading">¶</a></h3>
 <p><img alt="Operation status" src="../_images/operation_status.PNG"/></p>
-<p>In the status tab the available statuses are shown. The view is fully configurable as part of the settings. Pressing the status will send the status.</p>
+<p>In the status tab the available statuses are shown. The view is fully configurable as part of the settings. Pressing the status will send the status. The current status is indicated by having a orange background compared to status not engaged having a grey background.</p>
 </section>
 <section id="all-operations">
 <h3 id="all-operations">All operations:<a class="headerlink" href="#all-operations" title="Permalink to this heading">¶</a></h3>
 <p><img alt="Operation info" src="../_images/operation_all_operations.PNG"/></p>
 <p>The “All operations” tab shows the current cases. You may handle several cases simultaneously, however, only one case can be active at a time.  In the “All operations” tab you select the case that should be active if there are multiple ones available. If only one case is available that case will be activated by default.</p>
-<p>Furthermore, data from historic cases are shown. Previous cases are stored for 24h before they are automatically removed.</p>
+<p>Furthermore, data from historic cases are shown. Previous cases are stored under “History” for 24h before they are automatically removed.</p>
 </section>
 <section id="confirming-a-case">
 <h3 id="confirming-a-case">Confirming a case:<a class="headerlink" href="#confirming-a-case" title="Permalink to this heading">¶</a></h3>
@@ -348,7 +348,8 @@
 <li><p>Confirm the case towards the dispatcher</p></li>
 <li><p>Start navigation to the case destination and/or assigned breakpoint</p></li>
 <li><p>Change to the assigned talk group</p></li>
-<li><p>Any other predefined action in the Tetra network.</p></li>
+<li><p>Any other predefined action in the Tetra network</p></li>
+<li><p>Change the base map and/or add/remove any map layer</p></li>
 </ul>
 </section>
 <section id="dismissing-a-case">
@@ -363,11 +364,11 @@
 <p>Confirming a case is made through accepting the notification which is shown when a case is received or through activating the case from the “All operations” tab.</p>
 </details>
 <details>
-<summary> I have received a notification about an assigned case that I am unable to accept. How do I remove the notification and dismiss the case? </summary>
+<summary> I have received a case that I don’t want to accept. How do I remove the notification and dismiss the case? </summary>
 <p>To dismiss a case, you simply swipe the associated notification away from the screen. Once swiped away the case will land in the “All operations” tab and can be activated at a later point.</p>
 </details>
 <details>
-<summary> I want to see my current status; how do I do that? </summary>
+<summary> I want to see my current status. How do I do that? </summary>
 <p>To view your current status, you can either look in the “Status tab” of the Operations app or preferably under “Current status” in the shortcut center.</p>
 </details>
 <details>
@@ -379,7 +380,7 @@
 <summary> I have no connection the Tetra Radio </summary>
 <p>If you have no connection to the Tetra radio please try the following to resolve the problem:</p>
 <ul class="simple">
-<li><p>Confirm that the PEI-cable between the Radio and the device is intact and connected.</p></li>
+<li><p>Confirm that the PEI-cable between the Radio and the device is intact and connected to the Radio’s active PEI-port.</p></li>
 <li><p>Try to reboot your Tetra radio.</p></li>
 <li><p>Confirm that the correct radio type/brand is configured as part of your vehicle settings.</p></li>
 </ul>

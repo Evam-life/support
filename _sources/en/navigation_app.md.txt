@@ -12,24 +12,61 @@ The overall functionalities of the Navigation app are as follows:
 ![navigation overview](../_static/assets/img/png/navigation_overview.png)
 
 1. **Route card:** The route card shows the next turn, second to next turn, Estimated Time of Arrival and distance to destination. 
-2. **Route overview:** Pressing the button zooms out the map to show the full route overview. 
-3. **Destination overview:** Pressing the button zooms in the map on the destination. 
-4. **Audio guidance:** Turns on and off audio guidance. 
-5. **Map-mode:** Pressing the button toggles the map between following the car with the map oriented in North/South mode and the map oriented in the direction of travel. I red arrow in the icon always indicates North direction. 
+2. **Route overview:** Pressing the button zooms out the map to show the full route overview. [Read more ](#route-and-destination-overview)
+3. **Destination overview:** Pressing the button brings you to a destination overview. [Read more ](#route-and-destination-overview)
+4. **Audio guidance:** Turns on and off turn-by-tuen audio guidance. 
+5. **Map-mode:** Pressing the button toggles the map between following the car with the map oriented in North/South mode and the map oriented in the direction of travel. The red arrow in the icon always indicates North direction. [Read more ](#map-mode)
 6. **Zoom:** Zooms the map in and out without disconnecting the map from following the vehicle. 
 7. **Base maps and layers:** Opens a menu to select base maps and map layers to be displayed. 
 8. **Center:** The center button appears as soon as the map has been moved to no longer follow the vehicle. Pressing center will zoom the map back to following the vehicle. 
 
 ### Starting a navigation
-Starting a navigation can be made in three ways: 
+Starting a navigation can be made in four ways: 
 
-- **Accepting a case:** Accepting a case in the Operation app with a destination will launch a navigation to the destination. 
-- **Searching for a destination:** Search is reached from the magnifier glass icon in the top left corner of the navigation app. You may search for both addresses or points of interest. 
+- **Accepting a case:** Accepting a case with a destination automatically launches a navigation to the destination. 
+- **Searching for a destination:** Search for a destination by clicking the magnifying glass in the top left corner. You can search for addresses as well as points of interest. 
 - **Selecting destination in the address book:** The address book is configurable and may be reached through the magnifier glass icon in the top left corner of the navigation app.
 - **Pinning a position in the map:** By pressing and holding somewhere in the map while you have no current active navigation you may launch a navigation to a pinned spot. 
 
+### Map Mode
+To toggle the map between following the car with the map oriented in North/South mode and the map oriented in the direction of travel you may change the map mode. The map mode is changed by pressing the map mode button marked below: 
+![Navigation map mode button](../_static/assets/img/png/Navigation_map_mode_overview.jpg)
+
+Toggling the map mode button will present you with with the following modes: 
+
+**North Mode**
+![Navigation North Mode](../_static/assets/img/png/Navigation_map_mode_north.jpg)
+
+**Direction of Travel Mode**
+![Navigation North Mode](../_static/assets/img/png/Navigation_map_mode_follow.jpg)
+
+### Route and Destination Overview
+A route and destination overview can be activated simply within the Navigation app. The different functions are activated with the top right buttons when you have a active trip as described by the figure below. 
+
+**Button 1:** Route overview
+
+**Button 2:** Destination overview
+
+![Navigation overviews](../_static/assets/img/png/navigation_overviews.jpg)
+
+**Route Overview**
+
+![Navigation route overview](../_static/assets/img/png/navigation_Overview.jpg)
+
+The route overview can be used to give and overview of the route to quickly understand where you are heading. If there are alternative routes these will be shown. However, the quickest route will always be pre-chosen. You may select the other route by pressing on it or starting to drive that route as the navigation app then automatically will adapt. 
+
+Pressing "Center" will bring you back to follow the car again. 
+
+**Destination Overview**
+
+![Navigation destination overview](../_static/assets/img/png/navigation_destination.jpg)
+
+The destination overview may be used to quckly zoom in on the destination to give you an overview of the site you are heading to. Take the possibility to start planning your first actions before you are at site. When in the destination overview mode you may change to a different map layer e.g. satellite images to get an even better overview of the site.  
+
+Pressing "Center" will bring you back to follow the car again. 
+
 ### Adding a breakpoint or middle stop
-Adding a breakpoint or middle stoop can be made in two ways: 
+Adding a breakpoint or middle stop can be made in two ways: 
 
 **Option 1:** Through the dispatch.
 The dispatch may include a breakpoint. This will be added as a middle stop in the navigation route and can be viewed and removed by expanding the route card. 
@@ -37,7 +74,7 @@ The dispatch may include a breakpoint. This will be added as a middle stop in th
 ![Navigation added stop](../_static/assets/img/png/navigation_cancel.png)
 
 
-**Option 2:** By expanding the route card and clicking “Add stop”. 
+**Option 2:** By expanding the route card and clicking “Add stop” which brings you to the address book where you also can search for other destinations outside of your address book. 
 
 ![Navigation add stop](../_static/assets/img/png/navigation_route_card.png)
 
@@ -108,7 +145,7 @@ Evam may help you identify and solve the problems through the advanced support l
 
 <details>
 
-<summary> What map layers can I get access to:   </summary>
+<summary> What map layers and base maps can I get access to:   </summary>
 
 The navigation app can handle any map material in any of the following formats: 
 - KML

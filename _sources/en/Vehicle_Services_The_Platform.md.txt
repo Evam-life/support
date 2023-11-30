@@ -29,7 +29,7 @@ The applications on the platform uses notifications to notify the user and to gi
 
 In the shortcut center the user can configure shortcuts to commonly used parts of the platform. 
 
-**Locate the shortcut center:** The notification center is located in the lower right corner of the screen. It has the symbol of a grid, and here you will find all shortcuts that you have configured. 
+**Locate the shortcut center:** The shortcut center is located in the lower right corner of the screen. It has the symbol of a grid, and here you will find all shortcuts that you have configured. 
 
 **The functions in the shortcut center:** The content of the shortcut center is configurable but includes the following:
 
@@ -55,11 +55,11 @@ Once paired in multiple screen mode the devices will share all data between the 
 -	Opening one app on one screen will not open the same app on other screens – the views are independent. 
 
 ### TNA functionality (Optional)
-Support for SOS Alarm’s (Sweden) TNA functionality may be enabled. If enabled the TNA Functionality is reach from the top bar of the shortcut center. 
+Support for SOS Alarm’s (Sweden) TNA functionality may be enabled. If enabled the TNA Functionality is reached from the top bar of the shortcut center. 
 
 **Seeing login status:** If logged in the MSISDN (Call-sign) to which you are logged in will be displayed within the shortcut center. If you are not logged in a logged-out icon will be displayed instead. 
 
-**Loggin in or out to the TNA server:** By clicking on the TNA status field in the shortcut center you will bring up a list of the available and preconfigured callsigns to which you can log in. Clicking log in will log you in to the selected call-sign. A confirmation or any failure code will confirm the login status. 
+**Logging in or out to the TNA server:** By clicking on the TNA status field in the shortcut center you will bring up a list of the available and preconfigured callsigns to which you can log in. Clicking log in will log you in to the selected call-sign. A confirmation or any failure code will confirm the login status. 
 
 **Getting logged out by another user:** If another vehicle logs in to the call-sign that you currently are logged in to you will be automatically logged out. The logged-out user will be notified about that it has been logged out through a notification and the status of the TNA status field in the shortcut center will be updated accordingly. 
 
@@ -136,7 +136,7 @@ Configuration changes are made through request to support@evam.life. Please incl
 
 <summary>Adding an application </summary>
 
-Any available application on the platform may be added to any part of the organization. To request a new application contact support@evam.life. 
+Any available application on the platform may be added to any part of the organization. To request a new application contact hello@evam.life or your sales representative. 
 
 </details>
 
@@ -202,7 +202,7 @@ To configure or change the TNA functionality contact support@evam.life and inclu
 
 <summary>Gates </summary>
 
-Any number of Tetra controlled gates, traffic lights or other devices may be controlled from Vehicle Services. 
+Any number of Tetra controlled gates, traffic lights or other Tetra controlled infrastructure may be controlled from Vehicle Services. 
 
 The configuration of a gate includes the following: 
 

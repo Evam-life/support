@@ -1,5 +1,10 @@
 # Vehicle installation
 
+`````{attention}
+Please read through the full installation guide and take care to follow each step as listed below.
+`````
+
+
 **Table of contents**
 
 1. [Chose your installation type](#chose-your-installation-type)
@@ -14,7 +19,7 @@
 
 ![Multiple screens](../_static/assets/img/png/installation_main_receiving.png)
 
-One main screen and one or more receiving screens are installed in the vehicle. The main screen should be permanently connected to the vehicle's Rakel terminal. We recommend mounting the main screen as the driver's display.
+One main screen and one or more receiving screens are installed in the vehicle. The main screen should be permanently connected to the vehicle's Tetra terminal. We recommend mounting the main screen as the driver's display.
 
 Receiving screens can be used freely within and around the vehicle up to 50 meters from the vehicle, depending on the environment. 
 

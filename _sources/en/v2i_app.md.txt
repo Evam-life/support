@@ -8,7 +8,7 @@
 
 ## User instructions
 
-The app works in the background an utilizes data from the Operation and Navigation apps. As a user you don’t have to do anything xtra besides using the Operation app and Navigation app as usual. 
+The app works in the background an utilizes data from the Operation and Navigation apps. As a user you don’t have to do anything extra besides using the Operation app and Navigation app as usual. 
 
 ![V2I Illustration](../_static/assets/img/png/v2i_illustration.PNG)
 
