@@ -1,0 +1,43 @@
+# Application: Street View
+
+**Developer:** Evam
+
+**Availability**: World-wide
+
+**Description:** Street View gives you unparalleled destination knowledge. We designed the Street view app from the ground up to give first responders the best possible situational awareness. See the destination from street level and get vital information of how to plan your mission before arriving at site.
+
+## User Instructions
+
+The overall functionalities of the Street view app are as follows:
+
+![Street View overview](../_static/assets/img/png/streetview_overview.jpg)
+
+1. **Case address:** Shows the address of the destination of the current case. This is were the street view is provided.
+
+        
+      
+2. **Compass:** Shows the north/south orientation helping the user to orient himself.
+
+        
+      
+3. **Zoom:** The +/- buttons allows the user to zoom in/out.
+
+        
+      
+4. **Pan and walk along the street:** Using the arrows the user can "walk" back and forth along the street. Using the fingers the user can pan around to change the view.
+
+### Getting a street view
+
+A street view is only given when the user gets a case. When the user is not on a case the user can not use the street view functionality.
+
+## FAQ:
+
+
+
+<details>
+
+<summary> When is a street view provided in vehicle services? </summary>
+
+A street view is provided only when the user is on a active case. Evam is using Google to provide the street view and there might be places where Google has no data to provide a street view. For such places no street view will be provided.
+
+</details>

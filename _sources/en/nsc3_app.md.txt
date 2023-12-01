@@ -1,0 +1,66 @@
+# Application: NSC3
+
+**Developer:** Modirum
+
+**Availability**: Sweden
+
+**Description:** Enables emergency services to share live video feeds in a safe and secure way. Use any type of camera, drone or phone to share video with your fellow colleagues. Share video streams between organizations and if needed outside of organizations.
+
+## User instructions
+
+![nsc3 overview](../_static/assets/img/png/nsc3_overview.jpg)
+
+1. **Categories:** Here you can toggle between all available cameras or only show cameras that are live. Toggle between the two categories by pressing them.
+     
+2. **Available cameras:** The available cameras is shown in a list view with name and status. Live indicates that camera is streaming. Online indicates that the camera is online but not streaming. Offline indicates that the camera is offline. Pressing one of the cameras on the list gives you a full screen view of the camera stream.
+
+
+## More information about the NSC3 web and mobile app
+For more information about the NSC3 web and mobile app please see: [NSC3 System Description](../_static/assets/pdf/NSC3-system-description.pdf)
+
+
+## FAQ:
+
+
+
+<details>
+
+<summary> What cameras can I use to provide a live stream to the Evam platform? </summary>
+
+The NSC3 platform supports a wide range of different cameras. With the NSC3 mobile app you can use your mobile phone as a camera. The NSC3 platform supports the following video protocols enabling the usage of cameras that support such protocols. These are the supported protocols:
+
+- RTMPs (Real-Time Messaging Protocol with (encrypted over SSL)
+
+- RTSP (Real-Time Streaming Protocol)
+- WebRTC (Web Real-Time Communications)
+- MPEG-TS
+- motion-JPEG
+- ONVIF
+
+Talk to a Evam representative to know what cameras Evam recommends.
+
+
+</details>
+
+<details>
+
+<summary> What drones are supported by the NSC3 platform? </summary>
+
+If your drone supports video sharing over any of the above mentioned video protocols then the video stream from the drone can be easily integrated with the NSC3 platform.
+
+Using the NSC3 mobile app you can also easily share the video stream from the drone enabling a screen sharing, sharing the screen of the drone manufactures own application.
+
+NSC3 also have a mobile/tablet drone app that's compatible with DJI Mavic 2 drones.
+
+</details>
+
+
+<details>
+
+<summary> Where is my data stored? </summary>
+
+In Sweden. Evam and Modirum is today the only supplier of this type of services that can offer data storage in Sweden.
+
+</details>
+
+
