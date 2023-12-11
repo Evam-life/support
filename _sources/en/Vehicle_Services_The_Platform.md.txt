@@ -114,6 +114,14 @@ Any open notification on the screen can be removed by pressing on the notificati
 
 </details>
 
+<details>
+
+<summary> How do I update to a new version of Central Services? </summary>
+
+If a new version of Central Services is available for you 
+
+</details>
+
 
 
 ## Configuration

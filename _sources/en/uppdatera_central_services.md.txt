@@ -1,0 +1,37 @@
+# Uppdatera Central Services
+
+Om en ny uppdatering av central services finns tillgänglig för dig visas det genom en notis i notiscentret. 
+
+
+`````{attention}
+För att kunna uppdatera till den senast versionen av Central Services behöver du först uppdatera samtliga fordon i din organisation till senaste versionen av Vehicle Services.  
+`````
+
+### Följ stegen nedan för att uppdatera till en ny version av Central Services: 
+
+
+1. **Öppna Notiscentret**
+    ![Uppdatera 1](../_static/assets/img/png/uppdatera_1.jpg)
+
+2. **När ni öppnat notiscentret så finner ni en notis som det står ”Datauppdatering tillgänglig” på. Tryck på "Bekräfta" för att påbörja uppgraderingen av Central Services**
+    ![Uppdatera 2](../_static/assets/img/png/uppdatera_2.jpg)
+
+
+3. **Läs informationen nogrannt och tryck på "Bekräfta" för att fortsätta**
+    `````{attention}
+    Uppdateringen av Central Services tar bara några minuter men innebär att samtliga offlinekartor radderas och behöver laddas ned på nytt. Nedladdningen av offlinekartor kan ta flera timmar. Under tiden för nedladdning av offlinekartor är dock systemet operativt men utan offlinekartor. Se till att enheten är uppkopplad mot Wi-Fi för att ladda ner offlinekartorna. 
+    `````
+    ![Uppdatera 3](../_static/assets/img/png/uppdatera_3.jpg)
+
+4. **När ni tryckt på bekräfta så kommer Vehicle Service automatiskt att startas om och denna bild kommer att synas när uppdateringen är klar.**
+
+    ![Uppdatera 4](../_static/assets/img/png/uppdatera_4.jpg)
+
+5. **När allt är klart så kommer kartan att visa sig igen. Detta kan ta flera  minuter.**
+
+6. **Nu är systemet operativt och ni kan följa nedladdningen av offline-kartor genom en notis i notiscentret.**
+    `````{attention}
+    Observera att uppkoppling mot Wi-Fi behövs för att ladda ner offline-kartorna. 
+    `````
+
+    ![Uppdatera 6](../_static/assets/img/png/uppdatera_6.jpg)  
