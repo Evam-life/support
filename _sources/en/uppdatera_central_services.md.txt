@@ -19,7 +19,7 @@ För att kunna uppdatera till den senast versionen av Central Services behöver 
 
 3. **Läs informationen nogrannt och tryck på "Bekräfta" för att fortsätta**
     `````{attention}
-    Uppdateringen av Central Services tar bara några minuter men innebär att samtliga offlinekartor radderas och behöver laddas ned på nytt. Nedladdningen av offlinekartor kan ta flera timmar. Under tiden för nedladdning av offlinekartor är dock systemet operativt men utan offlinekartor. Se till att enheten är uppkopplad mot Wi-Fi för att ladda ner offlinekartorna. 
+    Uppdateringen av Central Services tar bara några minuter men innebär att samtliga offlinekartor raderas och behöver laddas ned på nytt. Nedladdningen av offlinekartor kan ta flera timmar. Under tiden för nedladdning av offlinekartor är dock systemet operativt men utan offlinekartor. Se till att enheten är uppkopplad mot Wi-Fi för att ladda ner offlinekartorna. 
     `````
     ![Uppdatera 3](../_static/assets/img/png/uppdatera_3.jpg)
 
