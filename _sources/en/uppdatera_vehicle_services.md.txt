@@ -1,0 +1,50 @@
+```{eval-rst}
+.. _update-vehicle-services:
+```
+
+
+# Uppdatera Vehicle Services
+
+För att uppdatera Vehicle Services och stödjande programvaror följer du denna guide:
+
+1. **Stäng ner samtliga öppna applikationer genom överblicksmenyn som nås genom att antingen svepa från botten till mitten av skärmen (gäller S6/S7) eller trycka på den fysiska knappen märkt "|||" (gäller Active4 Pro). Klicka sedan på "Stäng allt"**
+
+    ![Uppdatera 1](../_static/assets/img/png/Uppdatera_vehicle_Services/Stang_allt.jpg)
+
+2. **Svep nedåt från toppen till mitten på skärmen för att öppna genvägar**
+
+    ![Uppdatera 2](../_static/assets/img/png/Uppdatera_vehicle_Services/Genvagar.jpg)
+
+
+3. **Klicka på kugghjulet i övre högra hörnet**
+
+    ![Uppdatera 3](../_static/assets/img/png/Uppdatera_vehicle_Services/Installningar.jpg)
+
+4. **Klicka på ”Appar” och sedan på ”Google Play Butik”**
+
+    ![Uppdatera 4](../_static/assets/img/png/Uppdatera_vehicle_Services/Google_play.jpg)
+
+5. **Klicka på ”Öppna”**
+
+    ![Uppdatera 5](../_static/assets/img/png/Uppdatera_vehicle_Services/Oppna.jpg)
+
+6. **Klicka på övre högra knappen för att nå ert konto**
+
+    ![Uppdatera 6](../_static/assets/img/png/Uppdatera_vehicle_Services/Oppna_konto.jpg)
+
+7. **Klicka på "Hantera appar och enheter"**
+
+    ![Uppdatera 7](../_static/assets/img/png/Uppdatera_vehicle_Services/Hantera_appar.jpg)
+
+8. **Klicka på "Uppdatera alla"**
+
+    ![Uppdatera 8](../_static/assets/img/png/Uppdatera_vehicle_Services/Uppdatera_alla.jpg)
+
+
+9. **Invänta att uppdateringen slutförs och du ser texten "Alla appar är uppdaterade"**
+
+10. **Du kan nu starta Vehicle Services från skrivbordet igen**
+
+
+### Ska du även uppdatera Central Services? Du hittar guiden här: [Uppdatera Central Services](#uppdatera_central_services)
+

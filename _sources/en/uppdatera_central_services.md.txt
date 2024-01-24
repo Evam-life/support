@@ -1,11 +1,19 @@
 # Uppdatera Central Services
 
-Om en ny uppdatering av central services finns tillgänglig för dig visas det genom en notis i notiscentret. 
+Om en ny uppdatering av Central Services finns tillgänglig för dig visas det genom en notis i notiscentret. 
 
 
 `````{attention}
-För att kunna uppdatera till den senast versionen av Central Services behöver du först uppdatera samtliga fordon i din organisation till senaste versionen av Vehicle Services.  
+För att kunna uppdatera till den senast versionen av Central Services behöver du först uppdatera samtliga fordon i din organisation till senaste versionen av Vehicle Services och dess stödjande programvaror. För att uppdatera Vehicle Services och dess stödjande programvaror följ denna guide: 
+
+```{eval-rst}
+:ref:`update-vehicle-services`.
+
+```
+
 `````
+
+
 
 ### Följ stegen nedan för att uppdatera till en ny version av Central Services: 
 
