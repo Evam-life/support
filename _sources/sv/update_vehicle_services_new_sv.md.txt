@@ -1,0 +1,63 @@
+# Uppdatera Vehicle Services - Enheter med kiosk-läge
+
+För att uppdatera Vehicle Services och stödjande programvara, följ denna guide:
+
+
+1. **Stäng ner alla öppna applikationer genom överblicksmenyn, som nås genom att antingen svepa från botten till mitten av skärmen (gäller för S6/S7) eller trycka på den fysiska knappen märkt "|||" (gäller för Active4 Pro). Klicka sedan på "Stäng allt"**
+
+    ![Uppdatera 1](../_static/assets/img/png/Uppdatera_vehicle_Services/Stang_allt.jpg)
+
+2. **Avsluta av kiosk-läge genom att trycka på "Hantera inställningar" på startsidan**
+
+    ![Uppdatera 2](../_static/assets/img/png/launch-managed-settings.jpg)
+
+
+3. **Tryck på informationsknappen**
+
+    ![Uppdatera 3](../_static/assets/img/png/info-managed-settings.jpg)
+
+4. **Tryck på "Avsluta kiosk" och ange administrationskoden.**
+    Standardkoden är alltid inställd på "1234"
+
+    ![Uppdatera 4](../_static/assets/img/png/device-information-managed-settings.jpg)
+
+
+    **Du har nu avslutat kiosk-läget**
+
+
+
+
+5. **Öppna Play Butik från startsidan**
+
+    ![Uppdatera 5](../_static/assets/img/png/launch-play-store.jpg)
+
+
+6. **Klicka på den övre högra knappen för att komma åt ditt konto**
+
+    ![Uppdatera 6](../_static/assets/img/png/Uppdatera_vehicle_Services/Oppna_konto.jpg)
+
+7. **Klicka på "Hantera appar och enheter"**
+
+    ![Uppdatera 7](../_static/assets/img/png/Uppdatera_vehicle_Services/Hantera_appar.jpg)
+
+8. **Klicka på "Uppdatera alla"**
+
+    ![Uppdatera 8](../_static/assets/img/png/Uppdatera_vehicle_Services/Uppdatera_alla.jpg)
+
+
+9. **Vänta tills uppdateringen är klar och du ser texten "Alla appar är uppdaterade"**
+
+10. **Du kan nu återgå till kiosk-läget genom att svepa från mitten av skärmen och uppåt för att öppna app-menyn**
+
+    ![Uppdatera 9](../_static/assets/img/png/open-app-menu.jpg)
+
+11. **Klicka på "ManagedHomeScreen"**
+
+    ![Uppdatera 10](../_static/assets/img/png/launch-managed-home-screen.jpg)
+
+11. **Starta "Vehicle Services" och verifiera funktionaliteten**
+
+    ![Uppdatera 11](../_static/assets/img/png/launch-vehicle-services.jpg)
+
+
+### Ska du även uppdatera Central Services? Du hittar guiden här: [Uppdatera Central Services](#update_central_services_sv)

@@ -1,0 +1,40 @@
+# Update Central Services
+
+If a new update for Central Services is available for you, it will be indicated by a notification in the notification center.
+
+
+`````{attention}
+To update to the latest version of Central Services, you first need to update all vehicles in your organization to the latest version of Vehicle Services and its supporting software. To update Vehicle Services and its supporting software, follow this guide:
+
+```{eval-rst}
+:ref:`update-vehicle-services-en`.
+
+```
+
+`````
+
+
+### Follow the steps below to update to a new version of Central Services:
+
+1. **Open the Notification Center**
+    ![uppdatera_1](../_static/assets/img/png/uppdatera_1.jpg)
+
+2. **Once you've opened the notification center, you will find a notification stating "Data update available". Press "Confirm" to start the upgrade of Central Services.**
+    ![uppdatera_2](../_static/assets/img/png/uppdatera_2.jpg)
+
+3. **Read the information carefully and press "Confirm" to proceed**
+    `````{attention}
+    The update of Central Services only takes a few minutes but involves deleting all offline maps, which need to be downloaded again. Downloading offline maps can take several hours. However, the system remains operational during the download of offline maps but without offline maps. Make sure the device is connected to Wi-Fi to download the offline maps.
+    `````
+    ![uppdatera_3](../_static/assets/img/png/uppdatera_3.jpg)
+
+4. **Once you've confirmed, Vehicle Service will automatically restart, and this image will appear when the update is complete.**
+    ![uppdatera_4](../_static/assets/img/png/uppdatera_4.jpg)
+
+5. **When everything is ready, the map will reappear. This may take several minutes.**
+
+6. **Now the system is operational, and you can monitor the download of offline maps through a notification in the notification center.**
+    `````{attention}
+    Note that Wi-Fi connection is required to download offline maps.
+    `````
+    ![uppdatera_6](../_static/assets/img/png/uppdatera_6.jpg)  

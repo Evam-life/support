@@ -1,0 +1,85 @@
+# Guide to managing kiosk mode devices
+
+`````{attention}
+Devices shipped from January 2024 and onwards implement a kiosk mode for improved usability of the device. 
+
+Devices shipped prior to January 2024 does not implement this functionality. 
+
+`````
+
+**Table of contents**
+1. [General description](#general-description)
+    -  [Key benefits](#key-benefits)
+    -  [Functionality within the kiosk mode](#functionality-within-the-kiosk-mode)
+    -  [Rebooting the device](#rebooting-the-device)
+2. [Exiting and entering the kiosk mode](#exiting-and-entering-the-kiosk-mode)
+    - [Exiting the kiosk mode](#exiting-the-kiosk-mode)
+    - [Entering the kiosk mode](#entering-the-kiosk-mode)
+
+
+
+## General description
+
+The kiosk-mode, provides a controlled and restricted user interface environment. It clears up the user interface and make sure that only authorized administrators have access to device settings and similar features. 
+
+### Key benefits
+**Enhanced Security:** By restricting access to only authorized applications, kiosk-mode enhances device security, reducing the risk of unauthorized access or misuse.
+
+**Simplified User Experience:** Users are presented with a streamlined interface, tailored to their specific needs and tasks. This simplifies navigation and reduces the chances of users getting lost or confused within the device's interface.
+
+**Focused Productivity:** With access limited to essential applications and functions, users can stay focused on their tasks without distractions from unrelated apps or features.
+
+## Functionality within the kiosk mode
+Within the kiosk mode the user can only reach the following functions: 
+
+1. Vehicle Services: The platform for emergency vehicles with your collection of apps. 
+2. Knox Remote Support: Launch a remote support session with a member of our support team. 
+
+All other applications and settings are fully disabled in the kiosk mode. To access these [exit the kiosk mode](#exiting-and-entering-the-kiosk-mode)
+
+### Rebooting the device
+In case you need to reboot or shut off the device the following applies: 
+
+1. **Within kiosk mode:** If the device is rebooted or shut off from within kiosk mode the device will automatically boot into the kiosk mode again. 
+2. **Outside of the kiosk mode:** If the device is rebooted or shut off from outside of the kiosk mode the device will automatically boot into beeing outside of the kiosk mode again. 
+
+
+## Exiting and entering the kiosk-mode
+
+### Exiting the kiosk mode: 
+
+1. **Start exiting the kiosk mode by pressing "Managed settings" on the home screen**
+
+    ![Uppdatera 2](../_static/assets/img/png/launch-managed-settings.jpg)
+
+
+2. **Press the information button**
+
+    ![Uppdatera 3](../_static/assets/img/png/info-managed-settings.jpg)
+
+3. **Press "Exit kiosk" and enter the administration code.**
+    The default code is always set to "1234"
+
+    ![Uppdatera 4](../_static/assets/img/png/device-information-managed-settings.jpg)
+
+
+    **You have now exited the kiosk mode**
+
+    In this mode you now have full control of the settings of the device and can setup and manage things like WiFi-connections, Bluetooth and similar. 
+
+
+### Entering the kiosk mode
+
+1. **To enter the kiosk mode start by swiping from the middle of the screen and upwards to open the app-menu**
+
+    ![Uppdatera 9](../_static/assets/img/png/open-app-menu.jpg)
+
+11. **Click on "ManagedHomeScreen"**
+
+    ![Uppdatera 10](../_static/assets/img/png/launch-managed-home-screen.jpg)
+
+     **You have now entered the kiosk mode**
+
+     Within the kiosk mode the user can only start Vehicle Services and launch a remote support session by starting "Knox Remote Support". 
+
+

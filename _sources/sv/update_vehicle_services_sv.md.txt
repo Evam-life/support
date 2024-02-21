@@ -1,0 +1,12 @@
+```{eval-rst}
+.. _update-vehicle-services-sv:
+```
+
+# Uppdatera Vehicle Services
+
+
+## Välj din installationstyp
+
+1. [Enheter levererade från och med januari 2024 som använder kiosk-läge](#update_vehicle_services_new_sv)
+2. [Enheter levererade före januari 2024 som inte använder kiosk-läge](#update_vehicle_services_legacy_sv)
+

@@ -10,9 +10,19 @@ At Evam, we're revolutionizing the capabilities of first responders through our 
 
 [Application - Navigation:](#navigation_app) Navigate through the details of our navigation application, ensuring you reach your destination swiftly and accurately.
 
-[Application - V2I (Vehicle-to-Infrastructure)](#v2i_app): Uncover the potential of our V2I application, facilitating seamless communication between your vehicle and the infrastructure around.
+[Application - V2I (Vehicle-to-Infrastructure)](#v2i_app): Uncover the potential of our V2I application, facilitating seamless communication between your vehicle and the 
+infrastructure around.
+
+[Application - Street View](#streetview_app): Street View gives you unparalleled destination knowledge.
+
+[Application - NSC3](#nsc3_app): Enables emergency services to share live video feeds in a safe and secure way. 
 
 [Vehicle Installation](#vehicle_installation): Learn the ropes of installing and optimizing Evam in your emergency vehicle, ensuring a smooth integration into your operations.
+
+[Update Vehicle Services](#update_vehicle_services): Gain access to new features and functionalities by keeping Vehicle Services up to date. 
+
+[Guide to managing kiosk mode](#guide_to_managing_kiosk_mode): Devices shipped from January 2024 and onwards implement a kiosk mode for improved usability of the device. Learn how to manage the kiosk mode
+
 
 ## Get in Touch:
 

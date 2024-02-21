@@ -1,0 +1,47 @@
+
+
+
+# Update Vehicle Services - Non-kiosk mode devices
+
+To update Vehicle Services and supporting software, follow this guide:
+
+1. **Close all open applications through the overview menu, accessed by either swiping from the bottom to the middle of the screen (applies to S6/S7) or pressing the physical button labeled "|||" (applies to Active4 Pro). Then click on "Close all"**
+
+    ![Uppdatera 1](../_static/assets/img/png/Uppdatera_vehicle_Services/Stang_allt.jpg)
+
+2. **Swipe downward from the top to the middle of the screen to open shortcuts**
+
+    ![Uppdatera 2](../_static/assets/img/png/Uppdatera_vehicle_Services/Genvagar.jpg)
+
+
+3. **Click on the gear icon in the upper right corner**
+
+    ![Uppdatera 3](../_static/assets/img/png/Uppdatera_vehicle_Services/Installningar.jpg)
+
+4. **Click on "Apps" and then on "Google Play Store"**
+
+    ![Uppdatera 4](../_static/assets/img/png/Uppdatera_vehicle_Services/Google_play.jpg)
+
+5. **Click on "Open"**
+
+    ![Uppdatera 5](../_static/assets/img/png/Uppdatera_vehicle_Services/Oppna.jpg)
+
+6. **Click on the upper right button to access your account**
+
+    ![Uppdatera 6](../_static/assets/img/png/Uppdatera_vehicle_Services/Oppna_konto.jpg)
+
+7. **Click on "Manage apps and devices"**
+
+    ![Uppdatera 7](../_static/assets/img/png/Uppdatera_vehicle_Services/Hantera_appar.jpg)
+
+8. **Click on "Update all"**
+
+    ![Uppdatera 8](../_static/assets/img/png/Uppdatera_vehicle_Services/Uppdatera_alla.jpg)
+
+
+9. **Wait for the update to complete and you see the text "All apps are updated"**
+
+10. **You can now restart Vehicle Services from the desktop and verify functionality**
+
+
+### Are you also updating Central Services? You can find the guide here: [Update Central Services](#update_central_services)

@@ -1,0 +1,11 @@
+```{eval-rst}
+.. _update-vehicle-services-en:
+```
+
+# Update Vehicle Services
+
+
+## Select your installation type
+
+1. [Devices shipped from January 2024 and later using kiosk mode](#update_vehicle_services_new)
+2. [Devices shipped prior to January 2024 not using kiosk mode](#update_vehicle_services_legacy)

@@ -1,13 +1,8 @@
-```{eval-rst}
-.. _update-vehicle-services:
-```
+# Uppdatera Vehicle Services - Enheter utan kiosk-läge
 
+För att uppdatera Vehicle Services och stödjande programvara, följ denna guide:
 
-# Uppdatera Vehicle Services
-
-För att uppdatera Vehicle Services och stödjande programvaror följer du denna guide:
-
-1. **Stäng ner samtliga öppna applikationer genom överblicksmenyn som nås genom att antingen svepa från botten till mitten av skärmen (gäller S6/S7) eller trycka på den fysiska knappen märkt "|||" (gäller Active4 Pro). Klicka sedan på "Stäng allt"**
+1. **Stäng ner alla öppna applikationer genom överblicksmenyn, som nås genom att antingen svepa från botten till mitten av skärmen (gäller för S6/S7) eller trycka på den fysiska knappen märkt "|||" (gäller för Active4 Pro). Klicka sedan på "Stäng allt"**
 
     ![Uppdatera 1](../_static/assets/img/png/Uppdatera_vehicle_Services/Stang_allt.jpg)
 
@@ -43,8 +38,7 @@ För att uppdatera Vehicle Services och stödjande programvaror följer du denna
 
 9. **Invänta att uppdateringen slutförs och du ser texten "Alla appar är uppdaterade"**
 
-10. **Du kan nu starta Vehicle Services från skrivbordet igen**
+10. **Du kan nu starta om Vehicle Services från skrivbordet och verifiera funktionaliteten**
 
 
-### Ska du även uppdatera Central Services? Du hittar guiden här: [Uppdatera Central Services](#uppdatera_central_services)
-
+### Ska du även uppdatera Central Services? Du hittar guiden här: [Uppdatera Central Services](#update_central_services_sv)
