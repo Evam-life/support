@@ -25,6 +25,7 @@ This is a list of all articles in the documentation.
    en/v2i_app
    en/streetview_app
    en/nsc3_app
+   en/dangerous_chemicals_app
    en/vehicle_installation
    en/update_vehicle_services
    en/update_central_services

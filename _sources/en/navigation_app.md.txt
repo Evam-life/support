@@ -24,7 +24,7 @@ The overall functionalities of the Navigation app are as follows:
 Starting a navigation can be made in four ways: 
 
 - **Accepting a case:** Accepting a case with a destination automatically launches a navigation to the destination. 
-- **Searching for a destination:** Search for a destination by clicking the magnifying glass in the top left corner. You can search for addresses as well as points of interest. 
+- **Searching for a destination:** Search for a destination by clicking the magnifying glass in the top left corner. You can search for addresses, GPS Coordinates (WGS84 Decimal and SWEREF99) as well as points of interest. 
 - **Selecting destination in the address book:** The address book is configurable and may be reached through the magnifier glass icon in the top left corner of the navigation app.
 - **Pinning a position in the map:** By pressing and holding somewhere in the map while you have no current active navigation you may launch a navigation to a pinned spot. 
 

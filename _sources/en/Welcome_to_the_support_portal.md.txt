@@ -17,6 +17,8 @@ infrastructure around.
 
 [Application - NSC3](#nsc3_app): Enables emergency services to share live video feeds in a safe and secure way. 
 
+[Application - Dangerous Chemicals](#dangerous_chemicals_app): Act swiftly and appropriately at cases involving HazMat. 
+
 [Vehicle Installation](#vehicle_installation): Learn the ropes of installing and optimizing Evam in your emergency vehicle, ensuring a smooth integration into your operations.
 
 [Update Vehicle Services](#update_vehicle_services): Gain access to new features and functionalities by keeping Vehicle Services up to date. 

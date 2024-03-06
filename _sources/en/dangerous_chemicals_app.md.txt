@@ -1,0 +1,35 @@
+# Application: Dangerous Chemicals
+
+**Developer:** Evam
+
+**Availability**: Sweden
+
+**Description:**  The Dangerous Chemicals app (sv. Farliga Ämnen) is based on data from MSB - Swedish Civil Contingencies Agency. It helps you acting swiftly and appropriately at cases involving HazMat. Search for name, UN-number and more to find information about the HazMat. 
+
+## User Instructions
+
+1. **Search for a HazMat:** Enter name, UN-number, EG-number or CAS-number. The search engine will suggest you matching chemicals. 
+
+    ![Street View overview](../_static/assets/img/png/HazMat1.jpg)
+
+
+
+     
+2. **Read the available information** Click on the chemical to display the associated information. The information includes: "Marking and Identity", "Rescue", "Medical", "Physical data" and "Environmental concerns". The data that is displayed is fetched from MSB - Swedish Civil Contingencies Agency. 
+
+    ![Street View overview](../_static/assets/img/png/HazMat2.jpg)
+
+
+
+
+## FAQ:
+
+
+
+<details>
+
+<summary> Is the data in the Dangerous Chemicals application available offline?  </summary>
+
+Yes, the data is fully available offline. The offline data is periodically updated towards MSB - Swedish Civil Contingencies Agency's database. 
+
+</details>
