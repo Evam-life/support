@@ -147,7 +147,8 @@ Evam may help you identify and solve the problems through the advanced support l
 
 <summary> What map layers and base maps can I get access to:   </summary>
 
-The navigation app can handle any map material in any of the following formats: 
+The navigation app can handle any map material in any of the following formats:
+
 - KML
 - KMZ
 - GeoJSON
@@ -155,11 +156,21 @@ The navigation app can handle any map material in any of the following formats:
 - MBtile
 - TAB
 
-Other map formats can also be handled at an extra cost. Please contact support@evam.life
+All features included in the material must be points, lines or polygons. 
 
-Evam is a developer of maps from Swedish Ordnance Survey (Sv. Lantmäteriet) and the Swedish Traffic Department and may process maps from them at your request. **Please note that the end-user still must have necessary map licenses.** 
+- Points will show on the map using an unique icon of your choice from the [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Filled). All points will have the same icon.
+- Lines and polygons will show using an unique color of your choice in the RGB format. All of those elements will have the same color.
 
-To request a new base map or map-layer please contact support@evam.life. 
+If your map request meets the requirements above, Evam will handle it free of charge. Otherwise it can be handled at an extra cost. Please contact support@evam.life and attach your map material in addition to screenshots showing how your map should look like.
+
+In any case, please also provide:
+
+- The map name as it will show in Vehicle Services' "Base maps and layers" menu (max 8 characters),
+- The map icon as it will show in Vehicle Services' "Base maps and layers" menu, choose it from the [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Filled)
+
+Evam is a developer of maps from Swedish Ordnance Survey (Sv. Lantmäteriet) and the Swedish Traffic Department and may process maps from them at your request. Please note that the end-user still must have necessary map licenses.
+
+To request a new base map or map-layer please contact support@evam.life.
 
 
 </details>
