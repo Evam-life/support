@@ -385,3 +385,29 @@ a {
 .card:hover .sdk-ref-img {
     content: url('assets/img/svg/Hover SDK reference.svg');
 }
+
+.card:hover .dangerous-chemicals-img {
+    content: url('assets/img/svg/Dangerous%20ch-%20%20hover.svg');
+}
+
+.card:hover .nsc3-img {
+    content: url('assets/img/svg/NSC3\ \ -\ hover.svg');
+}
+
+.card:hover .streetview-img {
+    content: url('assets/img/svg/Street\ view\ -\ \ hover.svg');
+}
+
+/* Prefetch assets to avoid jerkiness when hovering*/
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('assets/img/svg/Hover SDK reference.svg') 
+    url('assets/img/svg/Hover Using the Evam SDK.svg') 
+    url('assets/img/svg/Hover Development environment.svg') 
+    url('assets/img/svg/Hover Deployment.svg') 
+    url('assets/img/svg/Hover Design guidelines.svg') 
+    url('assets/img/svg/Dangerous\ ch-\ \ hover.svg') 
+    url('assets/img/svg/NSC3\ \ -\ hover.svg') 
+    url('assets/img/svg/Street\ view\ -\ \ hover.svg') 
+    url('assets/img/svg/hover- Getting started.svg');
+}
