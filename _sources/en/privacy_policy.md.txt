@@ -1,0 +1,51 @@
+# H&E Solutions (Evam) Privacy Policy
+
+Effective Date: 2024-08-05
+
+## Introduction
+
+This Privacy Policy outlines how we collect, use, and safeguard your personal data.
+
+This privacy policy applies to the following Evam products:
+
+- Vehicle Services application,
+- Central Services application
+
+## Data Collection and Processing
+
+### Central Services application
+
+Here is the data we collect:
+
+- **Location**: We use approximate and precise device location to enable our products' functionalities. The data is collected but not shared with any third party.
+- **Pictures**: Some of our products allow the users to take pictures to enable our products' functionalities. This data is collected but not shared.
+- **Application usage**: The interations performed by the user as well as general application performance data and crash reports are used to continuously improve the products. This data is collected and can be shared with third parties.
+- **Personal information**: Email, first and last name - as well as optionally phone number - are collected to enable the product functionality. This data is collected and may be included in crash reports that can be shared with third parties.
+
+### Vehicle Services application
+
+Here is the data we collect:
+
+- **Location**: We use approximate and precise device location to enable our products' functionalities. The data is collected but not shared with any third party.
+- **Application usage**: The interations performed by the user as well as general application performance data and crash reports are used to continuously improve the products. This data is collected and can be shared with third parties.
+
+## Consent Mechanism
+
+By using our products, you agree to the terms of this Privacy Policy and give explicit consent for the processing of your data.
+
+## User Rights and Control
+
+You have the right to access, rectify, and erase your data. For any requests or concerns, contact our Data Protection Officer at [support@evam.life](mailto:support@evam.life).
+
+## Data Security Measures
+
+All of the data used within our products is encrypted:
+
+- In transit through the use of HTTPS and mutual TLS,
+- At rest both on the mobile devices and our servers.
+
+Security audits are performed regularly.
+
+## Updates and Compliance
+
+This Privacy Policy is effective from 2024-08-05. We may update it to stay compliant with GDPR guidelines. Check for changes periodically.
