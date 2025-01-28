@@ -7,12 +7,12 @@ För att uppdatera Vehicle Services och stödjande programvara, följ denna guid
 
     ![Uppdatera 1](../_static/assets/img/png/Uppdatera_vehicle_Services/Stang_allt.jpg)
 
-2. **Avsluta av kiosk-läge genom att trycka på "Hantera inställningar" på startsidan**
+2. **Avsluta av kiosk-läge genom att trycka på "Hantera inställningar" på startsidan eller kugghjulet i övre högra hörnet (beroende på konfiguration)**
 
     ![Uppdatera 2](../_static/assets/img/png/launch-managed-settings.jpg)
 
 
-3. **Tryck på informationsknappen**
+3. **Tryck på informationsknappen om tillgänglig**
 
     ![Uppdatera 3](../_static/assets/img/png/info-managed-settings.jpg)
 

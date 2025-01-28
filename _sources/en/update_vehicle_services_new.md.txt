@@ -7,12 +7,12 @@ To update Vehicle Services and supporting software, follow this guide:
 
     ![Uppdatera 1](../_static/assets/img/png/Uppdatera_vehicle_Services/Stang_allt.jpg)
 
-2. **Start exiting the kiosk mode by pressing "Managed settings" on the home screen**
+2. **Start exiting the kiosk mode by pressing "Managed settings" on the home screen or click the top right "cog wheel" (depending on configuration)**
 
     ![Uppdatera 2](../_static/assets/img/png/launch-managed-settings.jpg)
 
 
-3. **Press the information button**
+3. **Press the information button if available**
 
     ![Uppdatera 3](../_static/assets/img/png/info-managed-settings.jpg)
 
@@ -23,9 +23,6 @@ To update Vehicle Services and supporting software, follow this guide:
 
 
     **You have now exited the kiosk mode**
-
-
-
 
 5. **Open the Play Store from the home screen**
 
