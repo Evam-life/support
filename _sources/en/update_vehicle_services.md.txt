@@ -4,6 +4,14 @@
 
 # Update Vehicle Services
 
+`````{attention}
+This article only applies to Evam-managed devices. 
+
+For other setups or self-service devices, please refer to your local IT Administrator. 
+`````
+
+Information about the current Vehicle Service versions and the full change log of each version can be found at: [Change Log | Vehicle Services](#change_log_VS)
+
 
 ## Select your installation type
 

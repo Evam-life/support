@@ -48,12 +48,12 @@ In case you need to reboot or shut off the device the following applies:
 
 ### Exiting the kiosk mode: 
 
-1. **Start exiting the kiosk mode by pressing "Managed settings" on the home screen**
+1. **Start exiting the kiosk mode by pressing "Managed settings" on the home screen alternatively the cog wheel in the top right corner depending on installation setup**
 
     ![Uppdatera 2](../_static/assets/img/png/launch-managed-settings.jpg)
 
 
-2. **Press the information button**
+2. **Press the information button (If not avialable proceed to the next step)**
 
     ![Uppdatera 3](../_static/assets/img/png/info-managed-settings.jpg)
 

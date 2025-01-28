@@ -1,0 +1,19 @@
+# Vehicle Services - User Guides
+
+## The Platform:
+
+[Vehicle Services - The Platform:](#Vehicle_Services_The_Platform) Gain insights into the core of our innovative platform, understanding how it serves as the backbone for transforming emergency response.
+
+## The Native Applications
+[Application - Operation:](#operations_app) Dive into the functionalities that enhance operational efficiency, providing you with the tools you need when every second counts.
+
+[Application - Navigation:](#navigation_app) Navigate through the details of our navigation application, ensuring you reach your destination swiftly and accurately.
+
+[Application - V2I (Vehicle-to-Infrastructure)](#v2i_app): Uncover the potential of our V2I application, facilitating seamless communication between your vehicle and the 
+infrastructure around.
+
+[Application - Street View](#streetview_app): Street View gives you unparalleled destination knowledge.
+
+[Application - Dangerous Chemicals](#dangerous_chemicals_app): Act swiftly and appropriately at cases involving HazMat. 
+
+[Application - COMS](#coms_app): Handle Tetra, Telephone, Intercom, and Messages directly in Vehicle Services. Easily manage and customize.

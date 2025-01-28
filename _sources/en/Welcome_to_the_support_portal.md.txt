@@ -1,29 +1,26 @@
 # Welcome to the Evam Support Portal!
 
-At Evam, we're revolutionizing the capabilities of first responders through our cutting-edge emergency vehicle software platform. Designed with you in mind, Evam brings together a suite of powerful applications to keep you in control and seamlessly transition you into the digital era.
+**Mission-Critical Mobile Data Solutions: Transforming What First Responders Can Do**
+
+Evam is a Leading Global Supplier of Mission Critical Mobile Data Solutions Software for Police,
+Ambulance, Fire & Rescue, and other Public Safety Organizations. Used by 100+ regions and
+municipalities. Handles hundreds of thousands of life-threatening incidents on a yearly basis.
+The collection of apps is carefully selected to give blue-light agencies the services that they need
+including Mobilisation, Mapping, Navigation, Case Management, Situational Awareness and more.
 
 ## Explore the Essentials:
 
-[Vehicle Services - The Platform:](#Vehicle_Services_The_Platform) Gain insights into the core of our innovative platform, understanding how it serves as the backbone for transforming emergency response.
-
-[Application - Operation:](#operations_app) Dive into the functionalities that enhance operational efficiency, providing you with the tools you need when every second counts.
-
-[Application - Navigation:](#navigation_app) Navigate through the details of our navigation application, ensuring you reach your destination swiftly and accurately.
-
-[Application - V2I (Vehicle-to-Infrastructure)](#v2i_app): Uncover the potential of our V2I application, facilitating seamless communication between your vehicle and the 
-infrastructure around.
-
-[Application - Street View](#streetview_app): Street View gives you unparalleled destination knowledge.
-
-[Application - NSC3](#nsc3_app): Enables emergency services to share live video feeds in a safe and secure way. 
-
-[Application - Dangerous Chemicals](#dangerous_chemicals_app): Act swiftly and appropriately at cases involving HazMat. 
+[Vehicle Services User Guides:](#user_guides_vehicle_services) Gain insights into the core of our innovative platform, understanding how it serves as the backbone for transforming emergency response.
 
 [Vehicle Installation](#vehicle_installation): Learn the ropes of installing and optimizing Evam in your emergency vehicle, ensuring a smooth integration into your operations.
 
 [Update Vehicle Services](#update_vehicle_services): Gain access to new features and functionalities by keeping Vehicle Services up to date. 
 
+[Update Vehicle Services Device Firmware](#vs_fw_update): Learn how to keep your Vehicle Services Device Firmware up to date. 
+
 [Guide to managing kiosk mode](#guide_to_managing_kiosk_mode): Devices shipped from January 2024 and onwards implement a kiosk mode for improved usability of the device. Learn how to manage the kiosk mode
+
+[Change Log | Vehicle Services](#change_log_VS): Keep track of new features and improvements made to Vehicle Services
 
 
 ## Get in Touch:

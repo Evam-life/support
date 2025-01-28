@@ -19,17 +19,12 @@ This is a list of all articles in the documentation.
    :maxdepth: 1
    
    en/Welcome_to_the_support_portal
-   en/Vehicle_Services_The_Platform
-   en/operations_app
-   en/navigation_app
-   en/v2i_app
-   en/streetview_app
-   en/nsc3_app
-   en/dangerous_chemicals_app
+   en/user_guides_vehicle_services
    en/vehicle_installation
    en/update_vehicle_services
-   en/update_central_services
+   en/vs_fw_update
    en/guide_to_managing_kiosk_mode
+   en/change_log_VS
    
 
 

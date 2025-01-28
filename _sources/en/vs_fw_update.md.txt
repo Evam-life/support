@@ -1,0 +1,48 @@
+# Firmware Update of Vehicle Services
+
+`````{attention}
+This article only applies to Evam-managed devices sold after January 2024.
+
+For other setups or self-service devices, please refer to your local IT Administrator. 
+`````
+
+## Overall process
+For devices managed by Evam, we ensure that the firmware (FW) version is kept up to date. Before releasing any firmware to you as a customer, Evam thoroughly tests the firmware in our device lab to ensure compatibility with Vehicle Services.
+
+`````{attention}
+Note: Evam will never automatically update your device’s firmware because it interrupts your service while the update is in progress. Instead, you must request a specific firmware to be installed by following this guide.
+`````
+
+## Available FW versions
+
+Select your device type below to view the latest firmware releases, including change logs for each version:
+
+[Galaxy Tab Active4 Pro (SM-T636B)](https://doc.samsungmobile.com/SM-T636B/XSA/doc.html)
+
+[Galaxy Tab S7 FE 5G (SM-T736B)](https://doc.samsungmobile.com/SM-T736B/XSA/doc.html)
+
+[Galaxy Tab S6 Lite (SM-P625)](https://doc.samsungmobile.com/SM-P625/XSA/doc.html)
+
+## Enabling a Specific Firmware Version to Be Installed
+Installing a new firmware will make the device unavailable for the duration of the update. To manage this, Evam provides several methods to control when the firmware is installed.
+
+### Option 1: Time-Bound installation: 
+You can set the update to occur automatically during a specific time window. During this window, the installation proceeds without direct oversight. Once the firmware update is completed, you will need to restart Vehicle Services manually.
+
+You can target the update to a specific device by its IMEI number. This allows different devices to be updated during different time windows. We recommend scheduling the firmware update at the same time the vehicle is taken out of service for maintenance or repair or during similar downtime.
+
+### Option 2: Connectivity-Bound Installation
+Alternatively, you can set the firmware update to occur automatically once a device connects to a Wi-Fi network with a specified SSID. For this setup, we recommend using a dedicated Wi-Fi network (for example, via a 4G/5G portable modem) exclusively for firmware updates.
+
+This approach gives you full control over when the firmware update happens, as it only proceeds when you connect the device to the specified Wi-Fi network. The drawback, however, is that the installation process cannot usually be left unattended. 
+
+## Requestion a FW update to be enabled
+Evam will never enable a firmware update unless it is directly requested by the customer. To request an update, please email support@evam.life with the following details:
+- Customer name
+- List of devices to be updated (specified by their IMEI numbers)
+- Installation type (Option 1 or Option 2).
+    - For Option 1: Provide the desired time window for installation.
+    - For Option 2: Provide the SSID of the permitted Wi-Fi network.
+- The specific firmware version to be installed, or “latest”.
+
+

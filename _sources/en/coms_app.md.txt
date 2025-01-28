@@ -1,0 +1,43 @@
+# Application: COMS
+
+**Developer:** Evam
+
+**Availability**: World-wide
+
+**Description:** Handle Tetra, Telephone, Intercom, and Messages directly in Vehicle Services. Easily manage and customize. 
+
+- Tetra: Make Simplex and Duplex calls easily. Send callback requests and manage your talk groups
+
+- Telephony: Make phone calls over the mobile network. Easily configure new contacts.
+
+- Intercom: Keep each other updated. Intercom between the personnel in the vehicle
+
+- Messages: Receive and read messages from other Tetra users
+
+## User instructions
+The overall functionalities of the COMS app are as follows: 
+![coms overview](../_static/assets/img/png/Frame2461.png)
+
+### **1. Favourites:** 
+Your customizable favourites view. The tap may include any Telephone, Tetra or Intercom action. Actions can also be placed in folders. 
+
+**Intercom:** The intercom widget on the favourites tap allows you to manage your intercom to other connected devices in the same vehicle. Note: The intercom widget only activates your own microphone (i.e. simplex intercom call). That means that you need to activate intercom on both devices to have a duplex intercom call.  
+
+**Audio Options:** The audio options widget allows you to configure where the audio from the intercom and telephone calls should end up. You can selected from "Wired" i.e. headphones and "Speaker" i.e. the device loud speaker. (Options may vary depending on what devices you have connected.)
+
+### **2. Contacts:** 
+Your full contacts list. Each contact may include several means of communication such as Tetra and Telephony. The view is customizable through your settings. 
+
+### **3. Talk groups:** 
+The full list and structure of your Tetra radio's talkgroups. The talkgroups are read directly from your radio and no additional configuration is needed. 
+
+### **4. Messages:** 
+Displays you incomming Tetra text (SDS) messages. 
+
+### **5. Key pad:** 
+Allows you to manually call any number as a telephony call, Tetra Simplex or Tetra Duplex call. 
+
+## Configuration
+The COMS Configuration is fully self-service and handled by yourself through the COMS Configuration tool. 
+
+You may access the configurator [here](https://www.coms-configuration-tool.portal.evam.life/). 

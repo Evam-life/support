@@ -54,8 +54,14 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
@@ -186,49 +192,7 @@
     <li class="md-nav__item">
     
     
-      <a href="en/Vehicle_Services_The_Platform.html" class="md-nav__link">Vehicle Services - The platform</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="en/operations_app.html" class="md-nav__link">Application: Operation</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="en/navigation_app.html" class="md-nav__link">Application: Navigation</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="en/v2i_app.html" class="md-nav__link">Application: V2I</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="en/streetview_app.html" class="md-nav__link">Application: Street View</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="en/nsc3_app.html" class="md-nav__link">Application: NSC3</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="en/dangerous_chemicals_app.html" class="md-nav__link">Application: Dangerous Chemicals</a>
+      <a href="en/user_guides_vehicle_services.html" class="md-nav__link">Vehicle Services - User Guides</a>
       
     
     </li>
@@ -249,7 +213,7 @@
     <li class="md-nav__item">
     
     
-      <a href="en/update_central_services.html" class="md-nav__link">Update Central Services</a>
+      <a href="en/vs_fw_update.html" class="md-nav__link">Firmware Update of Vehicle Services</a>
       
     
     </li>
@@ -257,6 +221,13 @@
     
     
       <a href="en/guide_to_managing_kiosk_mode.html" class="md-nav__link">Guide to managing kiosk mode devices</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="en/change_log_VS.html" class="md-nav__link">Changelog | Vehicle Services</a>
       
     
     </li>

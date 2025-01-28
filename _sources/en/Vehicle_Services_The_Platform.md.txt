@@ -5,13 +5,22 @@ Evam is an emergency vehicle platform with a collection of apps. It is optimized
 
 ## User instructions
 
-![Vehicle services platform](../_static/assets/img/png/Vehicle-services-1.png)
+![Vehicle services platform](../_static/assets/img/png/Frame2459.png)
 
-1. The application bar
-2. The notification center
-3. The shortcut center
 
-### The application bar
+1. The notification center
+2. The application bar
+3. Audio control
+4. The shortcut center
+5. The Top Bar
+
+
+### 1. The notification center
+The applications on the platform uses notifications to notify the user and to give the right information at the right time. 
+
+**Locate the notification center:** The notification center is located in the lower left corner of the screen. It has the symbol of a bell, and here you will find all notifications that you have not interacted with. An orange dot indicates that there are unread notifications. 
+
+### 2. The application bar
 **Locate the App Bar:** At the bottom of your screen, find the application bar. This is your command center for accessing installed apps in your vehicle.
 
 **App Selection in a Click:** Click on an app to bring it into view. First click brings the app to half-screen mode. Clicking again brings the app to full-screen mode. 
@@ -20,12 +29,13 @@ Evam is an emergency vehicle platform with a collection of apps. It is optimized
 
 **Tailor Your View:** Need a specific screen mode? Grab the orange triangle and drag it. Snap the app to your preferred half or full-screen mode. 
 
-### The notification center
-The applications on the platform uses notifications to notify the user and to give the right information at the right time. 
+### 3. Audio Control
+Opening the Audio Control allows you to control the three following audio levels depending on your configuration: 
+- Tetra: Controll the audio of your tetra device
+- Device: Device and system sounds e.g. notifications
+- Voice: Audiovolume of Phone calls and Intercom
 
-**Locate the notification center:** The notification center is located in the lower left corner of the screen. It has the symbol of a bell, and here you will find all notifications that you have not interacted with. An orange dot indicates that there are unread notifications. 
-
-### The shortcut center
+### 4. The shortcut center
 
 In the shortcut center the user can configure shortcuts to commonly used parts of the platform. 
 
@@ -44,7 +54,24 @@ In the shortcut center the user can configure shortcuts to commonly used parts o
 7.	**Next suggested status:** Shows your suggested next status based on the configured status flow. 
 8.	**Custom buttons:** Up to six custom buttons can be programmed. The custom buttons can include any type of Tetra command as well as certain shortcuts to specific apps.
 
-### Utilizing multiple screens
+### 5. The Top Bar
+**The functions of the top bar:** The top bar gives you an overview of the system state. The components shown depends on your configuration but includes the following: 
+
+![Top Bar](../_static/assets/img/png/Frame2460.png)
+
+**1. Call-sign:** Shows you the logged in call-sign
+
+**2. Tetra Radio State:** Shows you the state of the tetra radio such as connectivity, talkgroup, traffic and more. 
+
+**3. Multiple-screen state:** Shows you the state of the multiple screen setup. 
+
+**4. Connectivity:** Shows you the state of the connectivity including cellular and WiFi connectivity. 
+
+**5. Battery state:** Shows you the current state of charge of the battery. 
+
+**6. Time:** Shows you the current local time
+
+## Utilizing multiple screens
 The platform supports multiple screens. A large number of screens can be connected together through a peer-to-peer Wi-Fi network secured by a PKI infrastructure. 
 
 The multiple screen mode is configured through the initial setups flow or from the settings menu which can be reached from the shortcut center. 
@@ -54,7 +81,7 @@ Once paired in multiple screen mode the devices will share all data between the 
 -	Changing the destination in the navigation app on one screen will change the destination on all screens. 
 -	Opening one app on one screen will not open the same app on other screens – the views are independent. 
 
-### TNA functionality (Optional)
+## TNA functionality (Optional)
 Support for SOS Alarm’s (Sweden) TNA functionality may be enabled. If enabled the TNA Functionality is reached from the top bar of the shortcut center. 
 
 **Seeing login status:** If logged in the MSISDN (Call-sign) to which you are logged in will be displayed within the shortcut center. If you are not logged in a logged-out icon will be displayed instead. 
@@ -62,7 +89,6 @@ Support for SOS Alarm’s (Sweden) TNA functionality may be enabled. If enabled 
 **Logging in or out to the TNA server:** By clicking on the TNA status field in the shortcut center you will bring up a list of the available and preconfigured callsigns to which you can log in. Clicking log in will log you in to the selected call-sign. A confirmation or any failure code will confirm the login status. 
 
 **Getting logged out by another user:** If another vehicle logs in to the call-sign that you currently are logged in to you will be automatically logged out. The logged-out user will be notified about that it has been logged out through a notification and the status of the TNA status field in the shortcut center will be updated accordingly. 
-
 
 
 ## FAQ
