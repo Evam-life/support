@@ -1,5 +1,20 @@
 # Changelog | Vehicle Services
 
+## 6.2.0
+
+2025-01-29
+
+### Highlights
+
+* **Added support for the Info App in Vehicle Services:** Organizations using the Info App in Central Services can now access their information cards from Vehicle Services as well.
+
+### Additional changes
+
+* **Fixed a rare crash related to the Navigation app:** The navigation app could crash upon the Vehicle Services start in some rare cases, this should no longer be the case.
+* **Fixed a bug related to the Route calculation failed pop-up:** The "Route calculation failed" pop-up that shows up when the Navigation app cannot route the vehicle to its destination could, in some rare cases, be un-dismissable. This should no longer be the case.
+* **Fixed an issue with the Maps download:** Previously, a bug caused the Offline Maps download to happen even if the vehicle was on a metered connection (such as 4G or 5G), causing high data usage. This should now be fixed, the offline map download should only happen on Wi-Fi.
+
+
 ## 6.1.8
 
 2025-01-14
