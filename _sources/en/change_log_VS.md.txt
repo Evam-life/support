@@ -1,5 +1,18 @@
 # Changelog | Vehicle Services
 
+## 6.3.2
+
+2025-02-25
+
+### Highlights
+
+* **Added support for displaying the selected talkgroup when scanning is used:** Previously, the display of the currently selected talkgroup name required scanning to be disabled. If it was enabled, the talkgroup will be displayed using its GSSI in the top bar, not its name. We have now added support for this use case, so the talkgroup name should be correctly displayed even if scanning is enabled.
+
+### Additional changes
+
+* **Fixed an issue with the Info App recommendations:** Previously, a bug caused the recommended info cards to be incomplete if the received Operation contained Swedish characters in its name ('case index 1' from SOS). This should no longer be the case.
+
+
 ## 6.2.0
 
 2025-01-29
