@@ -1,0 +1,290 @@
+# Self Service: Setup Vehicle Services for your organization
+
+This article describes the process to deploy Vehicle Services to your fleet of self-managed devices and is relevant to you if you have purchased Vehicle Services as an APK.
+
+Pre-requisites for each device:
+
+- The device should run Android 11 or later version,
+- The device should be enrolled in your organization through an Android Enterprise compatible Mobile Device Management (MDM) system - such as Microsoft Intune.
+
+`````{attention}
+Deploying to devices without Android Enterprise - such as devices running Android Open Source Project (AOSP) or devices without Google Mobile Services (GMS) - is not currently available but will be in an upcoming release. Reach out to us at 
+[support@evam.life](mailto:support@evam.life) if you are interested in this deployment scenario.
+`````
+
+## Deployment steps using Microsoft Intune
+
+The following steps assume you are using Microsoft Intune.
+
+Pre-requisites:
+
+- You must have linked your Managed Google Play organization to Intune,
+- You must have Administrator access.
+
+### Step 1 - Setup device certificates for your Android devices
+
+Authentication towards Central Services, Evam cloud services, requires the self-managed devices to supply a trusted client certificate.
+
+This is a standard client certificate, and can be issued using different strategies based on your organization needs (SCEP, PKCS, etc). The Certificate Authority (CA) public certificate is then to be provided to Evam to allow your devices to connect safely.
+
+This section does not aim at being a comprehensive guide on this subject, and focuses instead on the Evam-specific requirements.
+
+There are 2 main options available:
+
+1. Setup your own SCEP server and connect it to your Intune tenant to issue device certificates automatically,
+2. Create device certificates using `openssl` and install them manually in your devices.
+
+#### Option 1 - Setup your own SCEP server
+
+This option consists in setting up a SCEP server and connecting it to your Intune tenant. Devices enrolled through this configuration will automatically obtain a certificate upon enrollment, and the Intune Android app will keep those certificates up-to-date. No action is required from the user to enable this.
+
+This option offers the best scalability, but requires a more advanced setup in Intune.
+
+You can find the documentation to achieve this in the [Intune documentation](https://learn.microsoft.com/en-us/mem/intune-service/protect/certificates-scep-configure). 
+
+Some third-party services offer to simplify this: [Intune documentation](https://learn.microsoft.com/en-us/mem/intune-service/protect/certificate-authority-add-scep-overview#third-party-certification-authority-partners). We recommend [SCEPMan](https://docs.scepman.com/) if you decide on this option.
+
+Once you are done with setting up this server, please send the created CA certificate (public key) to [support@evam.life](mailto:support@evam.life) with the subject "Add CA certificate to Central Services". Make sure you send this mail using your professional mail address.
+
+#### Option 2 - Create device certificates and install them manually
+
+This option requires no setup in Intune. The only requirement is to install `openssl` on a computer.
+
+It however requires the device certificates to be installed manually on each device.
+
+Due to the security-sensitive nature of the client certificates, we recommend restricting access to this computer and only using it for the certificate creation operations.
+
+These instructions will work on Windows, MacOS and GNU/Linux. They require familiarity with the command line and the OpenSSL program. 
+
+1. Install `openssl` for your Operating System. On Windows we recommend you use [Git Bash](https://git-scm.com/downloads/win),
+2. Open the Terminal app (MacOS and Linux) or Git Bash (Windows),
+3. Create a directory for the certificates, we will name it "cacerts"
+
+```shell
+mkdir -p cacert
+```
+
+4. Enter this directory
+
+```shell
+cd cacert
+```
+
+5. Create the directory for the CA private key
+
+```shell
+mkdir -p ca/private
+```
+
+6. Create the CA keys. You will be prompted for a password to protect the private key file. It is important you use a complex password and store it in a safe location.
+
+```shell
+openssl req -x509 -days 3650 -newkey rsa:4096 -keyout ca/private/ca_key.pem -out ca/ca_cert.pem
+```
+
+After entering the password, you will be prompted for details about your organization. Please fill them accordingly. Here is an example below.
+
+```
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) []:SE
+State or Province Name (full name) []:Stockholm
+Locality Name (eg, city) []:Stockholm
+Organization Name (eg, company) []:Evam
+Organizational Unit Name (eg, section) []:Evam
+Common Name (eg, fully qualified host name) []:evam.life
+Email Address []:info@evam.life
+```
+
+7. Create the directory for the client certificate
+
+```shell
+mkdir -p client/private
+```
+
+8. Create the client key and Certificate Signing Request (CSR). You will be asked again for details about your organization, make sure to fill them in accordingly.
+
+```shell
+openssl req -new -key client/private/client_key.pem -out client/client.csr
+```
+
+9. Create the client certificate.
+
+```shell
+openssl x509 -req -days 1460 -in client/client.csr -CA ca/ca_cert.pem -CAkey ca/private/ca_key.pem -CAcreateserial -out client/client_cert.pem
+```
+
+10. The client certificate is now ready. We only need to export it in the P12 format so Android can use it.
+
+```shell
+openssl pkcs12 -export -out client-certificate-evam.p12 -inkey client/private/client_key.pem -in client/client_cert.pem 
+```
+
+You will be prompted for a password. Again, make sure to use a secure password. You will have to enter it in the Android devices.
+
+The certificate file of interest is named "client-certificate-evam.p12", you may copy it on a USB stick now.
+
+11. Send the file "ca_cert.pem" under the "ca" directory to [support@evam.life](mailto:support@evam.life) with the subject "Add CA certificate to Central Services". Make sure you send this mail using your professional mail address.
+
+##### On the device side
+
+Start by inserting the USB stick in the Android device.
+
+1. Open the "Settings" app
+2. Navigate to "Security"
+3. Then "Encryption and credentials"
+4. Then "Install from storage"
+5. Then "VPN & app user certificate"
+6. A file explorer should open, navigate to your USB stick
+7. Click on the file "client-certificate-evam.p12",
+8. Enter the password you used at step 10 of the previous section,
+9. Optionally, provide a name for this certificate, such as "Evam".
+
+The certificate is now installed on this device. It will be valid for 4 years, after that time you will need to repeat the process.
+
+### Step 2 - Obtain the Vehicle Services APK
+
+To obtain the Vehicle Services APK, you should send a mail to [support@evam.life](mailto:support@evam.life) with the subject "Vehicle Services APK request". Make sure you send this mail using your professional mail address.
+
+You will then receive a link as response to this mail, this link points to a password-protected directory that contains the Vehicle Services APK file.
+
+> ![VS release folder](../_static/assets/img/png/VS_self_service/vs_releases_folder.png)
+
+The Stable releases are intended for production use.
+
+The Alpha releases are intended for testing only and may contain bugs or be unstable, usage in production deployment is discouraged.
+
+Navigate to the folder of you choice based on the release type that corresponds the best to your use case, and select a release APK file. 
+
+> ![VS download APK](../_static/assets/img/png/VS_self_service/vs_download_apk.png)
+
+Clicking on it will initiate a download, making the APK file available in your computer. You will need it in the next step.
+
+### Step 3 - Upload the APK through Intune
+
+Start by accessing the [Intune Admin Center](https://intune.microsoft.com/#home).
+
+Then navigate to your Android apps by clicking through:
+
+1. "Apps"
+2. "By platform" > "Android"
+
+> ![Intune Android apps](../_static/assets/img/png/VS_self_service/intune_android_apps.png)
+
+Let us now add Vehicle Services as new application. Click on the "+ Add" button
+as you can see in the image above, then select under "App type": "Store app" > "Managed Google Play app".
+
+> ![Intune Android apps](../_static/assets/img/png/VS_self_service/intune_android_app_type.png)
+
+Then, click on the "Select" button as shown in the image above.
+
+This will bring you to the Managed Play Store view.
+
+> ![Intune Android apps](../_static/assets/img/png/VS_self_service/intune_play_store.png)
+
+Click on the "Lock icon" in the "Google Play" left bar to access the private apps. This is where we will upload the Vehicle Services APK.
+
+> ![Intune Private Android apps](../_static/assets/img/png/VS_self_service/intune_play_store_private_apps.png)
+
+Click on the "+" button at the bottom right of the page, as displayed in the image above.
+
+> ![Intune Upload Vehicle Services](../_static/assets/img/png/VS_self_service/intune_add_vs_apk.png)
+
+You should set the app title to "Vehicle Services", and upload the APK file you downloaded in step 1.
+
+Once done click "Create".
+
+The app creation process will take a few seconds, and complete successfully.
+
+
+> ![Intune Uploaded Vehicle Services](../_static/assets/img/png/VS_self_service/intune_add_vs_apk_done.png)
+
+You can then click the "Sync" button right above "Google Play" as visible in the image above.
+
+This will bring you back to the Android apps list in Intune, with an indicate the sync is ongoing. This means Intune is now pulling your new app from the private play store.
+
+> ![Intune Uploaded Vehicle Services](../_static/assets/img/png/VS_self_service/intune_sync_ongoing.png)
+
+You should wait a minute and then click the "Refresh". You new app should show in the list. Clicking on it will display its details.
+
+> ![Intune Uploaded Vehicle Services](../_static/assets/img/png/VS_self_service/intune_vs_app.png)
+
+### Step 4 - Assign the Application to devices
+
+Click on "Properties" in the left menu as shown on the image above.
+
+> ![Intune Uploaded Vehicle Services](../_static/assets/img/png/VS_self_service/intune_vs_app2.png)
+
+Click on the "Edit" button next to "Assignments" as shown in the image above.
+
+This will open a page in which you can decide which devices, users, or groups should get access to the application.
+
+You may decide based on your organisational structure which devices or groups should receive the application. We recommend you take advantage of Security groups in Intune to group devices logically as it offers a great deal of flexibility.
+
+> ![Intune Groups Vehicle Services](../_static/assets/img/png/VS_self_service/intune_vs_groups.png)
+
+In the example above, all devices that are part of the "Evam" group will have Vehicle Services as pre-installed application, with no possibility of removing it. The "Evam" group is a security group in which devices are manually enrolled.
+
+You may then click on "Review + save", which will deploy the Vehicle Services application to the desired devices.
+
+#### On the device side
+
+The application will be downloaded to the devices and appear in the Android launcher.
+
+
+> ![Intune Groups Vehicle Services](../_static/assets/img/png/VS_self_service/android_vs_installed.png)
+
+You may launch it by clicking its icon.
+
+When Vehicle Services starts for the first time, you will be requested to select a certificate to be used for Central Services. Make sure you use the certificate installed at Step 1, or you will not be able to login.
+
+### Step 5 - Update the Vehicle Services APK
+
+The Evam platform - which includes Vehicle Services - is continuously updated to add new features, more stability and security.
+
+You can find the Vehicle Services version history and release notes here:
+
+[Vehicle Services Releases](#change_log_VS)
+
+You do not have to update every time a new release is made, instead we recommend you update Vehicle Services on a regular basis at a pace that matches your operational constraints (maintenance, etc). 
+
+To update Vehicle Services, you first simply need to download the APK for the release version of your choice in the same way as in step 1.
+
+Then, in a similar manner as in step 2, navigate again to the Managed Play store private apps.
+
+> ![Intune Uploaded Vehicle Services](../_static/assets/img/png/VS_self_service/intune_add_vs_apk_done.png)
+
+Click on the Vehicle Services one, then click on the "Edit" button.
+
+> ![Intune Uploaded Vehicle Services](../_static/assets/img/png/VS_self_service/intune_update_vs_apk.png)
+
+Then, click on the "edit" button next to the "APK file" row.
+
+This will open a file selection dialogue for you to upload a new release of Vehicle Services. Select the new APK and upload it. The upload will take a few seconds.
+
+Then click "Save".
+
+> ![Intune Uploaded Vehicle Services](../_static/assets/img/png/VS_self_service/intune_add_vs_apk_done.png)
+
+The APK has now been deployed to the Intune servers. It will be downloaded by your enrolled devices within a few hours, provided they have internet connection.
+
+#### On the device side
+
+To update, start by opening the Vehicle Services app information. You can do this by long-pressing the application icon on the launcher.
+
+> ![Intune Groups Vehicle Services](../_static/assets/img/png/VS_self_service/android_vs_info.png)
+
+Click on "Advanced" then "App installed from Google Play Store".
+
+
+> ![Intune Groups Vehicle Services](../_static/assets/img/png/VS_self_service/android_vs_update.png)
+
+Click on "Update" to update the application to the new version.
+
+You may the relaunch the app.

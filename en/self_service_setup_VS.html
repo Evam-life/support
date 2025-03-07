@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="white">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Self Service: Setup Vehicle Services for your organization &#8212; Evam Support  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vehicle Installation Guides" href="vehicle_installation.html" />
+    <link rel="prev" title="Vehicle Services - User Guides" href="user_guides_vehicle_services.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=white data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#en/self_service_setup_VS" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Evam Support  documentation"
+           class="md-header-nav__button md-logo">
+          
+              <img src="../_static/evam-black.png" height="26"
+                   alt="Evam Support documentation logo">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Evam Support  documentation</span>
+          <span class="md-header-nav__topic"> Self Service: Setup Vehicle Services for your organization </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Evam Support  documentation</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Evam Support documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/evam-black.png" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Evam Support documentation">Evam Support  documentation</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="Welcome_to_the_support_portal.html" class="md-nav__link">Welcome to the Evam Support Portal!</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="user_guides_vehicle_services.html" class="md-nav__link">Vehicle Services - User Guides</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Self Service: Setup Vehicle Services for your organization </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Self Service: Setup Vehicle Services for your organization</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#en-self-service-setup-vs--page-root" class="md-nav__link">Self Service: Setup Vehicle Services for your organization</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#deployment-steps-using-microsoft-intune" class="md-nav__link">Deployment steps using Microsoft Intune</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#step-1-setup-device-certificates-for-your-android-devices" class="md-nav__link">Step 1 - Setup device certificates for your Android devices</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#option-1-setup-your-own-scep-server" class="md-nav__link">Option 1 - Setup your own SCEP server</a>
+        </li>
+        <li class="md-nav__item"><a href="#option-2-create-device-certificates-and-install-them-manually" class="md-nav__link">Option 2 - Create device certificates and install them manually</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#on-the-device-side" class="md-nav__link">On the device side</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#step-2-obtain-the-vehicle-services-apk" class="md-nav__link">Step 2 - Obtain the Vehicle Services APK</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-3-upload-the-apk-through-intune" class="md-nav__link">Step 3 - Upload the APK through Intune</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-4-assign-the-application-to-devices" class="md-nav__link">Step 4 - Assign the Application to devices</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id1" class="md-nav__link">On the device side</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#step-5-update-the-vehicle-services-apk" class="md-nav__link">Step 5 - Update the Vehicle Services APK</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id2" class="md-nav__link">On the device side</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="vehicle_installation.html" class="md-nav__link">Vehicle Installation Guides</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="update_vehicle_services.html" class="md-nav__link">Update Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="vs_fw_update.html" class="md-nav__link">Firmware Update of Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="guide_to_managing_kiosk_mode.html" class="md-nav__link">Guide to managing kiosk mode devices</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="change_log_VS.html" class="md-nav__link">Changelog | Vehicle Services</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#en-self-service-setup-vs--page-root" class="md-nav__link">Self Service: Setup Vehicle Services for your organization</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#deployment-steps-using-microsoft-intune" class="md-nav__link">Deployment steps using Microsoft Intune</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#step-1-setup-device-certificates-for-your-android-devices" class="md-nav__link">Step 1 - Setup device certificates for your Android devices</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#option-1-setup-your-own-scep-server" class="md-nav__link">Option 1 - Setup your own SCEP server</a>
+        </li>
+        <li class="md-nav__item"><a href="#option-2-create-device-certificates-and-install-them-manually" class="md-nav__link">Option 2 - Create device certificates and install them manually</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#on-the-device-side" class="md-nav__link">On the device side</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#step-2-obtain-the-vehicle-services-apk" class="md-nav__link">Step 2 - Obtain the Vehicle Services APK</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-3-upload-the-apk-through-intune" class="md-nav__link">Step 3 - Upload the APK through Intune</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-4-assign-the-application-to-devices" class="md-nav__link">Step 4 - Assign the Application to devices</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id1" class="md-nav__link">On the device side</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#step-5-update-the-vehicle-services-apk" class="md-nav__link">Step 5 - Update the Vehicle Services APK</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id2" class="md-nav__link">On the device side</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="self-service-setup-vehicle-services-for-your-organization">
+<h1 id="en-self-service-setup-vs--page-root">Self Service: Setup Vehicle Services for your organization<a class="headerlink" href="#en-self-service-setup-vs--page-root" title="Permalink to this heading">¶</a></h1>
+<p>This article describes the process to deploy Vehicle Services to your fleet of self-managed devices and is relevant to you if you have purchased Vehicle Services as an APK.</p>
+<p>Pre-requisites for each device:</p>
+<ul class="simple">
+<li><p>The device should run Android 11 or later version,</p></li>
+<li><p>The device should be enrolled in your organization through an Android Enterprise compatible Mobile Device Management (MDM) system - such as Microsoft Intune.</p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Deploying to devices without Android Enterprise - such as devices running Android Open Source Project (AOSP) or devices without Google Mobile Services (GMS) - is not currently available but will be in an upcoming release. Reach out to us at
+<a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> if you are interested in this deployment scenario.</p>
+</div>
+<section id="deployment-steps-using-microsoft-intune">
+<h2 id="deployment-steps-using-microsoft-intune">Deployment steps using Microsoft Intune<a class="headerlink" href="#deployment-steps-using-microsoft-intune" title="Permalink to this heading">¶</a></h2>
+<p>The following steps assume you are using Microsoft Intune.</p>
+<p>Pre-requisites:</p>
+<ul class="simple">
+<li><p>You must have linked your Managed Google Play organization to Intune,</p></li>
+<li><p>You must have Administrator access.</p></li>
+</ul>
+<section id="step-1-setup-device-certificates-for-your-android-devices">
+<h3 id="step-1-setup-device-certificates-for-your-android-devices">Step 1 - Setup device certificates for your Android devices<a class="headerlink" href="#step-1-setup-device-certificates-for-your-android-devices" title="Permalink to this heading">¶</a></h3>
+<p>Authentication towards Central Services, Evam cloud services, requires the self-managed devices to supply a trusted client certificate.</p>
+<p>This is a standard client certificate, and can be issued using different strategies based on your organization needs (SCEP, PKCS, etc). The Certificate Authority (CA) public certificate is then to be provided to Evam to allow your devices to connect safely.</p>
+<p>This section does not aim at being a comprehensive guide on this subject, and focuses instead on the Evam-specific requirements.</p>
+<p>There are 2 main options available:</p>
+<ol class="arabic simple">
+<li><p>Setup your own SCEP server and connect it to your Intune tenant to issue device certificates automatically,</p></li>
+<li><p>Create device certificates using <code class="docutils literal notranslate"><span class="pre">openssl</span></code> and install them manually in your devices.</p></li>
+</ol>
+<section id="option-1-setup-your-own-scep-server">
+<h4 id="option-1-setup-your-own-scep-server">Option 1 - Setup your own SCEP server<a class="headerlink" href="#option-1-setup-your-own-scep-server" title="Permalink to this heading">¶</a></h4>
+<p>This option consists in setting up a SCEP server and connecting it to your Intune tenant. Devices enrolled through this configuration will automatically obtain a certificate upon enrollment, and the Intune Android app will keep those certificates up-to-date. No action is required from the user to enable this.</p>
+<p>This option offers the best scalability, but requires a more advanced setup in Intune.</p>
+<p>You can find the documentation to achieve this in the <a class="reference external" href="https://learn.microsoft.com/en-us/mem/intune-service/protect/certificates-scep-configure">Intune documentation</a>.</p>
+<p>Some third-party services offer to simplify this: <a class="reference external" href="https://learn.microsoft.com/en-us/mem/intune-service/protect/certificate-authority-add-scep-overview#third-party-certification-authority-partners">Intune documentation</a>. We recommend <a class="reference external" href="https://docs.scepman.com/">SCEPMan</a> if you decide on this option.</p>
+<p>Once you are done with setting up this server, please send the created CA certificate (public key) to <a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> with the subject “Add CA certificate to Central Services”. Make sure you send this mail using your professional mail address.</p>
+</section>
+<section id="option-2-create-device-certificates-and-install-them-manually">
+<h4 id="option-2-create-device-certificates-and-install-them-manually">Option 2 - Create device certificates and install them manually<a class="headerlink" href="#option-2-create-device-certificates-and-install-them-manually" title="Permalink to this heading">¶</a></h4>
+<p>This option requires no setup in Intune. The only requirement is to install <code class="docutils literal notranslate"><span class="pre">openssl</span></code> on a computer.</p>
+<p>It however requires the device certificates to be installed manually on each device.</p>
+<p>Due to the security-sensitive nature of the client certificates, we recommend restricting access to this computer and only using it for the certificate creation operations.</p>
+<p>These instructions will work on Windows, MacOS and GNU/Linux. They require familiarity with the command line and the OpenSSL program.</p>
+<ol class="arabic simple">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">openssl</span></code> for your Operating System. On Windows we recommend you use <a class="reference external" href="https://git-scm.com/downloads/win">Git Bash</a>,</p></li>
+<li><p>Open the Terminal app (MacOS and Linux) or Git Bash (Windows),</p></li>
+<li><p>Create a directory for the certificates, we will name it “cacerts”</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>cacert
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Enter this directory</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>cacert
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Create the directory for the CA private key</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>ca/private
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Create the CA keys. You will be prompted for a password to protect the private key file. It is important you use a complex password and store it in a safe location.</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>openssl<span class="w"> </span>req<span class="w"> </span>-x509<span class="w"> </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span>-newkey<span class="w"> </span>rsa:4096<span class="w"> </span>-keyout<span class="w"> </span>ca/private/ca_key.pem<span class="w"> </span>-out<span class="w"> </span>ca/ca_cert.pem
+</pre></div>
+</div>
+<p>After entering the password, you will be prompted for details about your organization. Please fill them accordingly. Here is an example below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-----</span>
+<span class="n">You</span> <span class="n">are</span> <span class="n">about</span> <span class="n">to</span> <span class="n">be</span> <span class="n">asked</span> <span class="n">to</span> <span class="n">enter</span> <span class="n">information</span> <span class="n">that</span> <span class="n">will</span> <span class="n">be</span> <span class="n">incorporated</span>
+<span class="n">into</span> <span class="n">your</span> <span class="n">certificate</span> <span class="n">request</span><span class="o">.</span>
+<span class="n">What</span> <span class="n">you</span> <span class="n">are</span> <span class="n">about</span> <span class="n">to</span> <span class="n">enter</span> <span class="ow">is</span> <span class="n">what</span> <span class="ow">is</span> <span class="n">called</span> <span class="n">a</span> <span class="n">Distinguished</span> <span class="n">Name</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">DN</span><span class="o">.</span>
+<span class="n">There</span> <span class="n">are</span> <span class="n">quite</span> <span class="n">a</span> <span class="n">few</span> <span class="n">fields</span> <span class="n">but</span> <span class="n">you</span> <span class="n">can</span> <span class="n">leave</span> <span class="n">some</span> <span class="n">blank</span>
+<span class="n">For</span> <span class="n">some</span> <span class="n">fields</span> <span class="n">there</span> <span class="n">will</span> <span class="n">be</span> <span class="n">a</span> <span class="n">default</span> <span class="n">value</span><span class="p">,</span>
+<span class="n">If</span> <span class="n">you</span> <span class="n">enter</span> <span class="s1">'.'</span><span class="p">,</span> <span class="n">the</span> <span class="n">field</span> <span class="n">will</span> <span class="n">be</span> <span class="n">left</span> <span class="n">blank</span><span class="o">.</span>
+<span class="o">-----</span>
+<span class="n">Country</span> <span class="n">Name</span> <span class="p">(</span><span class="mi">2</span> <span class="n">letter</span> <span class="n">code</span><span class="p">)</span> <span class="p">[]:</span><span class="n">SE</span>
+<span class="n">State</span> <span class="ow">or</span> <span class="n">Province</span> <span class="n">Name</span> <span class="p">(</span><span class="n">full</span> <span class="n">name</span><span class="p">)</span> <span class="p">[]:</span><span class="n">Stockholm</span>
+<span class="n">Locality</span> <span class="n">Name</span> <span class="p">(</span><span class="n">eg</span><span class="p">,</span> <span class="n">city</span><span class="p">)</span> <span class="p">[]:</span><span class="n">Stockholm</span>
+<span class="n">Organization</span> <span class="n">Name</span> <span class="p">(</span><span class="n">eg</span><span class="p">,</span> <span class="n">company</span><span class="p">)</span> <span class="p">[]:</span><span class="n">Evam</span>
+<span class="n">Organizational</span> <span class="n">Unit</span> <span class="n">Name</span> <span class="p">(</span><span class="n">eg</span><span class="p">,</span> <span class="n">section</span><span class="p">)</span> <span class="p">[]:</span><span class="n">Evam</span>
+<span class="n">Common</span> <span class="n">Name</span> <span class="p">(</span><span class="n">eg</span><span class="p">,</span> <span class="n">fully</span> <span class="n">qualified</span> <span class="n">host</span> <span class="n">name</span><span class="p">)</span> <span class="p">[]:</span><span class="n">evam</span><span class="o">.</span><span class="n">life</span>
+<span class="n">Email</span> <span class="n">Address</span> <span class="p">[]:</span><span class="n">info</span><span class="nd">@evam</span><span class="o">.</span><span class="n">life</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Create the directory for the client certificate</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>client/private
+</pre></div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>Create the client key and Certificate Signing Request (CSR). You will be asked again for details about your organization, make sure to fill them in accordingly.</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-key<span class="w"> </span>client/private/client_key.pem<span class="w"> </span>-out<span class="w"> </span>client/client.csr
+</pre></div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Create the client certificate.</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>openssl<span class="w"> </span>x509<span class="w"> </span>-req<span class="w"> </span>-days<span class="w"> </span><span class="m">1460</span><span class="w"> </span>-in<span class="w"> </span>client/client.csr<span class="w"> </span>-CA<span class="w"> </span>ca/ca_cert.pem<span class="w"> </span>-CAkey<span class="w"> </span>ca/private/ca_key.pem<span class="w"> </span>-CAcreateserial<span class="w"> </span>-out<span class="w"> </span>client/client_cert.pem
+</pre></div>
+</div>
+<ol class="arabic simple" start="10">
+<li><p>The client certificate is now ready. We only need to export it in the P12 format so Android can use it.</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>openssl<span class="w"> </span>pkcs12<span class="w"> </span>-export<span class="w"> </span>-out<span class="w"> </span>client-certificate-evam.p12<span class="w"> </span>-inkey<span class="w"> </span>client/private/client_key.pem<span class="w"> </span>-in<span class="w"> </span>client/client_cert.pem<span class="w"> </span>
+</pre></div>
+</div>
+<p>You will be prompted for a password. Again, make sure to use a secure password. You will have to enter it in the Android devices.</p>
+<p>The certificate file of interest is named “client-certificate-evam.p12”, you may copy it on a USB stick now.</p>
+<ol class="arabic simple" start="11">
+<li><p>Send the file “ca_cert.pem” under the “ca” directory to <a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> with the subject “Add CA certificate to Central Services”. Make sure you send this mail using your professional mail address.</p></li>
+</ol>
+<section id="on-the-device-side">
+<h5 id="on-the-device-side">On the device side<a class="headerlink" href="#on-the-device-side" title="Permalink to this heading">¶</a></h5>
+<p>Start by inserting the USB stick in the Android device.</p>
+<ol class="arabic simple">
+<li><p>Open the “Settings” app</p></li>
+<li><p>Navigate to “Security”</p></li>
+<li><p>Then “Encryption and credentials”</p></li>
+<li><p>Then “Install from storage”</p></li>
+<li><p>Then “VPN &amp; app user certificate”</p></li>
+<li><p>A file explorer should open, navigate to your USB stick</p></li>
+<li><p>Click on the file “client-certificate-evam.p12”,</p></li>
+<li><p>Enter the password you used at step 10 of the previous section,</p></li>
+<li><p>Optionally, provide a name for this certificate, such as “Evam”.</p></li>
+</ol>
+<p>The certificate is now installed on this device. It will be valid for 4 years, after that time you will need to repeat the process.</p>
+</section>
+</section>
+</section>
+<section id="step-2-obtain-the-vehicle-services-apk">
+<h3 id="step-2-obtain-the-vehicle-services-apk">Step 2 - Obtain the Vehicle Services APK<a class="headerlink" href="#step-2-obtain-the-vehicle-services-apk" title="Permalink to this heading">¶</a></h3>
+<p>To obtain the Vehicle Services APK, you should send a mail to <a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> with the subject “Vehicle Services APK request”. Make sure you send this mail using your professional mail address.</p>
+<p>You will then receive a link as response to this mail, this link points to a password-protected directory that contains the Vehicle Services APK file.</p>
+<blockquote>
+<div><p><img alt="VS release folder" src="../_images/vs_releases_folder.png"/></p>
+</div></blockquote>
+<p>The Stable releases are intended for production use.</p>
+<p>The Alpha releases are intended for testing only and may contain bugs or be unstable, usage in production deployment is discouraged.</p>
+<p>Navigate to the folder of you choice based on the release type that corresponds the best to your use case, and select a release APK file.</p>
+<blockquote>
+<div><p><img alt="VS download APK" src="../_images/vs_download_apk.png"/></p>
+</div></blockquote>
+<p>Clicking on it will initiate a download, making the APK file available in your computer. You will need it in the next step.</p>
+</section>
+<section id="step-3-upload-the-apk-through-intune">
+<h3 id="step-3-upload-the-apk-through-intune">Step 3 - Upload the APK through Intune<a class="headerlink" href="#step-3-upload-the-apk-through-intune" title="Permalink to this heading">¶</a></h3>
+<p>Start by accessing the <a class="reference external" href="https://intune.microsoft.com/#home">Intune Admin Center</a>.</p>
+<p>Then navigate to your Android apps by clicking through:</p>
+<ol class="arabic simple">
+<li><p>“Apps”</p></li>
+<li><p>“By platform” &gt; “Android”</p></li>
+</ol>
+<blockquote>
+<div><p><img alt="Intune Android apps" src="../_images/intune_android_apps.png"/></p>
+</div></blockquote>
+<p>Let us now add Vehicle Services as new application. Click on the “+ Add” button
+as you can see in the image above, then select under “App type”: “Store app” &gt; “Managed Google Play app”.</p>
+<blockquote>
+<div><p><img alt="Intune Android apps" src="../_images/intune_android_app_type.png"/></p>
+</div></blockquote>
+<p>Then, click on the “Select” button as shown in the image above.</p>
+<p>This will bring you to the Managed Play Store view.</p>
+<blockquote>
+<div><p><img alt="Intune Android apps" src="../_images/intune_play_store.png"/></p>
+</div></blockquote>
+<p>Click on the “Lock icon” in the “Google Play” left bar to access the private apps. This is where we will upload the Vehicle Services APK.</p>
+<blockquote>
+<div><p><img alt="Intune Private Android apps" src="../_images/intune_play_store_private_apps.png"/></p>
+</div></blockquote>
+<p>Click on the “+” button at the bottom right of the page, as displayed in the image above.</p>
+<blockquote>
+<div><p><img alt="Intune Upload Vehicle Services" src="../_images/intune_add_vs_apk.png"/></p>
+</div></blockquote>
+<p>You should set the app title to “Vehicle Services”, and upload the APK file you downloaded in step 1.</p>
+<p>Once done click “Create”.</p>
+<p>The app creation process will take a few seconds, and complete successfully.</p>
+<blockquote>
+<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_add_vs_apk_done.png"/></p>
+</div></blockquote>
+<p>You can then click the “Sync” button right above “Google Play” as visible in the image above.</p>
+<p>This will bring you back to the Android apps list in Intune, with an indicate the sync is ongoing. This means Intune is now pulling your new app from the private play store.</p>
+<blockquote>
+<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_sync_ongoing.png"/></p>
+</div></blockquote>
+<p>You should wait a minute and then click the “Refresh”. You new app should show in the list. Clicking on it will display its details.</p>
+<blockquote>
+<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_vs_app.png"/></p>
+</div></blockquote>
+</section>
+<section id="step-4-assign-the-application-to-devices">
+<h3 id="step-4-assign-the-application-to-devices">Step 4 - Assign the Application to devices<a class="headerlink" href="#step-4-assign-the-application-to-devices" title="Permalink to this heading">¶</a></h3>
+<p>Click on “Properties” in the left menu as shown on the image above.</p>
+<blockquote>
+<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_vs_app2.png"/></p>
+</div></blockquote>
+<p>Click on the “Edit” button next to “Assignments” as shown in the image above.</p>
+<p>This will open a page in which you can decide which devices, users, or groups should get access to the application.</p>
+<p>You may decide based on your organisational structure which devices or groups should receive the application. We recommend you take advantage of Security groups in Intune to group devices logically as it offers a great deal of flexibility.</p>
+<blockquote>
+<div><p><img alt="Intune Groups Vehicle Services" src="../_images/intune_vs_groups.png"/></p>
+</div></blockquote>
+<p>In the example above, all devices that are part of the “Evam” group will have Vehicle Services as pre-installed application, with no possibility of removing it. The “Evam” group is a security group in which devices are manually enrolled.</p>
+<p>You may then click on “Review + save”, which will deploy the Vehicle Services application to the desired devices.</p>
+<section id="id1">
+<h4 id="id1">On the device side<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h4>
+<p>The application will be downloaded to the devices and appear in the Android launcher.</p>
+<blockquote>
+<div><p><img alt="Intune Groups Vehicle Services" src="../_images/android_vs_installed.png"/></p>
+</div></blockquote>
+<p>You may launch it by clicking its icon.</p>
+<p>When Vehicle Services starts for the first time, you will be requested to select a certificate to be used for Central Services. Make sure you use the certificate installed at Step 1, or you will not be able to login.</p>
+</section>
+</section>
+<section id="step-5-update-the-vehicle-services-apk">
+<h3 id="step-5-update-the-vehicle-services-apk">Step 5 - Update the Vehicle Services APK<a class="headerlink" href="#step-5-update-the-vehicle-services-apk" title="Permalink to this heading">¶</a></h3>
+<p>The Evam platform - which includes Vehicle Services - is continuously updated to add new features, more stability and security.</p>
+<p>You can find the Vehicle Services version history and release notes here:</p>
+<p><a class="reference internal" href="change_log_VS.html"><span class="doc std std-doc">Vehicle Services Releases</span></a></p>
+<p>You do not have to update every time a new release is made, instead we recommend you update Vehicle Services on a regular basis at a pace that matches your operational constraints (maintenance, etc).</p>
+<p>To update Vehicle Services, you first simply need to download the APK for the release version of your choice in the same way as in step 1.</p>
+<p>Then, in a similar manner as in step 2, navigate again to the Managed Play store private apps.</p>
+<blockquote>
+<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_add_vs_apk_done.png"/></p>
+</div></blockquote>
+<p>Click on the Vehicle Services one, then click on the “Edit” button.</p>
+<blockquote>
+<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_update_vs_apk.png"/></p>
+</div></blockquote>
+<p>Then, click on the “edit” button next to the “APK file” row.</p>
+<p>This will open a file selection dialogue for you to upload a new release of Vehicle Services. Select the new APK and upload it. The upload will take a few seconds.</p>
+<p>Then click “Save”.</p>
+<blockquote>
+<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_add_vs_apk_done.png"/></p>
+</div></blockquote>
+<p>The APK has now been deployed to the Intune servers. It will be downloaded by your enrolled devices within a few hours, provided they have internet connection.</p>
+<section id="id2">
+<h4 id="id2">On the device side<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h4>
+<p>To update, start by opening the Vehicle Services app information. You can do this by long-pressing the application icon on the launcher.</p>
+<blockquote>
+<div><p><img alt="Intune Groups Vehicle Services" src="../_images/android_vs_info.png"/></p>
+</div></blockquote>
+<p>Click on “Advanced” then “App installed from Google Play Store”.</p>
+<blockquote>
+<div><p><img alt="Intune Groups Vehicle Services" src="../_images/android_vs_update.png"/></p>
+</div></blockquote>
+<p>Click on “Update” to update the application to the new version.</p>
+<p>You may the relaunch the app.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="user_guides_vehicle_services.html" title="Vehicle Services - User Guides"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> "Previous" </span> Vehicle Services - User Guides </span>
+              </div>
+            </a>
+          
+          
+            <a href="vehicle_installation.html" title="Vehicle Installation Guides"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> "Next" </span> Vehicle Installation Guides </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2025, Evam.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>

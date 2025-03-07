@@ -20,6 +20,7 @@ This is a list of all articles in the documentation.
    
    en/Welcome_to_the_support_portal
    en/user_guides_vehicle_services
+   en/self_service_setup_VS
    en/vehicle_installation
    en/update_vehicle_services
    en/vs_fw_update
