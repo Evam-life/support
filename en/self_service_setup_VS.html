@@ -219,9 +219,9 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#step-2-obtain-the-vehicle-services-apk" class="md-nav__link">Step 2 - Obtain the Vehicle Services APK</a>
+        <li class="md-nav__item"><a href="#step-2-obtain-access-to-the-vehicle-services-app" class="md-nav__link">Step 2 - Obtain access to the Vehicle Services App</a>
         </li>
-        <li class="md-nav__item"><a href="#step-3-upload-the-apk-through-intune" class="md-nav__link">Step 3 - Upload the APK through Intune</a>
+        <li class="md-nav__item"><a href="#step-3-add-the-app-through-intune" class="md-nav__link">Step 3 - Add the App through Intune</a>
         </li>
         <li class="md-nav__item"><a href="#step-4-assign-the-application-to-devices" class="md-nav__link">Step 4 - Assign the Application to devices</a><nav class="md-nav">
               <ul class="md-nav__list">
@@ -229,11 +229,7 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#step-5-update-the-vehicle-services-apk" class="md-nav__link">Step 5 - Update the Vehicle Services APK</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#id2" class="md-nav__link">On the device side</a>
-        </li></ul>
-            </nav>
+        <li class="md-nav__item"><a href="#step-5-update-the-vehicle-services-apk" class="md-nav__link">Step 5 - Update the Vehicle Services APK</a>
         </li></ul>
             </nav>
         </li></ul>
@@ -309,9 +305,9 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#step-2-obtain-the-vehicle-services-apk" class="md-nav__link">Step 2 - Obtain the Vehicle Services APK</a>
+        <li class="md-nav__item"><a href="#step-2-obtain-access-to-the-vehicle-services-app" class="md-nav__link">Step 2 - Obtain access to the Vehicle Services App</a>
         </li>
-        <li class="md-nav__item"><a href="#step-3-upload-the-apk-through-intune" class="md-nav__link">Step 3 - Upload the APK through Intune</a>
+        <li class="md-nav__item"><a href="#step-3-add-the-app-through-intune" class="md-nav__link">Step 3 - Add the App through Intune</a>
         </li>
         <li class="md-nav__item"><a href="#step-4-assign-the-application-to-devices" class="md-nav__link">Step 4 - Assign the Application to devices</a><nav class="md-nav">
               <ul class="md-nav__list">
@@ -319,11 +315,7 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#step-5-update-the-vehicle-services-apk" class="md-nav__link">Step 5 - Update the Vehicle Services APK</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#id2" class="md-nav__link">On the device side</a>
-        </li></ul>
-            </nav>
+        <li class="md-nav__item"><a href="#step-5-update-the-vehicle-services-apk" class="md-nav__link">Step 5 - Update the Vehicle Services APK</a>
         </li></ul>
             </nav>
         </li></ul>
@@ -375,7 +367,14 @@
 <p>This option offers the best scalability, but requires a more advanced setup in Intune.</p>
 <p>You can find the documentation to achieve this in the <a class="reference external" href="https://learn.microsoft.com/en-us/mem/intune-service/protect/certificates-scep-configure">Intune documentation</a>.</p>
 <p>Some third-party services offer to simplify this: <a class="reference external" href="https://learn.microsoft.com/en-us/mem/intune-service/protect/certificate-authority-add-scep-overview#third-party-certification-authority-partners">Intune documentation</a>. We recommend <a class="reference external" href="https://docs.scepman.com/">SCEPMan</a> if you decide on this option.</p>
-<p>Once you are done with setting up this server, please send the created CA certificate (public key) to <a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> with the subject “Add CA certificate to Central Services”. Make sure you send this mail using your professional mail address.</p>
+<p>Once you are done with setting up this server, please send the created CA certificate - <strong>without the private key!</strong> - to <a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> with the subject “Add CA certificate to Central Services”.</p>
+<p>The file should look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-----</span><span class="n">BEGIN</span> <span class="n">CERTIFICATE</span><span class="o">-----</span>
+<span class="n">MII</span> <span class="p">(</span><span class="o">...</span><span class="p">)</span> <span class="p">(</span><span class="n">content</span> <span class="n">will</span> <span class="n">vary</span><span class="p">)</span>
+<span class="o">-----</span><span class="n">END</span> <span class="n">CERTIFICATE</span><span class="o">-----</span>
+</pre></div>
+</div>
+<p>Make sure you send this mail using your professional mail address.</p>
 </section>
 <section id="option-2-create-device-certificates-and-install-them-manually">
 <h4 id="option-2-create-device-certificates-and-install-them-manually">Option 2 - Create device certificates and install them manually<a class="headerlink" href="#option-2-create-device-certificates-and-install-them-manually" title="Permalink to this heading">¶</a></h4>
@@ -474,23 +473,13 @@
 </section>
 </section>
 </section>
-<section id="step-2-obtain-the-vehicle-services-apk">
-<h3 id="step-2-obtain-the-vehicle-services-apk">Step 2 - Obtain the Vehicle Services APK<a class="headerlink" href="#step-2-obtain-the-vehicle-services-apk" title="Permalink to this heading">¶</a></h3>
-<p>To obtain the Vehicle Services APK, you should send a mail to <a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> with the subject “Vehicle Services APK request”. Make sure you send this mail using your professional mail address.</p>
-<p>You will then receive a link as response to this mail, this link points to a password-protected directory that contains the Vehicle Services APK file.</p>
-<blockquote>
-<div><p><img alt="VS release folder" src="../_images/vs_releases_folder.png"/></p>
-</div></blockquote>
-<p>The Stable releases are intended for production use.</p>
-<p>The Alpha releases are intended for testing only and may contain bugs or be unstable, usage in production deployment is discouraged.</p>
-<p>Navigate to the folder of you choice based on the release type that corresponds the best to your use case, and select a release APK file.</p>
-<blockquote>
-<div><p><img alt="VS download APK" src="../_images/vs_download_apk.png"/></p>
-</div></blockquote>
-<p>Clicking on it will initiate a download, making the APK file available in your computer. You will need it in the next step.</p>
+<section id="step-2-obtain-access-to-the-vehicle-services-app">
+<h3 id="step-2-obtain-access-to-the-vehicle-services-app">Step 2 - Obtain access to the Vehicle Services App<a class="headerlink" href="#step-2-obtain-access-to-the-vehicle-services-app" title="Permalink to this heading">¶</a></h3>
+<p>To obtain the Vehicle Services App in Intune, you should send a mail to <a class="reference external" href="mailto:support%40evam.life">support<span>@</span>evam<span>.</span>life</a> with the subject “Vehicle Services App access request”. Make sure you send this mail using your professional mail address. In the mail, you should include your Oganization ID so we can share the app with your Managed Play store instacne, see <a class="reference external" href="https://support.google.com/googleplay/work/answer/7042126?hl=en#:~:text=Locate%20your%20organization%20ID&amp;amp;text=You%20can%20obtain%20your%20organization,in%20the%20top%20right%20corner.">this guide</a> if you do not know how to retrieve it.</p>
+<p>You will then receive a confirmation as response to this mail.</p>
 </section>
-<section id="step-3-upload-the-apk-through-intune">
-<h3 id="step-3-upload-the-apk-through-intune">Step 3 - Upload the APK through Intune<a class="headerlink" href="#step-3-upload-the-apk-through-intune" title="Permalink to this heading">¶</a></h3>
+<section id="step-3-add-the-app-through-intune">
+<h3 id="step-3-add-the-app-through-intune">Step 3 - Add the App through Intune<a class="headerlink" href="#step-3-add-the-app-through-intune" title="Permalink to this heading">¶</a></h3>
 <p>Start by accessing the <a class="reference external" href="https://intune.microsoft.com/#home">Intune Admin Center</a>.</p>
 <p>Then navigate to your Android apps by clicking through:</p>
 <ol class="arabic simple">
@@ -509,20 +498,6 @@ as you can see in the image above, then select under “App type”: “Store ap
 <p>This will bring you to the Managed Play Store view.</p>
 <blockquote>
 <div><p><img alt="Intune Android apps" src="../_images/intune_play_store.png"/></p>
-</div></blockquote>
-<p>Click on the “Lock icon” in the “Google Play” left bar to access the private apps. This is where we will upload the Vehicle Services APK.</p>
-<blockquote>
-<div><p><img alt="Intune Private Android apps" src="../_images/intune_play_store_private_apps.png"/></p>
-</div></blockquote>
-<p>Click on the “+” button at the bottom right of the page, as displayed in the image above.</p>
-<blockquote>
-<div><p><img alt="Intune Upload Vehicle Services" src="../_images/intune_add_vs_apk.png"/></p>
-</div></blockquote>
-<p>You should set the app title to “Vehicle Services”, and upload the APK file you downloaded in step 1.</p>
-<p>Once done click “Create”.</p>
-<p>The app creation process will take a few seconds, and complete successfully.</p>
-<blockquote>
-<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_add_vs_apk_done.png"/></p>
 </div></blockquote>
 <p>You can then click the “Sync” button right above “Google Play” as visible in the image above.</p>
 <p>This will bring you back to the Android apps list in Intune, with an indicate the sync is ongoing. This means Intune is now pulling your new app from the private play store.</p>
@@ -544,9 +519,19 @@ as you can see in the image above, then select under “App type”: “Store ap
 <p>This will open a page in which you can decide which devices, users, or groups should get access to the application.</p>
 <p>You may decide based on your organisational structure which devices or groups should receive the application. We recommend you take advantage of Security groups in Intune to group devices logically as it offers a great deal of flexibility.</p>
 <blockquote>
-<div><p><img alt="Intune Groups Vehicle Services" src="../_images/intune_vs_groups.png"/></p>
+<div><p><img alt="Intune Groups Vehicle Services" src="../_images/intune_vs_group_assignments.png"/></p>
 </div></blockquote>
 <p>In the example above, all devices that are part of the “Evam” group will have Vehicle Services as pre-installed application, with no possibility of removing it. The “Evam” group is a security group in which devices are manually enrolled.</p>
+<p>Note the “Tracks” column, click on it.</p>
+<blockquote>
+<div><p><img alt="Intune Groups Tracks Vehicle Services" src="../_images/intune_vs_group_assignments_tracks.png"/></p>
+</div></blockquote>
+<p>In this blade, you may decide what update tracks should be delivered to the devices. Vehicle Services offers different tracks:</p>
+<ul class="simple">
+<li><p><strong>Production:</strong> This is the default track and contains the stable releases of Vehicle Services. Those release are rigorously tested before deployment.</p></li>
+<li><p><strong>Alpha:</strong> This is preview track for newer Vehicle Services versions. It typically contains newer features or APIs, and is well-suited for Certified Application development and testing. This track is not recommended for production deployments where mission-critical robustness is expected.</p></li>
+</ul>
+<p>The 2 other tracks (“Infinity” and “Production buffer”) are not recommended for any usage.</p>
 <p>You may then click on “Review + save”, which will deploy the Vehicle Services application to the desired devices.</p>
 <section id="id1">
 <h4 id="id1">On the device side<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h4>
@@ -564,35 +549,7 @@ as you can see in the image above, then select under “App type”: “Store ap
 <p>You can find the Vehicle Services version history and release notes here:</p>
 <p><a class="reference internal" href="change_log_VS.html"><span class="doc std std-doc">Vehicle Services Releases</span></a></p>
 <p>You do not have to update every time a new release is made, instead we recommend you update Vehicle Services on a regular basis at a pace that matches your operational constraints (maintenance, etc).</p>
-<p>To update Vehicle Services, you first simply need to download the APK for the release version of your choice in the same way as in step 1.</p>
-<p>Then, in a similar manner as in step 2, navigate again to the Managed Play store private apps.</p>
-<blockquote>
-<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_add_vs_apk_done.png"/></p>
-</div></blockquote>
-<p>Click on the Vehicle Services one, then click on the “Edit” button.</p>
-<blockquote>
-<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_update_vs_apk.png"/></p>
-</div></blockquote>
-<p>Then, click on the “edit” button next to the “APK file” row.</p>
-<p>This will open a file selection dialogue for you to upload a new release of Vehicle Services. Select the new APK and upload it. The upload will take a few seconds.</p>
-<p>Then click “Save”.</p>
-<blockquote>
-<div><p><img alt="Intune Uploaded Vehicle Services" src="../_images/intune_add_vs_apk_done.png"/></p>
-</div></blockquote>
-<p>The APK has now been deployed to the Intune servers. It will be downloaded by your enrolled devices within a few hours, provided they have internet connection.</p>
-<section id="id2">
-<h4 id="id2">On the device side<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h4>
-<p>To update, start by opening the Vehicle Services app information. You can do this by long-pressing the application icon on the launcher.</p>
-<blockquote>
-<div><p><img alt="Intune Groups Vehicle Services" src="../_images/android_vs_info.png"/></p>
-</div></blockquote>
-<p>Click on “Advanced” then “App installed from Google Play Store”.</p>
-<blockquote>
-<div><p><img alt="Intune Groups Vehicle Services" src="../_images/android_vs_update.png"/></p>
-</div></blockquote>
-<p>Click on “Update” to update the application to the new version.</p>
-<p>You may the relaunch the app.</p>
-</section>
+<p>To update Vehicle Services, no action is required in Intune.</p>
 </section>
 </section>
 </section>

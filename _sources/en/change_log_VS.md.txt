@@ -1,5 +1,18 @@
 # Changelog | Vehicle Services
 
+## 6.4.1
+
+2025-03-12
+
+### Highlights
+
+* **Added support for delegated management of Vehicle Services:**  Vehicle Services can now be deployed to a fleet of self-managed devices, allowing for more flexibility in the deployments of Vehicle Services.
+
+### Additional changes
+
+N/A
+
+
 ## 6.3.2
 
 2025-02-25
