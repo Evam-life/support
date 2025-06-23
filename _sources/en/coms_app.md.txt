@@ -19,7 +19,7 @@ The overall functionalities of the COMS app are as follows:
 ![coms overview](../_static/assets/img/png/Frame2461.png)
 
 ### **1. Favourites:** 
-Your customizable favourites view. The tap may include any Telephone, Tetra or Intercom action. Actions can also be placed in folders. 
+Your customizable favourites view. The favourites tab may include any Telephone, Tetra or Intercom action. Actions can also be placed in folders. 
 
 **Intercom:** The intercom widget on the favourites tap allows you to manage your intercom to other connected devices in the same vehicle. Note: The intercom widget only activates your own microphone (i.e. simplex intercom call). That means that you need to activate intercom on both devices to have a duplex intercom call.  
 

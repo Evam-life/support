@@ -31,9 +31,10 @@ The applications on the platform uses notifications to notify the user and to gi
 
 ### 3. Audio Control
 Opening the Audio Control allows you to control the three following audio levels depending on your configuration: 
-- Tetra: Controll the audio of your tetra device
 - Device: Device and system sounds e.g. notifications
 - Voice: Audiovolume of Phone calls and Intercom
+- Tetra: Controll the audio of your tetra device (Only applicable to installations where a Tetra radio is connected to Evam Vehicle Services)
+
 
 ### 4. The shortcut center
 
@@ -46,8 +47,8 @@ In the shortcut center the user can configure shortcuts to commonly used parts o
 ![Shortcut center](../_static/assets/img/png/Vehicle-services-2.png)
 
 1.	**Settings:** Includes vehicle settings, multiple screen settings and possibility to send detailed support logs to Evam. 
-2.	**TNA (Optional):** Support for SOS Alarm’s (Sweden) TNA functionality.
-3.	**Garage doors:** Includes all garage doors for which the vehicle is within the geofence. 
+2.	**Callsign management/TNA (Optional):** Callsign management, including log on/off functionality. Including support for SOS Alarm’s (Sweden) TNA functionality.
+3.	**Garage doors:** Includes all garage doors for which the vehicle is within the geofence. Applicable to select users only
 4.	**Screen brightness:** Adjust the screen brightness or set it to “Auto” to be adjusted based on the ambient brightness. 
 5.	**Screen mode:** Select between Day and Night mode colors. If auto is selected the screen mode will be adjusted based on sunrise and sunset as well as setting it to Night when in tunnels. 
 6.	**Current status:** Shows your currently selected status. 
@@ -61,7 +62,7 @@ In the shortcut center the user can configure shortcuts to commonly used parts o
 
 **1. Call-sign:** Shows you the logged in call-sign
 
-**2. Tetra Radio State:** Shows you the state of the tetra radio such as connectivity, talkgroup, traffic and more. 
+**2. Dispatch connection status:** Displays the status of the dispatch connection. For users receiving dispatch over Tetra, it also includes talkgroup status, traffic, and more. 
 
 **3. Multiple-screen state:** Shows you the state of the multiple screen setup. 
 
@@ -164,7 +165,7 @@ Configuration changes are made through request to support@evam.life. Please incl
 
 <summary>Adding an application </summary>
 
-Any available application on the platform may be added to any part of the organization. To request a new application contact hello@evam.life or your sales representative. 
+Any available application on the platform may be added to any part of the organization. To request a new application contact support@evam.life or your sales representative. 
 
 </details>
 

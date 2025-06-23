@@ -1,0 +1,76 @@
+# Application: Chat
+
+**Developer:** Evam
+
+**Availability**: World-wide
+
+**Description:** The chat app allows users to share information with other users and the control room in a chat-like format. This ensures that everyone stays up to date on incident progress, improving the quality and coordination of the incident response.
+
+- Share text, photos and files with other users of Evam Vehicle Services, Central Services, and control room personnel.
+
+- Automatically generates incident-specific chat groups when the user is mobilized to an incident.
+
+- Supports templated messages to improve efficiency and user experience. Users can select from a library of predefined messages, reducing the need to type manually. Examples include templates like "Stop" and "Incident Destination Relocation."
+
+## User instructions
+The overall functionalities of the Chat app are as follows: 
+
+![Chat Groups](../_static/assets/img/png/chat_groups.png)
+
+When the user taps the Chat app from the app bar, the app opens and displays a list of available chat groups. Tapping on a group opens the conversation, where the user can read and send information.
+
+![Ongoing chat](../_static/assets/img/png/chat_app_conversation.png)
+
+
+**1. Send a message:** 
+By tapping the "Send a message" field, the user can begin writing a message.
+
+**2. Send the message:** 
+The message is sent by tapping the arrow icon, which resembles a paper plane.
+
+**3. Send a picture:** 
+By tapping the camera icon, the user can take a photo and share it in the chat.
+
+**4. File upload:** 
+To the right of the camera icon, there is a vertical arrow icon that allows the user to upload a file, such as a previously taken photo.
+
+**5. Templated messages:** 
+By tapping the puzzle icon, the user can access the library of templated messages and send a predefined message, such as "Stop" or "Relocate Incident."
+
+
+## Messages are pushed as notifications
+Users are notified of new messages via a notification if they are not actively using the Chat app.
+
+![Chat notification](../_static/assets/img/png/chat_notification.png)
+
+Pressing "View" takes the user to the chat group, where they can read the full message and respond.
+
+
+## FAQ
+
+<details>
+
+<summary> How do I add templated messages?  
+
+</summary>
+
+If you would like to add templated messages to your library, please send a detailed request to support@evam.life.
+
+</details>
+
+<details>
+
+<summary> How do I relocate an incident using a templated message?  
+
+</summary>
+
+How to Relocate an Incident Using a Templated Message:
+
+1. Tap the puzzle piece icon to open your library of templated messages.
+2. Select "Relocate Incident" from the list.
+3. A small map will appear. Tap on the new location where you want the incident to be relocated.
+4. Your request is sent to the control room. Once confirmed by the control room, the incident destination will be updated and reflected for all resources assigned to the incident.
+
+**Note:** The "Relocate Incident" feature requires support in the CAD system. It is only available when the connected CAD software supports incident relocation.
+
+</details>

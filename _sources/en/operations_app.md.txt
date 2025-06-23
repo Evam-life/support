@@ -4,15 +4,15 @@
 
 **Availability**: World-wide
 
-**Description:** Your Operation is our mission. As a spider in the web the Operation app sits at the center and handles your call-out. Integrated with the dispatch central it gives you the information that you need. In the way you want it.
+**Description:** Your incident is our mission. As a spider in the web the Operation app sits at the center and handles your incident. Integrated with the dispatch central it gives you the information that you need. In the way you want it.
 
 ## User instructions
-The operations app handles the full mission and integrates with your dispatch central. The operations app includes the following tabs: 
+The operations app handles the full incident and integrates with your dispatch central. The Operations app includes the following tabs: 
 
 ![Operation overview](../_static/assets/img/png/operation_overview.png)
 
 1. Info
-2. Units
+2. Units/Resources
 3. Status
 4. All operations
 
@@ -20,21 +20,21 @@ The operations app handles the full mission and integrates with your dispatch ce
 
 ![Operation info](../_static/assets/img/png/operation_info.PNG)
 
-In the "Info" tab, you'll access comprehensive details about ongoing cases, including but not limited to:
+In the "Info" tab, you'll access comprehensive details about ongoing incidents, including but not limited to:
 
-**Case Overview:** Gain insights into pertinent information regarding the case.
+**Incident Overview:** Gain insights into pertinent information regarding the incident.
 
-**Address Details:**  Explore the address associated with the case location. Easily navigate the surroundings by pressing the "Destination Overview" button.
+**Address Details:**  Explore the address associated with the incident location. Easily navigate the surroundings by pressing the "Destination Overview" button.
 
-**Assigned Radio Group:** Identify and change to the assigned radio group. 
+**Assigned Radio Group:** Identify and change to the assigned radio group (for installations with Tetra radio connected to Evam Vehicle Services only). 
 
 **Other:** All other information that is sent from the dispatcher is also displayed for the user depending on the case type. 
 
-### Units
+### Resources
 
-![Operation units](../_static/assets/img/png/operation_units.PNG)
+![Operation units](../_static/assets/img/png/Resources.png)
 
-In the units tab the units connected to the same case are displayed. If the other units are also equipped with the Evam platform the Estimated Time of Arrival (ETA) and current status is also displayed. If not, only the call sign is displayed assuming it has been delivered as part of the dispatch. 
+In the resources tab the resources mobilised to the same incident are displayed. If the other resources are also equipped with the Evam platform the Estimated Time of Arrival (ETA) and current status is also displayed.
 
 ### Status: 
 
@@ -46,41 +46,41 @@ In the status tab the available statuses are shown. The view is fully configurab
 
 ![Operation info](../_static/assets/img/png/operation_all_operations.PNG)
 
-The “All operations” tab shows the current cases. You may handle several cases simultaneously, however, only one case can be active at a time.  In the “All operations” tab you select the case that should be active if there are multiple ones available. If only one case is available that case will be activated by default. 
+The “All operations” tab shows the current incidents. You may handle several incidents simultaneously, however, only one incident can be active at a time.  In the “All operations” tab you select the incident that should be active if there are multiple ones available. If only one incident is available that incident will be activated by default. 
 
-Furthermore, data from historic cases are shown. Previous cases are stored under "History" for 24h before they are automatically removed. 
+Furthermore, data from historic incidents are shown. Previous incidents are stored under "History" for 24h before they are automatically removed. 
 
-### Confirming a case: 
+### Confirming an incident: 
 
 ![Operation info](../_static/assets/img/png/operation_hun.PNG)
 
-Confirming a case is made through accepting the notification which is shown when a case is received or through activating the case from the “All operations” tab. Once a case is activated it can be tied to automatically conduct the following operations: 
+Confirming a incident is made through accepting the notification which is shown when an incident is received or through activating the incident from the “All operations” tab. Once a incident is activated it can be tied to automatically conduct the following operations: 
 
-- Confirm the case towards the dispatcher
-- Start navigation to the case destination and/or assigned breakpoint
-- Change to the assigned talk group
-- Any other predefined action in the Tetra network
+- Confirm the incident towards the dispatcher
+- Start navigation to the incident destination and/or assigned breakpoint
+- Change to the assigned talk group (For installations with Tetra radio connected to Evam Vehicle Services only)
+- Any other predefined action in the Tetra network (For installations with Tetra radio connected to Evam Vehicle Services only)
 - Change the base map and/or add/remove any map layer
 
-### Dismissing a case:
-To dismiss a case, you simply swipe the associated notification away from the screen. Once swiped away the case will land in the “All operations” tab and can be activated at a later point. 
+### Dismissing a incident:
+To dismiss an incident, simply tap "Dismiss" in the top-right corner of the incident notification. Once dismissed, the incident will be available in the “All operations” tab and can be activated later if needed.
 
 ## FAQ: 
 
 <details>
 
-<summary> How do I confirm a case? </summary>
+<summary> How do I confirm a incident? </summary>
 
-Confirming a case is made through accepting the notification which is shown when a case is received or through activating the case from the “All operations” tab.
+Confirming a incident is made through accepting the notification which is shown when an incident is received or through activating the case from the “All operations” tab.
 
 </details>
 
 
 <details>
 
-<summary> I have received a case that I don’t want to accept. How do I remove the notification and dismiss the case? </summary>
+<summary> I have received an incident that I don’t want to accept. How do I remove the notification and dismiss the incident? </summary>
 
-To dismiss a case, you simply swipe the associated notification away from the screen. Once swiped away the case will land in the “All operations” tab and can be activated at a later point. 
+To dismiss an incident, simply tap "Dismiss" in the top-right corner of the incident notification. Once dismissed, the incident will be available in the “All operations” tab and can be activated later if needed.
 
 </details>
 
@@ -140,13 +140,13 @@ For the operations app to be able to change the talk group of your Airbus radio 
 
 <details>
 
-<summary> I cannot receive any cases from my dispatch central </summary>
+<summary> I cannot receive any incidents from my dispatch central </summary>
 
 `````{attention}
 The answer provided is related to dispatched received from Swedish SOS Alarm.  
 `````
 
-To receive dispatches in the operations app you must ensure that the following configuration is made for your organization at SOS Alarm: 
+To receive incidents in the operations app you must ensure that the following configuration is made for your organization at SOS Alarm: 
 
 **Sending profile:** 
 
@@ -192,7 +192,7 @@ A status can be configured with the following fields:
 
 <details>
 
-<summary> Case Priority </summary>
+<summary> Incident Priority </summary>
 
 The available priorities for an active case may be configured. E.g. Prio 1, Prio 2, Prio 3 etc. 
 

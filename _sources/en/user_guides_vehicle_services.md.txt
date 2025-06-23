@@ -9,11 +9,16 @@
 
 [Application - Navigation:](#navigation_app) Navigate through the details of our navigation application, ensuring you reach your destination swiftly and accurately.
 
-[Application - V2I (Vehicle-to-Infrastructure)](#v2i_app): Uncover the potential of our V2I application, facilitating seamless communication between your vehicle and the 
-infrastructure around.
+[Application - Info](#info_app): Your central hub for location- and incident-based information, offering smart recommendations via notifications and full access to your data repository.
+
+[Application - Chat](#chat_app): The Chat app enables real-time information sharing between users and the control room, keeping everyone updated and improving incident coordination.
+
+[Application - Command](#command_app): The Command app provide a complete on-scene incident command solution, enabling real-time control, coordination, and effective incident management. 
 
 [Application - Street View](#streetview_app): Street View gives you unparalleled destination knowledge.
 
-[Application - Dangerous Chemicals](#dangerous_chemicals_app): Act swiftly and appropriately at cases involving HazMat. 
-
 [Application - COMS](#coms_app): Handle Tetra, Telephone, Intercom, and Messages directly in Vehicle Services. Easily manage and customize.
+
+[Application - V2I (Vehicle-to-Infrastructure)](#v2i_app): Uncover the potential of our V2I application, facilitating seamless communication between your vehicle and the infrastructure around.
+
+[Application - Dangerous Chemicals](#dangerous_chemicals_app): Act swiftly and appropriately at cases involving HazMat. 

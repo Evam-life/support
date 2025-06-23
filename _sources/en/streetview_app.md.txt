@@ -4,7 +4,9 @@
 
 **Availability**: World-wide
 
-Street View gives you unparalleled destination knowledge.**Description:**  We designed the Street view app from the ground up to give first responders the best possible situational awareness. See the destination from street level and get vital information of how to plan your mission before arriving at site.
+Street View gives you unparalleled destination knowledge.
+
+**Description:**  We designed the Street view app from the ground up to give first responders the best possible situational awareness. See the destination from street level and get vital information of how to plan your mission before arriving at site.
 
 ## User Instructions
 
@@ -12,7 +14,7 @@ The overall functionalities of the Street view app are as follows:
 
 ![Street View overview](../_static/assets/img/png/streetview_overview.jpg)
 
-1. **Case address:** Shows the address of the destination of the current case. This is were the street view is provided.
+1. **Incident address:** Shows the address of the destination of the active incident. This is were the street view is provided.
 
         
       
@@ -28,7 +30,7 @@ The overall functionalities of the Street view app are as follows:
 
 ### Getting a street view
 
-A street view is only given when the user gets a case. When the user is not on a case the user can not use the street view functionality.
+A street view is only given when the user is mobilised to an incident. When the user is not on an active incident the user can not use the street view.
 
 ## FAQ:
 
@@ -38,6 +40,6 @@ A street view is only given when the user gets a case. When the user is not on a
 
 <summary> When is a street view provided in vehicle services? </summary>
 
-A street view is provided only when the user is on a active case. Evam is using Google to provide the street view and there might be places where Google has no data to provide a street view. For such places no street view will be provided.
+A street view is provided only when the user is on an active incident. Evam is using Google to provide the street view and there might be places where Google has no data to provide a street view. For such places no street view will be provided.
 
 </details>
