@@ -1,5 +1,20 @@
 # Changelog | Vehicle Services
 
+## 7.0.0
+
+2025-06-24
+
+### Highlights
+
+* **Added support for integration with next-generation public safety networks:**  The Vehicle Services logic was overhauled to support the next-generation public safety networks, which are becoming the preferred way to establish secure communication channels for public safety as replacement of Tetra-based ones. Vehicle Services still supports the use of Tetra and will keep supporting it in the foreseeable future.
+* **Added support for interactive map layers:** It is now possible to have interactive map layers, that will show pop-ups with custom content once tapped in the Navigation app.
+* **Added integration with What3Words:** The What3Words database can now be leveraged when searching for locations in the Search view.
+* **Added support for additional unit systems:** It is now possible to use imperial units in the Navigation app, as well as Easting and Northing coordinates for both display and search.
+
+### Additional changes
+
+* **Fixed various texts in Vehicle Services:** Several text elements were rephrased after user feedback.
+
 ## 6.4.1
 
 2025-03-12
