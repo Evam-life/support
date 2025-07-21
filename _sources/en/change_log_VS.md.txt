@@ -1,5 +1,21 @@
 # Changelog | Vehicle Services
 
+## 7.0.2
+
+2025-07-21
+
+### Highlights
+
+* **Significant improvements to stability and performance:** The memory management of the application was overhauled to improve the stability and general responsivenes of Vehicle Services.
+* **Improved the offline search database updates:** The offline search database will now be downloaded more often and will contain more entries, allowing for smoother operations when network is unavailable.
+* **Improved the offline search performance:** Searching for addresses while offline should now be significantly faster.
+
+### Additional changes
+
+* **Improved English translations:** Fixed wording of some text elements to be more accurate.
+* **Fixed camera in chat application:** The pictures taken from the Chat Certified app could show sideways if the tablet was held in portrait mode, this should now be fixed.
+
+
 ## 7.0.0
 
 2025-06-24
