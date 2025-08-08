@@ -34,6 +34,14 @@ There are 2 main options available:
 1. Setup your own SCEP server and connect it to your Intune tenant to issue device certificates automatically,
 2. Create device certificates using `openssl` and install them manually in your devices.
 
+**Important note:**
+
+Vehicle Services will prompt the user for a certificate to be selected during login. You must ensure the correct one (i.e. the one you setup in this carticle) is selected otherwise you will not be able to login.
+
+Additionally, make sure you do not remove the certificate after using it for login, otherwise you will be logged out with no way to get back in Vehicle Services, even with the right password for your user. Adding back another certificate with the same name will not work either.
+
+If any of the situations above occur, you must clear the application data and login again.
+
 #### Option 1 - Setup your own SCEP server
 
 This option consists in setting up a SCEP server and connecting it to your Intune tenant. Devices enrolled through this configuration will automatically obtain a certificate upon enrollment, and the Intune Android app will keep those certificates up-to-date. No action is required from the user to enable this.
