@@ -119,6 +119,8 @@ Remember that a single-screen solution can be expanded to a multi-screen solutio
 
     **Access to the device position:** Device position should be allowed always when the app is running. 
 
+    **Enable Keep Alive service:** You will be prompted with a pop-up window to enable the Keep Alive service. Follow this guide for instructions on how to enable the Keep Alive service [Enable Keep Alive service](#Enable_Keep_Alive_for_Vehicle_Services). 
+
 13. **If you have installed a Main device you may now install your Receiving devices**
 
     Installation instruction [Receiving devices](#general-installation-receiving-device)
@@ -163,6 +165,8 @@ Remember that a single-screen solution can be expanded to a multi-screen solutio
     **Chose certificate:** Certificate named “User…” should be selected. 
 
     **Access to the device position:** Device position should be allowed always when the app is running. 
+
+    **Enable Keep Alive service:** You will be prompted with a pop-up window to enable the Keep Alive service. Follow this guide for instructions on how to enable the Keep Alive service [Enable Keep Alive service](#Enable_Keep_Alive_for_Vehicle_Services). 
 
 **You are now ready to start using Evam!**
 

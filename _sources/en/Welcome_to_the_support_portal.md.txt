@@ -20,6 +20,8 @@ including Mobilisation, Mapping, Navigation, Case Management, Situational Awaren
 
 [Guide to managing kiosk mode](#guide_to_managing_kiosk_mode): Devices shipped from January 2024 and onwards implement a kiosk mode for improved usability of the device. Learn how to manage the kiosk mode
 
+[Enable Keep-Alive for Vehicle Services](#Enable_Keep_Alive_for_Vehicle_Services): Guide to enable Keep Alive for Vehicle Services
+
 [Change Log | Vehicle Services](#change_log_VS): Keep track of new features and improvements made to Vehicle Services
 
 

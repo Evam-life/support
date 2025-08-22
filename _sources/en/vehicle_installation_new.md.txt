@@ -136,7 +136,9 @@ Remember that a single-screen solution can be expanded to a multi-screen solutio
 
     If prompted, grant the necessary permissions to Vehicle Services:
 
-    **Access to the device position:** Device position should be allowed always when the app is running. 
+    **Access to the device position:** Device position should be allowed always when the app is running.
+
+    **Enable Keep Alive service:** You will be prompted with a pop-up window to enable the Keep Alive service. Follow this guide for instructions on how to enable the Keep Alive service [Enable Keep Alive service](#Enable_Keep_Alive_for_Vehicle_Services).  
 
 
 17. **If you have installed a Main device you may now install your Receiving devices**
@@ -204,7 +206,9 @@ Are you an administrator and want to learn more about managing the kiosk mode?  
 
     If prompted, grant the necessary permissions to Vehicle Services:
 
-    **Access to the device position:** Device position should be allowed always when the app is running. 
+    **Access to the device position:** Device position should be allowed always when the app is running.
+
+    **Enable Keep Alive service:** You will be prompted with a pop-up window to enable the Keep Alive service. Follow this guide for instructions on how to enable the Keep Alive service [Enable Keep Alive service](#Enable_Keep_Alive_for_Vehicle_Services).  
 
 Always remember to verify the functionality of the installation prior to putting the system in live use!
 

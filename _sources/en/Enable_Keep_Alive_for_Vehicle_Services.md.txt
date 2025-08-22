@@ -1,0 +1,48 @@
+# Guide to enable Keep-Alive for Vehicle Services
+`````{attention}
+To enable Keep Alive, we need to first change your configuration. To do that, please reach out to Evam Support at support@evam.life.
+
+This guide refers to Samsung Android tablets. The process may differ for other tablet brands. If you have any questions, please contact support@evam.life.
+
+`````
+
+**Table of contents**
+1. [General description](#general-description)
+
+2. [Enable Keep-Alive for Vehicle Services](#enable-keep-alive-for-vehicle-services)
+
+
+
+## General description
+
+In Android, a keep-alive service usually refers to a background mechanism that ensures an app or process stays active (or at least wakes up regularly), even when the system would normally suspend or kill it to save battery and memory.
+
+By default, Android aggressively manages apps in the background. If an app isn’t in use, the system may stop its background services. A keep-alive service prevents this by keeping a small, ongoing process running. This is often used for apps that need continuous operation. 
+
+## Enable Keep-Alive for Vehicle Services
+
+To enable Keep Alive, we need to first change your configuration. To do that, please reach out to Evam Support at support@evam.life.
+
+Once you have received confirmation that your configuration has been changed, please follow these steps to enable Keep Alive:
+
+1. **Close the application completely. Make sure it is not just minimized.**
+
+2. **Restart the application. Once it has restarted, a pop-up window should appear. Select “Go to settings.”**
+
+    *If the pop-up does not appear, skip ahead to Step 4.*
+
+
+    ![keep alive 1](../_static/assets/img/png/keep_alive_1.jpg)
+
+
+3. **In Settings, find Vehicle Services and toggle the switch to enable Keep Alive.**
+
+    ![keep alive 2](../_static/assets/img/png/keep_alive_2.jpg)
+
+4. **Now restart Vehicle Services again. To confirm that the Keep Alive service is running, swipe down from the top of the screen and check that the Keep Alive notification is visible. If you see the notification, as shown in the picture below, you have successfully enabled the Keep Alive service.**
+    
+
+    ![keep alive 3](../_static/assets/img/png/keep_alive_3.jpg)
+
+
+

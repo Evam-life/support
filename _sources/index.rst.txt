@@ -25,6 +25,7 @@ This is a list of all articles in the documentation.
    en/update_vehicle_services
    en/vs_fw_update
    en/guide_to_managing_kiosk_mode
+   en/Enable_Keep_Alive_for_Vehicle_Services
    en/change_log_VS
    
 
