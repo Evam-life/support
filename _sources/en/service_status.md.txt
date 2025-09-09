@@ -36,15 +36,15 @@ To ensure transparency and consistency in how we communicate issues, we classify
 
 - **S1 – Critical**
 
-    These incidents represent the highest level of severity. They typically involve complete system outages or issues that prevent the majority of users from accessing core services. Our team responds immediately to resolve P0 incidents.
+    These incidents represent the highest level of severity. They typically involve complete system outages or issues that prevent the majority of users from accessing core services. Our team responds immediately to resolve S1 incidents.
 
 
 - **S2 – High**
 
-    Incidents at this level cause a large-scale impact but do not fully take down the system. For example, a major feature may be unavailable or malfunctioning. These are addressed with urgency, though they may not require the same escalation as P0 events.
+    Incidents at this level cause a large-scale impact but do not fully take down the system. For example, a major feature may be unavailable or malfunctioning. These are addressed with urgency, though they may not require the same escalation as S1 events.
 
 - **S3 – Moderate**
 
-    These are issues with a limited or moderate impact, such as a minor feature not functioning as expected. While important, P2 incidents are prioritised alongside other ongoing work and may not be resolved as quickly as higher-severity incidents.
+    These are issues with a limited or moderate impact, such as a minor feature not functioning as expected. While important, S3 incidents are prioritised alongside other ongoing work and may not be resolved as quickly as higher-severity incidents.
 
 
