@@ -1,5 +1,20 @@
 # Changelog | Vehicle Services
 
+## 7.0.4
+
+2025-09-29
+
+### Highlights
+
+* **Improved the notifications when working with multiple incidents simultaneously:** Vehicle Services will now make it clearer when incidents sent over TETRA are being updated even when they are not the active one, making it less likely an information gets missed.
+* **Significant improvements to stability and performance:** The memory management of the application was overhauled to improve the stability and general responsivenes of Vehicle Services, notably the handling of map elements was optimized.
+
+
+### Additional changes
+
+* **Added logs for better root cause analysis:** We have added extra logs that will be visible to our support team when you send a log report from Vehicle Services, which will allow us to help you better when you encounter issues.
+
+
 ## 7.0.2
 
 2025-07-21

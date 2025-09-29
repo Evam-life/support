@@ -9,13 +9,15 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 
 ### Active Incidents
-
 `````{note}
 All Systems Operational
 `````
 
+
 ### Historical incidents
 Below you'll find a record of all incidents from the past 30 days.
+
+
 
 ## Sweden
 [Subscribe to Incident Updates](https://cdn.forms-content-1.sg-form.com/b8bdae67-8c99-11f0-b323-163051fa07b0)
