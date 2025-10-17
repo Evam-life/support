@@ -17,6 +17,10 @@ Note: Evam will never automatically update your device’s firmware because it i
 
 Select your device type below to view the latest firmware releases, including change logs for each version:
 
+[Galaxy Tab Active5 (SM-X306B)](https://doc.samsungmobile.com/SM-X306B/XSA/doc.html)
+
+[Galaxy Tab Active5 Pro (SM-X356B)](https://doc.samsungmobile.com/SM-X356B/XSA/doc.html)
+
 [Galaxy Tab Active4 Pro (SM-T636B)](https://doc.samsungmobile.com/SM-T636B/XSA/doc.html)
 
 [Galaxy Tab S7 FE 5G (SM-T736B)](https://doc.samsungmobile.com/SM-T736B/XSA/doc.html)

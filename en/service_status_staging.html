@@ -47,7 +47,7 @@
   
   
   
-    <title>Firmware Update of Vehicle Services &#8212; Evam Support  documentation</title>
+    <title>Service Status &#8212; Evam Support  documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
@@ -58,8 +58,6 @@
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Guide to managing kiosk mode devices" href="guide_to_managing_kiosk_mode.html" />
-    <link rel="prev" title="Update Vehicle Services" href="update_vehicle_services.html" />
   
    
 
@@ -78,7 +76,7 @@
   <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
   <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
   <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-  <a href="#en/vs_fw_update" tabindex="1" class="md-skip"> Skip to content </a>
+  <a href="#en/service_status_staging" tabindex="1" class="md-skip"> Skip to content </a>
   <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
@@ -97,7 +95,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           <span class="md-header-nav__topic">Evam Support  documentation</span>
-          <span class="md-header-nav__topic"> Firmware Update of Vehicle Services </span>
+          <span class="md-header-nav__topic"> Service Status </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -215,35 +213,7 @@
     <li class="md-nav__item">
     
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    <label class="md-nav__link md-nav__link--active" for="__toc"> Firmware Update of Vehicle Services </label>
-    
-      <a href="#" class="md-nav__link md-nav__link--active">Firmware Update of Vehicle Services</a>
-      
-        
-<nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">"Contents"</label>
-  <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#en-vs-fw-update--page-root" class="md-nav__link">Firmware Update of Vehicle Services</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#overall-process" class="md-nav__link">Overall process</a>
-        </li>
-        <li class="md-nav__item"><a href="#available-fw-versions" class="md-nav__link">Available FW versions</a>
-        </li>
-        <li class="md-nav__item"><a href="#enabling-a-specific-firmware-version-to-be-installed" class="md-nav__link">Enabling a Specific Firmware Version to Be Installed</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#option-1-time-bound-installation" class="md-nav__link">Option 1: Time-Bound installation:</a>
-        </li>
-        <li class="md-nav__item"><a href="#option-2-connectivity-bound-installation" class="md-nav__link">Option 2: Connectivity-Bound Installation</a>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#requestion-a-fw-update-to-be-enabled" class="md-nav__link">Requestion a FW update to be enabled</a>
-        </li></ul>
-            </nav>
-        </li>
-  </ul>
-</nav>
+      <a href="vs_fw_update.html" class="md-nav__link">Firmware Update of Vehicle Services</a>
       
     
     </li>
@@ -289,21 +259,17 @@
 <nav class="md-nav md-nav--secondary">
     <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#en-vs-fw-update--page-root" class="md-nav__link">Firmware Update of Vehicle Services</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#en-service-status-staging--page-root" class="md-nav__link">Service Status</a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#overall-process" class="md-nav__link">Overall process</a>
-        </li>
-        <li class="md-nav__item"><a href="#available-fw-versions" class="md-nav__link">Available FW versions</a>
-        </li>
-        <li class="md-nav__item"><a href="#enabling-a-specific-firmware-version-to-be-installed" class="md-nav__link">Enabling a Specific Firmware Version to Be Installed</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#staging" class="md-nav__link">Staging</a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#option-1-time-bound-installation" class="md-nav__link">Option 1: Time-Bound installation:</a>
+        <li class="md-nav__item"><a href="#active-incidents" class="md-nav__link">Active Incidents</a>
         </li>
-        <li class="md-nav__item"><a href="#option-2-connectivity-bound-installation" class="md-nav__link">Option 2: Connectivity-Bound Installation</a>
+        <li class="md-nav__item"><a href="#historical-incidents" class="md-nav__link">Historical incidents</a>
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#requestion-a-fw-update-to-be-enabled" class="md-nav__link">Requestion a FW update to be enabled</a>
+        <li class="md-nav__item"><a href="#incident-categorisation" class="md-nav__link">Incident Categorisation</a>
         </li></ul>
             </nav>
         </li>
@@ -316,57 +282,36 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <section id="firmware-update-of-vehicle-services">
-<h1 id="en-vs-fw-update--page-root">Firmware Update of Vehicle Services<a class="headerlink" href="#en-vs-fw-update--page-root" title="Permalink to this heading">¶</a></h1>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>This article only applies to Evam-managed devices sold after January 2024.</p>
-<p>For other setups or self-service devices, please refer to your local IT Administrator.</p>
-</div>
-<section id="overall-process">
-<h2 id="overall-process">Overall process<a class="headerlink" href="#overall-process" title="Permalink to this heading">¶</a></h2>
-<p>For devices managed by Evam, we ensure that the firmware (FW) version is kept up to date. Before releasing any firmware to you as a customer, Evam thoroughly tests the firmware in our device lab to ensure compatibility with Vehicle Services.</p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>Note: Evam will never automatically update your device’s firmware because it interrupts your service while the update is in progress. Instead, you must request a specific firmware to be installed by following this guide.</p>
+  <section id="service-status">
+<h1 id="en-service-status-staging--page-root">Service Status<a class="headerlink" href="#en-service-status-staging--page-root" title="Permalink to this heading">¶</a></h1>
+<p>Welcome to Evam Status page. Here you’ll find live and historical data on system performance for the staging environment</p>
+<section id="staging">
+<h2 id="staging">Staging<a class="headerlink" href="#staging" title="Permalink to this heading">¶</a></h2>
+<section id="active-incidents">
+<h3 id="active-incidents">Active Incidents<a class="headerlink" href="#active-incidents" title="Permalink to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All Systems Operational</p>
 </div>
 </section>
-<section id="available-fw-versions">
-<h2 id="available-fw-versions">Available FW versions<a class="headerlink" href="#available-fw-versions" title="Permalink to this heading">¶</a></h2>
-<p>Select your device type below to view the latest firmware releases, including change logs for each version:</p>
-<p><a class="reference external" href="https://doc.samsungmobile.com/SM-X306B/XSA/doc.html">Galaxy Tab Active5 (SM-X306B)</a></p>
-<p><a class="reference external" href="https://doc.samsungmobile.com/SM-X356B/XSA/doc.html">Galaxy Tab Active5 Pro (SM-X356B)</a></p>
-<p><a class="reference external" href="https://doc.samsungmobile.com/SM-T636B/XSA/doc.html">Galaxy Tab Active4 Pro (SM-T636B)</a></p>
-<p><a class="reference external" href="https://doc.samsungmobile.com/SM-T736B/XSA/doc.html">Galaxy Tab S7 FE 5G (SM-T736B)</a></p>
-<p><a class="reference external" href="https://doc.samsungmobile.com/SM-P625/XSA/doc.html">Galaxy Tab S6 Lite (SM-P625)</a></p>
-</section>
-<section id="enabling-a-specific-firmware-version-to-be-installed">
-<h2 id="enabling-a-specific-firmware-version-to-be-installed">Enabling a Specific Firmware Version to Be Installed<a class="headerlink" href="#enabling-a-specific-firmware-version-to-be-installed" title="Permalink to this heading">¶</a></h2>
-<p>Installing a new firmware will make the device unavailable for the duration of the update. To manage this, Evam provides several methods to control when the firmware is installed.</p>
-<section id="option-1-time-bound-installation">
-<h3 id="option-1-time-bound-installation">Option 1: Time-Bound installation:<a class="headerlink" href="#option-1-time-bound-installation" title="Permalink to this heading">¶</a></h3>
-<p>You can set the update to occur automatically during a specific time window. During this window, the installation proceeds without direct oversight. Once the firmware update is completed, you will need to restart Vehicle Services manually.</p>
-<p>You can target the update to a specific device by its IMEI number. This allows different devices to be updated during different time windows. We recommend scheduling the firmware update at the same time the vehicle is taken out of service for maintenance or repair or during similar downtime.</p>
-</section>
-<section id="option-2-connectivity-bound-installation">
-<h3 id="option-2-connectivity-bound-installation">Option 2: Connectivity-Bound Installation<a class="headerlink" href="#option-2-connectivity-bound-installation" title="Permalink to this heading">¶</a></h3>
-<p>Alternatively, you can set the firmware update to occur automatically once a device connects to a Wi-Fi network with a specified SSID. For this setup, we recommend using a dedicated Wi-Fi network (for example, via a 4G/5G portable modem) exclusively for firmware updates.</p>
-<p>This approach gives you full control over when the firmware update happens, as it only proceeds when you connect the device to the specified Wi-Fi network. The drawback, however, is that the installation process cannot usually be left unattended.</p>
+<section id="historical-incidents">
+<h3 id="historical-incidents">Historical incidents<a class="headerlink" href="#historical-incidents" title="Permalink to this heading">¶</a></h3>
+<p>Below you’ll find a record of all incidents from the past 30 days.</p>
 </section>
 </section>
-<section id="requestion-a-fw-update-to-be-enabled">
-<h2 id="requestion-a-fw-update-to-be-enabled">Requestion a FW update to be enabled<a class="headerlink" href="#requestion-a-fw-update-to-be-enabled" title="Permalink to this heading">¶</a></h2>
-<p>Evam will never enable a firmware update unless it is directly requested by the customer. To request an update, please email support@evam.life with the following details:</p>
-<ul class="simple">
-<li><p>Customer name</p></li>
-<li><p>List of devices to be updated (specified by their IMEI numbers)</p></li>
-<li><p>Installation type (Option 1 or Option 2).</p>
+<section id="incident-categorisation">
+<h2 id="incident-categorisation">Incident Categorisation<a class="headerlink" href="#incident-categorisation" title="Permalink to this heading">¶</a></h2>
+<p>To ensure transparency and consistency in how we communicate issues, we classify incidents into different priority levels based on their urgency and impact. This helps our team respond appropriately and allows you to understand the severity of an incident at a glance.</p>
 <ul>
-<li><p>For Option 1: Provide the desired time window for installation.</p></li>
-<li><p>For Option 2: Provide the SSID of the permitted Wi-Fi network.</p></li>
-</ul>
+<li><p><strong>S1 – Critical</strong></p>
+<p>These incidents represent the highest level of severity. They typically involve complete system outages or issues that prevent the majority of users from accessing core services. Our team responds immediately to resolve S1 incidents.</p>
 </li>
-<li><p>The specific firmware version to be installed, or “latest”.</p></li>
+<li><p><strong>S2 – High</strong></p>
+<p>Incidents at this level cause a large-scale impact but do not fully take down the system. For example, a major feature may be unavailable or malfunctioning. These are addressed with urgency, though they may not require the same escalation as S1 events.</p>
+</li>
+<li><p><strong>S3 – Moderate</strong></p>
+<p>These are issues with a limited or moderate impact, such as a minor feature not functioning as expected. While important, S3 incidents are prioritised alongside other ongoing work and may not be resolved as quickly as higher-severity incidents.</p>
+</li>
 </ul>
 </section>
 </section>
@@ -381,30 +326,6 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="update_vehicle_services.html" title="Update Vehicle Services"
-               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
-               rel="prev">
-              <div class="md-flex__cell md-flex__cell--shrink">
-                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-              </div>
-              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                <span class="md-flex__ellipsis">
-                  <span
-                      class="md-footer-nav__direction"> "Previous" </span> Update Vehicle Services </span>
-              </div>
-            </a>
-          
-          
-            <a href="guide_to_managing_kiosk_mode.html" title="Guide to managing kiosk mode devices"
-               class="md-flex md-footer-nav__link md-footer-nav__link--next"
-               rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
-                class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> "Next" </span> Guide to managing kiosk mode devices </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink"><i
-                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           
         </a>
         
