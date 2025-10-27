@@ -1,5 +1,18 @@
 # Changelog | Vehicle Services
 
+## 7.0.5
+
+2025-10-27
+
+### Highlights
+
+* **Fixed an issue where Vehicle Services would require login after being restarted:** Vehicle Services could, under certain circumstances, show the login screen after the application restarted instead of letting the user into the app. We have now fixed this issue so you should no longer be forced to input credentials again unless the app data was cleared.
+* **Vehicle Services will prompt for a new certificate if the previous one was removed:** Vehicle Services requires the use of a certificate to connect to Central Services, which is typically deployed through a MDM policy. Previously, a wrong configuration in the MDM causing certificates to be removed from the device would mean a forced logout from Vehicle Services. Now, Vehicle Services will prompt for a new certificate instead. *Note: if you have several certificates you still need to make sure you selected the right one to get in Vehicle Services!*
+
+### Additional changes
+
+* **Fixed a bug where the turnout may not show despite Man-Acking the incident:** A race condition that could lead to missing turnout information was fixed, so Man-Acking an incident should no longer yield a empty turnout.
+
 ## 7.0.4
 
 2025-09-29
