@@ -1,0 +1,64 @@
+# Connectivity Setup Guide for Vehicle Services
+
+## Why Connectivity Matters
+
+Your Vehicle Services system works great even without an internet connection — that’s by design.  
+But when connected, the experience becomes **faster, smarter, and smoother**.
+
+Connectivity enables:
+- ✅ Real-time updates and syncing between screens  
+- ✅ Access to cloud features and support tools  
+- ✅ Easy remote troubleshooting and software updates  
+- ✅ Fewer manual steps and fewer errors  
+
+In short: **offline works — online feels amazing.**
+
+---
+
+## Recommended Setup
+
+To get the best experience, we recommend installing an **open SIM card** in each tablet.
+
+### 🔓 Open SIM (Recommended)
+- Quick setup, minimal maintenance  
+- Reliable mobile data connection  
+- Works out-of-the-box in most environments  
+
+---
+
+### 🔐 Private APN SIM (Optional)
+If your organization requires private networking:
+- A **Private APN** SIM can be used.  
+- Some network openings and configurations are required — follow the official **Private APN Setup Guide**.  
+- To receive that guide, please contact your **Project Manager**.
+
+---
+
+## Wi-Fi Usage Policy
+
+Wi-Fi can be handy but is not always stable enough for connected Vehicle Services setups.
+
+| Configuration | Wi-Fi Usage | Recommendation |
+|----------------|-------------|----------------|
+| **Single-screen setup** | Supported | ✅ Works, but mobile data is preferred for stability |
+| **Multi-screen setup** | Not supported | 🚫 Do **not** use Wi-Fi — it may cause sync issues |
+
+---
+
+## Summary
+
+| Option | Use Case | Our Take |
+|--------|-----------|----------|
+| **Open SIM** | Standard setup | ⭐ Recommended |
+| **Private APN SIM** | Security-focused setup | 🟢 Allowed (with guide) |
+| **Wi-Fi** | Single screen | 🟡 Works, but not ideal |
+| **Wi-Fi** | Multi-screen | 🔴 Not supported |
+
+---
+
+## Need Help?
+
+If you’re unsure which setup fits your environment or need the **Private APN Setup Guide**,  
+reach out to your *our support — they’ll help you get started quickly.
+
+---

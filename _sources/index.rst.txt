@@ -22,6 +22,7 @@ This is a list of all articles in the documentation.
    en/user_guides_vehicle_services
    en/self_service_setup_VS
    en/vehicle_installation
+   en/Connectivity_Setup_Guide_for_Vehicle_Services
    en/update_vehicle_services
    en/vs_fw_update
    en/guide_to_managing_kiosk_mode
