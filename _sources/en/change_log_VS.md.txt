@@ -1,5 +1,19 @@
 # Changelog | Vehicle Services
 
+## 7.0.6
+
+2025-11-10
+
+### Highlights
+
+* **Vehicle Statuses can now be sent automatically:** A major new feature was added to the Vehicle Statuses, allowing them to be configured to be automatically sent when specific conditions are met (such as arriving at incident site, exiting the home station, and more). When the conditions are met, a notification will show in Vehicle Services with a countdown which - upon completion - will cause the status to be automatically sent. The end user can cancel the countdown, as well as send the status immediately if needed. This functionality is opt-in, so make sure to reach out to Evam support to enable it if you want to use it.
+* **Major update to the navigation engine:** A significant overhaul of the Navigation App core engine was deployed, it improves the vehicle positioning as well as the routing experience significantly. The overall look and feel of the Navigation App does not change, but the general experience should now be improved with smoother routing and the occasional erratic positioning issues should now be less frequent.
+
+### Additional changes
+
+* **Vehicle Services now displays the time and date of the last status sending:** In the Status Tab under the Operations App, Vehicle Services will now display when the current Vehicle Status was sent.
+
+
 ## 7.0.5
 
 2025-10-27
