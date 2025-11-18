@@ -9,9 +9,17 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 
 ### Active Incidents
-`````{note}
-All Systems Operational
-`````
+>### Degraded performance of the Chat application
+>
+>**Severity:** S2 - High [Read more](#incident-categorisation)
+>
+>**Affected Services**: Chat app in Vehicle Services and Central Services
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 18 November 2025, 13:47 UTC*
 
 
 ### Historical incidents
