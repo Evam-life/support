@@ -43,13 +43,13 @@ Below you'll find a record of all incidents from the past 30 days.
 
 ### Active Incidents
 
->### Sending of a Status from notifications (such as recommended status notifications and new mobilisations) will not work for customers using Automatic statuses
+>### Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses. 
 >
 >**Severity:** S3
 >
->**Affected Services**: Status sending for customers using Automatic status when a status is sent from the notification iself. 
+>**Affected Services**: Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses. 
 >
->*Please note that is is still possible to send notifications from the Shortcut center (Sv: Genvägscentret) or the status menu in the operations app (Sv: Ärende)*
+>*Please note that is is still possible to send the status from the status menu in the operations app (Sv: Ärende)*
 >
 >### Incident Updates
 >
@@ -58,6 +58,12 @@ Below you'll find a record of all incidents from the past 30 days.
 >*As a mitigation we suggest that users send statuses from the shortcut center or the operations app until the issue is resolved.*
 >
 >*Posted: 11 December 2025, 09:55 UTC*
+>
+>**Update:** The problem is smaller than what was initially communicated. The only impact is that when confirming a new incident by pressing the confirm button the associated status to the control room will not be sent if the user is using automatic statuses. 
+>
+>*As a mitigation we suggest that users send the statuses from the operations app until the issue is resolved. Please not that all other autmatic statuses and notifications works as they should*
+>
+>*Posted: 11 December 2025, 10:23 UTC*
 
 
 
