@@ -11,7 +11,9 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 ### Active Incidents
 
 
-
+`````{note}
+All Systems Operational
+`````
 
 ### Historical incidents
 Below you'll find a record of all incidents from the past 30 days.
@@ -40,9 +42,23 @@ Below you'll find a record of all incidents from the past 30 days.
 [Subscribe to Incident Updates](https://cdn.forms-content-1.sg-form.com/b8bdae67-8c99-11f0-b323-163051fa07b0)
 
 ### Active Incidents
-`````{note}
-All Systems Operational
-`````
+
+>### Sending of a Status from notifications (such as recommended status notifications and new mobilisations) will not work for customers using Automatic statuses
+>
+>**Severity:** S3
+>
+>**Affected Services**: Status sending for customers using Automatic status when a status is sent from the notification iself. 
+>
+>*Please note that is is still possible to send notifications from the Shortcut center (Sv: Genvägscentret) or the status menu in the operations app (Sv: Ärende)*
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*As a mitigation we suggest that users send statuses from the shortcut center or the operations app until the issue is resolved.*
+>
+>*Posted: 11 December 2025, 09:55 UTC*
+
 
 
 ### Historical incidents
