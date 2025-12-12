@@ -25,6 +25,16 @@ Below you'll find a record of all incidents from the past 30 days.
 
 ### Active Incidents
 
+
+`````{note}
+All Systems Operational
+`````
+
+
+
+### Historical incidents
+Below you'll find a record of all incidents from the past 30 days.
+
 >### Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses. 
 >
 >**Severity:** S3
@@ -51,14 +61,10 @@ Below you'll find a record of all incidents from the past 30 days.
 >*A fix has been provided in Vehicle Services 7.0.7. To resolve the issue, please update Vehicle Services by following this guide: [Update Vehicle Services Manually](https://www.support.evam.life/en/update_vehicle_services.html)*
 >
 >*Posted: 12 December 2025, 11:41 UTC*
-```
-
-
-
-
-### Historical incidents
-Below you'll find a record of all incidents from the past 30 days.
-
+>
+>**Resolved:** The issue has been resolved, and all systems are operating normally.
+>
+>*Posted: 12 December 2025, 16:39 UTC*
 
 ## Incident Categorisation
 
