@@ -17,25 +17,7 @@ All Systems Operational
 
 ### Historical incidents
 Below you'll find a record of all incidents from the past 30 days.
->### Degraded performance of the Chat application
->
->**Severity:** S2 - High [Read more](#incident-categorisation)
->
->**Affected Services**: Chat app in Vehicle Services and Central Services
->
->### Incident Updates
->
->**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
->
->*Posted: 18 November 2025, 13:47 UTC*
->
->**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
->
->*Posted: 18 November 2025, 17:45 UTC*
->
->**Resolved:** The issue has been resolved, and all systems are operating normally.
->
->*Posted: Posted: 18 November 2025, 19:55 UTC*
+
 
 
 ## Sweden
@@ -64,6 +46,13 @@ Below you'll find a record of all incidents from the past 30 days.
 >*As a mitigation we suggest that users send the statuses from the operations app until the issue is resolved. Please not that all other autmatic statuses and notifications works as they should*
 >
 >*Posted: 11 December 2025, 10:23 UTC*
+>
+>**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
+>*A fix has been provided in Vehicle Services 7.0.7. To resolve the issue, please update Vehicle Services by following this guide: [Update Vehicle Services Manually](https://www.support.evam.life/en/update_vehicle_services.html)*
+>
+>*Posted: 12 December 2025, 11:41 UTC*
+```
+
 
 
 

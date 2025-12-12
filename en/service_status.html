@@ -271,12 +271,8 @@
         <li class="md-nav__item"><a href="#sweden" class="md-nav__link">Sweden</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#id1" class="md-nav__link">Active Incidents</a>
-        </li>
-        <li class="md-nav__item"><a href="#id3" class="md-nav__link">Historical incidents</a>
         </li></ul>
             </nav>
-        </li>
-        <li class="md-nav__item"><a href="#incident-categorisation" class="md-nav__link">Incident Categorisation</a>
         </li></ul>
             </nav>
         </li>
@@ -312,12 +308,8 @@
         <li class="md-nav__item"><a href="#sweden" class="md-nav__link">Sweden</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#id1" class="md-nav__link">Active Incidents</a>
-        </li>
-        <li class="md-nav__item"><a href="#id3" class="md-nav__link">Historical incidents</a>
         </li></ul>
             </nav>
-        </li>
-        <li class="md-nav__item"><a href="#incident-categorisation" class="md-nav__link">Incident Categorisation</a>
         </li></ul>
             </nav>
         </li>
@@ -346,18 +338,6 @@
 <section id="historical-incidents">
 <h3 id="historical-incidents">Historical incidents<a class="headerlink" href="#historical-incidents" title="Permalink to this heading">¶</a></h3>
 <p>Below you’ll find a record of all incidents from the past 30 days.</p>
-<blockquote>
-<div><h3 class="rubric" id="degraded-performance-of-the-chat-application">Degraded performance of the Chat application</h3>
-<p><strong>Severity:</strong> S2 - High <a class="reference internal" href="#incident-categorisation">Read more</a></p>
-<p><strong>Affected Services</strong>: Chat app in Vehicle Services and Central Services</p>
-<h3 class="rubric" id="incident-updates">Incident Updates</h3>
-<p><strong>Investigating:</strong> We are currently investigating the issue and working to resolve it as quickly as possible.</p>
-<p><em>Posted: 18 November 2025, 13:47 UTC</em></p>
-<p><strong>Monitoring:</strong> A fix has been implemented, and we are closely monitoring to ensure everything is stable.</p>
-<p><em>Posted: 18 November 2025, 17:45 UTC</em></p>
-<p><strong>Resolved:</strong> The issue has been resolved, and all systems are operating normally.</p>
-<p><em>Posted: Posted: 18 November 2025, 19:55 UTC</em></p>
-</div></blockquote>
 </section>
 </section>
 <section id="sweden">
@@ -370,34 +350,46 @@
 <p><strong>Severity:</strong> S3</p>
 <p><strong>Affected Services</strong>: Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses.</p>
 <p><em>Please note that is is still possible to send the status from the status menu in the operations app (Sv: Ärende)</em></p>
-<h3 class="rubric" id="id2">Incident Updates</h3>
+<h3 class="rubric" id="incident-updates">Incident Updates</h3>
 <p><strong>Investigating:</strong> We are currently investigating the issue and working to resolve it as quickly as possible.</p>
 <p><em>As a mitigation we suggest that users send statuses from the shortcut center or the operations app until the issue is resolved.</em></p>
 <p><em>Posted: 11 December 2025, 09:55 UTC</em></p>
 <p><strong>Update:</strong> The problem is smaller than what was initially communicated. The only impact is that when confirming a new incident by pressing the confirm button the associated status to the control room will not be sent if the user is using automatic statuses.</p>
 <p><em>As a mitigation we suggest that users send the statuses from the operations app until the issue is resolved. Please not that all other autmatic statuses and notifications works as they should</em></p>
 <p><em>Posted: 11 December 2025, 10:23 UTC</em></p>
+<p><strong>Monitoring:</strong> A fix has been implemented, and we are closely monitoring to ensure everything is stable.
+<em>A fix has been provided in Vehicle Services 7.0.7. To resolve the issue, please update Vehicle Services by following this guide: <a class="reference external" href="https://www.support.evam.life/en/update_vehicle_services.html">Update Vehicle Services Manually</a></em></p>
+<p><em>Posted: 12 December 2025, 11:41 UTC</em></p>
 </div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+
+
+### Historical incidents
+Below you'll find a record of all incidents from the past 30 days.
+
+
+## Incident Categorisation
+
+To ensure transparency and consistency in how we communicate issues, we classify incidents into different priority levels based on their urgency and impact. This helps our team respond appropriately and allows you to understand the severity of an incident at a glance.
+
+- **S1 – Critical**
+
+    These incidents represent the highest level of severity. They typically involve complete system outages or issues that prevent the majority of users from accessing core services. Our team responds immediately to resolve S1 incidents.
+
+
+- **S2 – High**
+
+    Incidents at this level cause a large-scale impact but do not fully take down the system. For example, a major feature may be unavailable or malfunctioning. These are addressed with urgency, though they may not require the same escalation as S1 events.
+
+- **S3 – Moderate**
+
+    These are issues with a limited or moderate impact, such as a minor feature not functioning as expected. While important, S3 incidents are prioritised alongside other ongoing work and may not be resolved as quickly as higher-severity incidents.
+
+
+</pre></div>
+</div>
 </section>
-<section id="id3">
-<h3 id="id3">Historical incidents<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
-<p>Below you’ll find a record of all incidents from the past 30 days.</p>
-</section>
-</section>
-<section id="incident-categorisation">
-<h2 id="incident-categorisation">Incident Categorisation<a class="headerlink" href="#incident-categorisation" title="Permalink to this heading">¶</a></h2>
-<p>To ensure transparency and consistency in how we communicate issues, we classify incidents into different priority levels based on their urgency and impact. This helps our team respond appropriately and allows you to understand the severity of an incident at a glance.</p>
-<ul>
-<li><p><strong>S1 – Critical</strong></p>
-<p>These incidents represent the highest level of severity. They typically involve complete system outages or issues that prevent the majority of users from accessing core services. Our team responds immediately to resolve S1 incidents.</p>
-</li>
-<li><p><strong>S2 – High</strong></p>
-<p>Incidents at this level cause a large-scale impact but do not fully take down the system. For example, a major feature may be unavailable or malfunctioning. These are addressed with urgency, though they may not require the same escalation as S1 events.</p>
-</li>
-<li><p><strong>S3 – Moderate</strong></p>
-<p>These are issues with a limited or moderate impact, such as a minor feature not functioning as expected. While important, S3 incidents are prioritised alongside other ongoing work and may not be resolved as quickly as higher-severity incidents.</p>
-</li>
-</ul>
 </section>
 </section>
 
