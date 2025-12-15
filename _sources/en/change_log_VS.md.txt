@@ -1,5 +1,14 @@
 # Changelog | Vehicle Services
 
+## 7.0.7
+
+2025-12-12
+
+### Highlights
+
+* **Fixed a bug with the status update upon incident confirmation:** A bug was found in the previous version, when confirming a new incident by pressing the confirm button the associated status to the control room will not be sent if the user is using the automatic statuses function. This is now fixed so the status will be sent as it should upon confirming the incident.
+
+
 ## 7.0.6
 
 2025-11-10
