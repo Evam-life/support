@@ -1,5 +1,15 @@
 # Changelog | Vehicle Services
 
+## 7.0.8
+
+2025-12-15
+
+### Highlights
+
+* **Fixed an issue with the Status sending timestamp in the Status Tab:** Customers using Vehicle Services with GD92 integration could experience erroneous timestamps in the Status Tab, where the timestamp would sometimes show the current time instead of the actual sending time of the status. This is now resolved. 
+* **Fixed an issue where Vehicle Services would fail to reconnect to Central Services under some circumstances:** An issue was previously present that could lead Vehicle Services to lose connection to Central Services and not be able to recover, potentially leading to missed messages and mobilisations. This could notably happen if Vehicle Services was restarted automatically after a system component update. We have now fixed this issue and Vehicle Services should remain connected provided an internet connection is available.
+
+
 ## 7.0.7
 
 2025-12-12
