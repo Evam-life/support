@@ -7,6 +7,12 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 
 ### Active Incidents
+`````{note}
+All Systems Operational
+`````
+
+### Historical incidents
+
 >###  DMT Staging Full Outage
 >
 >**Severity:** S1-Critical
@@ -22,11 +28,12 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 >**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
 >
 >*Posted: 22 December 2025 11:14 UTC*
+>
+>**Resolved:** The issue has been resolved, and all systems are operating normally.
+>
+>*Posted: 22 December 2025, 11:22 UTC*
 
 
-
-### Historical incidents
-Below you'll find a record of all incidents from the past 30 days.
 
 
 
