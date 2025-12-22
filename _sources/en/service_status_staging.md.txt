@@ -12,28 +12,7 @@ All Systems Operational
 `````
 
 ### Historical incidents
-
->###  DMT Staging Full Outage
->
->**Severity:** S1-Critical
->
->**Affected Services**: Staging
->
->### Incident Updates
->
->**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
->
->*Posted: 22 December 2025, 11:00 UTC*
->
->**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
->
->*Posted: 22 December 2025 11:14 UTC*
->
->**Resolved:** The issue has been resolved, and all systems are operating normally.
->
->*Posted: 22 December 2025, 11:22 UTC*
-
-
+Below you'll find a record of all incidents from the past 30 days.
 
 
 
