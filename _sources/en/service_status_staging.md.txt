@@ -7,9 +7,17 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 
 ### Active Incidents
-`````{note}
-All Systems Operational
-`````
+>###  DMT Steging Full Outage>
+>
+>**Severity:** S1-Critical
+>
+>**Affected Services**: Staging
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 22 December 2025, 12:00 UTC*
 
 
 ### Historical incidents
