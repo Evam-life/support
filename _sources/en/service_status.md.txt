@@ -11,9 +11,23 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 ### Active Incidents
 
 
-`````{note}
-All Systems Operational
-`````
+>### Central Services Full Outage
+>
+>**Severity:** S1-Critical [Read more](#incident-categorisation)
+>
+>**Affected Services**: Central Services Cloud Gateway and all services connecting to it e.g. Central Services and Vehicle Services
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 28 January 2026, 15:38 UTC*
+>
+>**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
+>
+>*Posted: 28 January 2026, 16:25 UTC*
+
+
 
 ### Historical incidents
 Below you'll find a record of all incidents from the past 30 days.
