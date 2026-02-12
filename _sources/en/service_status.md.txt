@@ -40,7 +40,51 @@ Below you'll find a record of all incidents from the past 30 days.
 >**Resolved:** The issue has been resolved, and all systems are operating normally.
 >
 >*Posted: 28 January 2026, 16:49 UTC*
-
+>
+> ## Post-incident report
+>
+> **Post-incident report posted:** 12 February 2026
+>
+> \-
+>
+> **Date:** 28 January 2026\
+> **Duration:** 47 minutes (15:38–16:25 UTC)\
+> **Impact:** **Full outage** for all users in the UK organisation — users could not use key functions such as mobilising, sending status updates, chat messaging, and related features.
+>
+> ### Summary
+>
+> During our planned monthly maintenance, we shut down one of our core application instances as part of a standard, one-by-one update process. At this point in time our load balancer should have moved away traffic from the instance that was shut down to another healthy instance. However, traffic did not shift to the remaining healthy instance as quickly as expected, and the remaining instance could not fully operate due to an internal dependency involved in handling user requests. This combination turned what should have been a partial disruption into a full outage.
+>
+> ### Timeline (UTC)
+>
+> * **15:38** – Outage began
+> * **15:57** – Response started
+> * **16:25** – Service restored
+> * **16:49** – Recovery verified
+>
+> ### Detection and alerts
+>
+> No automatic alert triggered at the start of the incident because alerts were temporarily muted due to maintenance on the alerting system shortly beforehand. This delayed our response by around **15 minutes** hence, responce was only started at 15:57.
+>
+> ### Resolution
+>
+> We followed our recovery procedures and restored service by bringing the affected instance(s) back online and confirming normal operation through monitoring and verification checks.
+>
+> ### Root cause
+>
+> The platform load balancer is designed to re-route traffic away from an instance that is taken offline, but this incident has uncovered that it does not guarantee the switch happens within a specific short time window. This is despite the configuration of the service beeing correct. During this maintenance sequence, traffic did not move over in time, and the remaining instance could not fully handle requests due to an internal dependency path also caused by the load balancer not acting as intended. Together, these factors caused a complete outage. Previous tests and maintenance has shown that this process should have worked and no impact on the availability of the services was expected.
+>
+> ### Preventing recurrence
+>
+> * **Keep monitoring fully available during production maintenance:** we will separate production maintenance from monitoring/alerting maintenance so alerts are not impacted.
+> * **Reduce disruptive maintenance actions:** we will reduce hard reboots in production environments unless required for critical security updates. This will happen until longer-term resilience improvements has been deployed.
+> * **Longer-term resilience improvement:** ongoing work to migrate this infrastructure to a more resilient platform (internal tracking: #2601).
+>
+> ### Apology
+>
+> We’re sorry for the disruption this caused to UK users. We’re taking the steps above to reduce the likelihood of a repeat and to improve detection and communication speed.
+>
+> If you have any further questions, please reach out to support@evam.life
 
 
 ## Sweden
@@ -57,53 +101,3 @@ All Systems Operational
 
 ### Historical incidents
 Below you'll find a record of all incidents from the past 30 days.
-
->### Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses. 
->
->**Severity:** S3
->
->**Affected Services**: Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses. 
->
->*Please note that is is still possible to send the status from the status menu in the operations app (Sv: Ärende)*
->
->### Incident Updates
->
->**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
->
->*As a mitigation we suggest that users send statuses from the shortcut center or the operations app until the issue is resolved.*
->
->*Posted: 11 December 2025, 09:55 UTC*
->
->**Update:** The problem is smaller than what was initially communicated. The only impact is that when confirming a new incident by pressing the confirm button the associated status to the control room will not be sent if the user is using automatic statuses. 
->
->*As a mitigation we suggest that users send the statuses from the operations app until the issue is resolved. Please not that all other autmatic statuses and notifications works as they should*
->
->*Posted: 11 December 2025, 10:23 UTC*
->
->**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
->*A fix has been provided in Vehicle Services 7.0.7. To resolve the issue, please update Vehicle Services by following this guide: [Update Vehicle Services Manually](https://www.support.evam.life/en/update_vehicle_services.html)*
->
->*Posted: 12 December 2025, 11:41 UTC*
->
->**Resolved:** The issue has been resolved, and all systems are operating normally.
->
->*Posted: 12 December 2025, 16:39 UTC*
-
-## Incident Categorisation
-
-To ensure transparency and consistency in how we communicate issues, we classify incidents into different priority levels based on their urgency and impact. This helps our team respond appropriately and allows you to understand the severity of an incident at a glance.
-
-- **S1 – Critical**
-
-    These incidents represent the highest level of severity. They typically involve complete system outages or issues that prevent the majority of users from accessing core services. Our team responds immediately to resolve S1 incidents.
-
-
-- **S2 – High**
-
-    Incidents at this level cause a large-scale impact but do not fully take down the system. For example, a major feature may be unavailable or malfunctioning. These are addressed with urgency, though they may not require the same escalation as S1 events.
-
-- **S3 – Moderate**
-
-    These are issues with a limited or moderate impact, such as a minor feature not functioning as expected. While important, S3 incidents are prioritised alongside other ongoing work and may not be resolved as quickly as higher-severity incidents.
-
-

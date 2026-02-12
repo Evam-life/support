@@ -275,8 +275,6 @@
         <li class="md-nav__item"><a href="#id2" class="md-nav__link">Historical incidents</a>
         </li></ul>
             </nav>
-        </li>
-        <li class="md-nav__item"><a href="#incident-categorisation" class="md-nav__link">Incident Categorisation</a>
         </li></ul>
             </nav>
         </li>
@@ -316,8 +314,6 @@
         <li class="md-nav__item"><a href="#id2" class="md-nav__link">Historical incidents</a>
         </li></ul>
             </nav>
-        </li>
-        <li class="md-nav__item"><a href="#incident-categorisation" class="md-nav__link">Incident Categorisation</a>
         </li></ul>
             </nav>
         </li>
@@ -348,7 +344,7 @@
 <p>Below you’ll find a record of all incidents from the past 30 days.</p>
 <blockquote>
 <div><h3 class="rubric" id="central-services-full-outage">Central Services Full Outage</h3>
-<p><strong>Severity:</strong> S1-Critical <a class="reference internal" href="#incident-categorisation">Read more</a></p>
+<p><strong>Severity:</strong> S1-Critical <a class="reference internal" href="#incident-categorisation"><span class="xref myst">Read more</span></a></p>
 <p><strong>Affected Services</strong>: Central Services Cloud Gateway and all services connecting to it e.g. Central Services and Vehicle Services</p>
 <h3 class="rubric" id="incident-updates">Incident Updates</h3>
 <p><strong>Investigating:</strong> We are currently investigating the issue and working to resolve it as quickly as possible.</p>
@@ -357,6 +353,36 @@
 <p><em>Posted: 28 January 2026, 16:25 UTC</em></p>
 <p><strong>Resolved:</strong> The issue has been resolved, and all systems are operating normally.</p>
 <p><em>Posted: 28 January 2026, 16:49 UTC</em></p>
+<h2 class="rubric" id="post-incident-report">Post-incident report</h2>
+<p><strong>Post-incident report posted:</strong> 12 February 2026</p>
+<p>-</p>
+<p><strong>Date:</strong> 28 January 2026<br/>
+<strong>Duration:</strong> 47 minutes (15:38–16:25 UTC)<br/>
+<strong>Impact:</strong> <strong>Full outage</strong> for all users in the UK organisation — users could not use key functions such as mobilising, sending status updates, chat messaging, and related features.</p>
+<h3 class="rubric" id="summary">Summary</h3>
+<p>During our planned monthly maintenance, we shut down one of our core application instances as part of a standard, one-by-one update process. At this point in time our load balancer should have moved away traffic from the instance that was shut down to another healthy instance. However, traffic did not shift to the remaining healthy instance as quickly as expected, and the remaining instance could not fully operate due to an internal dependency involved in handling user requests. This combination turned what should have been a partial disruption into a full outage.</p>
+<h3 class="rubric" id="timeline-utc">Timeline (UTC)</h3>
+<ul class="simple">
+<li><p><strong>15:38</strong> – Outage began</p></li>
+<li><p><strong>15:57</strong> – Response started</p></li>
+<li><p><strong>16:25</strong> – Service restored</p></li>
+<li><p><strong>16:49</strong> – Recovery verified</p></li>
+</ul>
+<h3 class="rubric" id="detection-and-alerts">Detection and alerts</h3>
+<p>No automatic alert triggered at the start of the incident because alerts were temporarily muted due to maintenance on the alerting system shortly beforehand. This delayed our response by around <strong>15 minutes</strong> hence, responce was only started at 15:57.</p>
+<h3 class="rubric" id="resolution">Resolution</h3>
+<p>We followed our recovery procedures and restored service by bringing the affected instance(s) back online and confirming normal operation through monitoring and verification checks.</p>
+<h3 class="rubric" id="root-cause">Root cause</h3>
+<p>The platform load balancer is designed to re-route traffic away from an instance that is taken offline, but this incident has uncovered that it does not guarantee the switch happens within a specific short time window. This is despite the configuration of the service beeing correct. During this maintenance sequence, traffic did not move over in time, and the remaining instance could not fully handle requests due to an internal dependency path also caused by the load balancer not acting as intended. Together, these factors caused a complete outage. Previous tests and maintenance has shown that this process should have worked and no impact on the availability of the services was expected.</p>
+<h3 class="rubric" id="preventing-recurrence">Preventing recurrence</h3>
+<ul class="simple">
+<li><p><strong>Keep monitoring fully available during production maintenance:</strong> we will separate production maintenance from monitoring/alerting maintenance so alerts are not impacted.</p></li>
+<li><p><strong>Reduce disruptive maintenance actions:</strong> we will reduce hard reboots in production environments unless required for critical security updates. This will happen until longer-term resilience improvements has been deployed.</p></li>
+<li><p><strong>Longer-term resilience improvement:</strong> ongoing work to migrate this infrastructure to a more resilient platform (internal tracking: #2601).</p></li>
+</ul>
+<h3 class="rubric" id="apology">Apology</h3>
+<p>We’re sorry for the disruption this caused to UK users. We’re taking the steps above to reduce the likelihood of a repeat and to improve detection and communication speed.</p>
+<p>If you have any further questions, please reach out to support@evam.life</p>
 </div></blockquote>
 </section>
 </section>
@@ -373,40 +399,7 @@
 <section id="id2">
 <h3 id="id2">Historical incidents<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <p>Below you’ll find a record of all incidents from the past 30 days.</p>
-<blockquote>
-<div><h3 class="rubric" id="confirming-a-new-incident-by-pressing-the-confirm-button-will-not-send-the-associated-status-to-the-control-room-if-the-user-is-using-automatic-statuses">Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses.</h3>
-<p><strong>Severity:</strong> S3</p>
-<p><strong>Affected Services</strong>: Confirming a new incident by pressing the confirm button will not send the associated status to the control room if the user is using automatic statuses.</p>
-<p><em>Please note that is is still possible to send the status from the status menu in the operations app (Sv: Ärende)</em></p>
-<h3 class="rubric" id="id3">Incident Updates</h3>
-<p><strong>Investigating:</strong> We are currently investigating the issue and working to resolve it as quickly as possible.</p>
-<p><em>As a mitigation we suggest that users send statuses from the shortcut center or the operations app until the issue is resolved.</em></p>
-<p><em>Posted: 11 December 2025, 09:55 UTC</em></p>
-<p><strong>Update:</strong> The problem is smaller than what was initially communicated. The only impact is that when confirming a new incident by pressing the confirm button the associated status to the control room will not be sent if the user is using automatic statuses.</p>
-<p><em>As a mitigation we suggest that users send the statuses from the operations app until the issue is resolved. Please not that all other autmatic statuses and notifications works as they should</em></p>
-<p><em>Posted: 11 December 2025, 10:23 UTC</em></p>
-<p><strong>Monitoring:</strong> A fix has been implemented, and we are closely monitoring to ensure everything is stable.
-<em>A fix has been provided in Vehicle Services 7.0.7. To resolve the issue, please update Vehicle Services by following this guide: <a class="reference external" href="https://www.support.evam.life/en/update_vehicle_services.html">Update Vehicle Services Manually</a></em></p>
-<p><em>Posted: 12 December 2025, 11:41 UTC</em></p>
-<p><strong>Resolved:</strong> The issue has been resolved, and all systems are operating normally.</p>
-<p><em>Posted: 12 December 2025, 16:39 UTC</em></p>
-</div></blockquote>
 </section>
-</section>
-<section id="incident-categorisation">
-<h2 id="incident-categorisation">Incident Categorisation<a class="headerlink" href="#incident-categorisation" title="Permalink to this heading">¶</a></h2>
-<p>To ensure transparency and consistency in how we communicate issues, we classify incidents into different priority levels based on their urgency and impact. This helps our team respond appropriately and allows you to understand the severity of an incident at a glance.</p>
-<ul>
-<li><p><strong>S1 – Critical</strong></p>
-<p>These incidents represent the highest level of severity. They typically involve complete system outages or issues that prevent the majority of users from accessing core services. Our team responds immediately to resolve S1 incidents.</p>
-</li>
-<li><p><strong>S2 – High</strong></p>
-<p>Incidents at this level cause a large-scale impact but do not fully take down the system. For example, a major feature may be unavailable or malfunctioning. These are addressed with urgency, though they may not require the same escalation as S1 events.</p>
-</li>
-<li><p><strong>S3 – Moderate</strong></p>
-<p>These are issues with a limited or moderate impact, such as a minor feature not functioning as expected. While important, S3 incidents are prioritised alongside other ongoing work and may not be resolved as quickly as higher-severity incidents.</p>
-</li>
-</ul>
 </section>
 </section>
 
