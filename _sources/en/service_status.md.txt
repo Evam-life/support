@@ -10,6 +10,23 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 ### Active Incidents
 
+>### Central Services UK - Suspected Outage Partly Affecting Services
+>
+>**Severity:** S1-Critical
+>
+>**Affected Services**: Central Services UK
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 18 June 2026, 09:11 UTC*
+
+
+
+### Historical incidents
+Below you'll find a record of all incidents from the past 30 days.
+>
 >### Central Services UK - Suspected Outage
 >
 >**Severity:** S1-Critical
@@ -29,15 +46,7 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 >**Resolved:** The issue has been resolved, and all systems are operating normally.
 >
 >*Posted: 18 June 2026, 08:37 UTC*
-
-
-
-
-
-
-### Historical incidents
-Below you'll find a record of all incidents from the past 30 days.
-
+>
 >### Central Services Full Outage
 >
 >**Severity:** S1-Critical [Read more](#incident-categorisation)
