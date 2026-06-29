@@ -7,118 +7,70 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 [Subscribe to Incident Updates](https://cdn.forms-content-1.sg-form.com/85a32dd5-8cad-11f0-b30a-161b0ada2de2)
 
-
 ### Active Incidents
 
->### Central Services UK - Suspected Outage Partly Affecting Services
->
->**Severity:** S1-Critical
->
->**Affected Services**: Central Services UK
->
->### Incident Updates
->
->**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
->
->*Posted: 18 June 2026, 09:11 UTC*
->
->**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
->
->*Posted: 18 June 2026, 09:22 UTC*
->
->**Resolved:** The issue has been resolved, and all systems are operating normally.
->
->*Posted: 18 June 2026, 10:22 UTC*
+`````{note}
+All Systems Operational
+`````
 
 
 ### Historical incidents
 Below you'll find a record of all incidents from the past 30 days.
->
->### Central Services UK - Suspected Outage
->
->**Severity:** S1-Critical
->
->**Affected Services**: Central Services UK
->
->### Incident Updates
->
->**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
->
->*Posted: 18 June 2026, 08:01 UTC*
->
->**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
->
->*Posted: 18 June 2026, 08:07 UTC*
->
->**Resolved:** The issue has been resolved, and all systems are operating normally.
->
->*Posted: 18 June 2026, 08:37 UTC*
->
->### Central Services Full Outage
->
->**Severity:** S1-Critical [Read more](#incident-categorisation)
->
->**Affected Services**: Central Services Cloud Gateway and all services connecting to it e.g. Central Services and Vehicle Services
->
->### Incident Updates
->
->**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
->
->*Posted: 28 January 2026, 15:38 UTC*
->
->**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
->
->*Posted: 28 January 2026, 16:25 UTC*
->
->**Resolved:** The issue has been resolved, and all systems are operating normally.
->
->*Posted: 28 January 2026, 16:49 UTC*
->
-> ## Post-incident report
->
-> **Post-incident report posted:** 12 February 2026
->
-> \-
->
-> **Date:** 28 January 2026\
-> **Duration:** 47 minutes (15:38–16:25 UTC)\
-> **Impact:** **Full outage** for all users in the UK organisation — users could not use key functions such as mobilising, sending status updates, chat messaging, and related features.
->
-> ### Summary
->
-> During our planned monthly maintenance, we shut down one of our core application instances as part of a standard, one-by-one update process. At this point in time our load balancer should have moved away traffic from the instance that was shut down to another healthy instance. However, traffic did not shift to the remaining healthy instance as quickly as expected, and the remaining instance could not fully operate due to an internal dependency involved in handling user requests. This combination turned what should have been a partial disruption into a full outage.
->
-> ### Timeline (UTC)
->
-> * **15:38** – Outage began
-> * **15:57** – Response started
-> * **16:25** – Service restored
-> * **16:49** – Recovery verified
->
-> ### Detection and alerts
->
-> No automatic alert triggered at the start of the incident because alerts were temporarily muted due to maintenance on the alerting system shortly beforehand. This delayed our response by around **15 minutes** hence, responce was only started at 15:57.
->
-> ### Resolution
->
-> We followed our recovery procedures and restored service by bringing the affected instance(s) back online and confirming normal operation through monitoring and verification checks.
->
-> ### Root cause
->
-> The platform load balancer is designed to re-route traffic away from an instance that is taken offline, but this incident has uncovered that it does not guarantee the switch happens within a specific short time window. This is despite the configuration of the service beeing correct. During this maintenance sequence, traffic did not move over in time, and the remaining instance could not fully handle requests due to an internal dependency path also caused by the load balancer not acting as intended. Together, these factors caused a complete outage. Previous tests and maintenance has shown that this process should have worked and no impact on the availability of the services was expected.
->
-> ### Preventing recurrence
->
-> * **Keep monitoring fully available during production maintenance:** we will separate production maintenance from monitoring/alerting maintenance so alerts are not impacted.
-> * **Reduce disruptive maintenance actions:** we will reduce hard reboots in production environments unless required for critical security updates. This will happen until longer-term resilience improvements has been deployed.
-> * **Longer-term resilience improvement:** ongoing work to migrate this infrastructure to a more resilient platform (internal tracking: #2601).
->
-> ### Apology
->
-> We’re sorry for the disruption this caused to UK users. We’re taking the steps above to reduce the likelihood of a repeat and to improve detection and communication speed.
->
-> If you have any further questions, please reach out to support@evam.life
 
+>## Post-Incident Report — UK Service Disruption, 18 June 2026
+>
+>**Service affected:** Central Services (UK production)
+>**Date:** 18 June 2026
+>**Status:** Resolved
+>
+>### Summary
+>
+>On the morning of 18 June 2026, our UK Central Services experienced two periods of disruption. The first was a period of intermittent instability during which the service generally remained available to users. The second was a short full outage of approximately 20 minutes, during which the service was unavailable. Service was fully restored and confirmed stable by late morning.
+>
+>We know how important reliable service is in the work our customers do, and we apologise for the disruption.
+>
+>### What happened
+>
+>During the first period, one part of our infrastructure began consuming more memory than expected. Because the service runs across more than one instance, traffic was automatically handled by the healthy instance, so most users were not affected during this time.
+>
+>While our team was resolving the underlying memory issue, a supporting component that routes incoming traffic did not restart as expected after maintenance actions were applied. This issue was not visible in our standard health checks at the time. As a result, when both instances were cycled, incoming traffic could no longer reach the service, which led to the full outage.
+>
+>Once our engineering team identified that this routing component was not running, it was restarted manually on both instances and the service was restored.
+>
+>### Customer impact
+>
+>During the initial instability, the service remained available to the large majority of users and most customers would not have noticed an interruption. During the later full outage, Central Services in the UK was unavailable for approximately 20 minutes. No customer data was lost or compromised at any point.
+>
+>### Timeline (UTC)
+>
+>- **06:40** — First signs of instability began.
+>- **06:55** — Service recovered and was operating normally.
+>- **07:30** — Instability resumed and was detected by our team.
+>- **07:54** — Engineering response began.
+>- **08:00** — Service recovered again.
+>- **08:53** — Full outage began; the service became unavailable.
+>- **09:13** — Full service restored and confirmed stable.
+>- **10:02** — Additional memory added as an immediate safeguard against recurrence.
+>
+>### How we fixed it
+>
+>Our team manually restarted the traffic-routing component on both service instances to restore connectivity, then verified that traffic was flowing correctly. As an immediate safeguard against recurrence, we increased the memory available to the service the same day.
+>
+>### What we are doing to prevent recurrence
+>
+>We have completed a full internal review of the incident and are taking the following actions:
+>
+>- **Resolving the underlying cause.** We have identified the source of the elevated memory usage and have work underway to fix it.
+>- **Strengthening our recovery procedures.** We are improving how we verify that a service is fully restored after maintenance, so that a component failing to restart is detected immediately rather than later.
+>- **Improving monitoring and alerting.** We are restoring and tuning our alerts so that early warning signs are caught faster and more reliably.
+>- **Upgrading our infrastructure.** We are continuing a planned migration of our infrastructure to improve overall resilience.
+>- **Improving our incident response.** We are formalising our on-call and escalation process and expanding incident-response training across our engineering teams so issues are owned and communicated clearly from the outset.
+>
+>### Our commitment
+>
+>Reliability is fundamental to the service we provide. The steps above are aimed at both preventing this specific issue from happening again and making our service more resilient overall. We will continue to share updates on this page as our follow-up work progresses.
+>
+>Thank you for your patience and continued trust.
 
 ## Sweden
 [Subscribe to Incident Updates](https://cdn.forms-content-1.sg-form.com/b8bdae67-8c99-11f0-b323-163051fa07b0)
