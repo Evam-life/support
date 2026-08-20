@@ -1,0 +1,165 @@
+# Microsoft Entra ID setup guide
+
+This guide walks a Microsoft Entra ID (Azure AD) administrator through registering
+the application that lets your organisation sign in to Evam Central Services with
+Microsoft, and that keeps Central Services users in sync with your Entra ID
+security groups.
+
+You will do most of the work in the **Microsoft Entra admin center**
+(<https://entra.microsoft.com>). The same screens are available in the Azure
+portal (<https://portal.azure.com>) under **Microsoft Entra ID**.
+
+## Before you start
+
+You need:
+
+- An Entra ID account with permission to create app registrations and grant
+  admin consent for the tenant (**Application Administrator**, **Cloud
+  Application Administrator**, or **Global Administrator**).
+- Access to the Central Services **Admin app** with the Admin role, so you can
+  open **Single sign-on → Entra ID setup**. Keep that page open in another
+  tab — you will copy the **Redirect URI** from it in Step 2, and paste your
+  tenant, client, and secret values back into it at the end.
+
+## What you will create
+
+1. An **app registration** in your Entra tenant.
+2. A **redirect URI** that points back to Central Services.
+3. A **client secret** for the backend to authenticate with.
+4. A set of **API permissions** (with admin consent).
+
+At the end you will have three values — **Directory (tenant) ID**,
+**Application (client) ID**, and **client secret** — which you enter in the
+Central Services SSO page.
+
+
+## Step 1 — Register the application
+
+1. In the Microsoft Entra admin center, go to **Identity → Applications → App
+   registrations** and select **New registration**.
+2. **Name**: enter something recognisable, e.g. `Evam Central Services`.
+3. **Supported account types**: choose **Accounts in this organizational
+   directory only (Single tenant)**.
+4. Leave **Redirect URI** empty for now — you will add it in the next step.
+5. Select **Register**.
+
+On the app's **Overview** page, copy these two values and keep them for the final
+step:
+
+- **Directory (tenant) ID**
+- **Application (client) ID**
+
+## Step 2 — Add the redirect URI
+
+The redirect URI is the address Microsoft sends the user back to after they sign
+in. It must match the value Central Services expects **exactly**, so copy it from
+Central Services rather than typing it by hand.
+
+1. In Central Services, open **Admin → Single sign-on → Entra ID setup**.
+2. Under **Redirect URI**, use the copy button to copy the full value. It looks
+   like:
+
+   ```
+   https://(...).centralservices.evam.life/realms/cs/broker/entra-(...)/endpoint
+   ```
+
+3. Back in the Entra admin center, open your app registration and go to
+   **Manage → Authentication**.
+4. Select **Add a platform → Web**.
+5. Paste the copied redirect URI into **Redirect URIs** and select **Configure**.
+
+
+## Step 3 — Create a client secret
+
+1. Go to **Manage → Certificates & secrets → Client secrets**.
+2. Select **New client secret**.
+3. Enter a description (e.g. `Central Services`) and choose an expiry. Pick a
+   duration that fits your rotation policy — you will need to create a new secret
+   and update Central Services before it expires.
+4. Select **Add**.
+5. Copy the secret **Value** immediately and keep it for the final step. Entra
+   only shows the value once; after you leave the page it can no longer be read.
+
+> Central Services stores the secret encrypted and never shows it back. To
+> replace it later, create a new secret here and paste the new value into the SSO
+> page — leaving the field blank keeps the existing one.
+
+---
+
+## Step 4 — Add API permissions and grant admin consent
+
+Central Services uses these permissions to sign users in and to read your
+security groups during group sync.
+
+1. Go to **Manage → API permissions**.
+2. The delegated permission **Microsoft Graph → User.Read** is added by default —
+   leave it in place. It, together with the standard `openid`, `profile`, and
+   `email` scopes, covers interactive sign-in.
+3. Select **Add a permission → Microsoft Graph → Application permissions**, then
+   add:
+
+   | Permission | Type | Why it is needed |
+   |---|---|---|
+   | `Group.Read.All` | Application | List and search your groups when you map them to Central Services roles |
+   | `GroupMember.Read.All` | Application | Read the members of your mapped groups during group sync |
+   | `User.ReadBasic.All` | Application | Read the name and email of each group member so their Central Services account can be created |
+
+4. Select **Grant admin consent for &lt;your tenant&gt;** and confirm. The status
+   column must show a green tick for every application permission — without
+   consent, group sync and the group picker will not work.
+
+## Step 5 — Enter the details in Central Services
+
+Return to **Admin → Single sign-on → Entra ID setup** in Central Services and,
+under **Connection**, enter:
+
+- **Directory (tenant) ID** — from Step 1
+- **Application (client) ID** — from Step 1
+- **Client secret** — the secret **Value** from Step 3
+
+Then select **Save**.
+
+
+## Step 6 — Test the connection and enable
+
+1. Select **Test connection**. Central Services verifies that the tenant ID,
+   client ID, and secret are valid and can reach Microsoft Graph.
+
+   Central Services can also check that the redirect URI is registered on the app,
+   simply grant the `Application.Read.All` permission if you wish to have this
+   verification done. If the permission is not granted the check is skipped. 
+2. When the credentials check passes, turn on **Enabled** and select **Save**.
+   Users can now sign in with Microsoft.
+3. Open **Manage group mappings** to map your Entra security groups to Central
+   Services apps and roles. Users receive access based on these mappings at the
+   next group sync — select **Sync groups** to apply them immediately.
+
+
+## Troubleshooting
+
+**Test connection fails on "Credentials".**
+The tenant ID, client ID, or secret is wrong, or the secret has expired. Confirm
+the values against the app's **Overview** page and create a fresh secret
+(Step 3) if in doubt.
+
+**Sign-in fails after choosing Microsoft.**
+Microsoft rejects the sign-in when the redirect URI on the app registration does
+not match the one Central Services expects. Re-copy it from the SSO page and
+compare it with **Authentication → Web → Redirect URIs**. It must match _exactly_ the one shown in the Central Services Admin App, SSO page.
+
+**A group sync error banner appears in the Admin app.**
+The last sync could not reach Microsoft — most often because the client secret
+has expired or been revoked, or admin consent for the application permissions was
+withdrawn. Central Services leaves all user accounts unchanged when this happens;
+no one is disabled on a failed sync. Create a new client secret (Step 3), confirm
+admin consent (Step 4), update the secret in the SSO page, then select **Sync
+groups** to retry.
+
+**Users can sign in but have no access.**
+Sign-in works but no mapped group applied. Check that the user is a member of a
+mapped security group, that the group is mapped under **Manage group mappings**,
+and that a group sync has run since the mapping was created — select **Sync
+groups** to apply mappings immediately.
+
+**Group sync has not added all users.**
+External users are not supported. They will not show up in Central Services Admin app's User list and will not be able to login. If you want to add users outside of your Entra ID tenant to Central Services, you should create them in Central Services Admin app instead as regular non-SSO users.

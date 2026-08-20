@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="white">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Microsoft Entra ID setup guide &#8212; Evam Support  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=white data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#en/entra_id_setup" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Evam Support  documentation"
+           class="md-header-nav__button md-logo">
+          
+              <img src="../_static/evam-black.png" height="26"
+                   alt="Evam Support documentation logo">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Evam Support  documentation</span>
+          <span class="md-header-nav__topic"> Microsoft Entra ID setup guide </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Evam Support  documentation</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Evam Support documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/evam-black.png" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Evam Support documentation">Evam Support  documentation</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="Welcome_to_the_support_portal.html" class="md-nav__link">Welcome to the Evam Support Portal!</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="user_guides_vehicle_services.html" class="md-nav__link">Vehicle Services - User Guides</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="self_service_setup_VS.html" class="md-nav__link">Self Service: Setup Vehicle Services for your organization</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="vehicle_installation.html" class="md-nav__link">Vehicle Installation Guides</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Connectivity_Setup_Guide_for_Vehicle_Services.html" class="md-nav__link">Connectivity Setup Guide for Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="update_vehicle_services.html" class="md-nav__link">Update Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="vs_fw_update.html" class="md-nav__link">Firmware Update of Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="guide_to_managing_kiosk_mode.html" class="md-nav__link">Guide to managing kiosk mode devices</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Enable_Keep_Alive_for_Vehicle_Services.html" class="md-nav__link">Guide to enable Keep-Alive for Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="change_log_VS.html" class="md-nav__link">Changelog</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="service_status.html" class="md-nav__link">Service Status</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#en-entra-id-setup--page-root" class="md-nav__link">Microsoft Entra ID setup guide</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#before-you-start" class="md-nav__link">Before you start</a>
+        </li>
+        <li class="md-nav__item"><a href="#what-you-will-create" class="md-nav__link">What you will create</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-1-register-the-application" class="md-nav__link">Step 1 — Register the application</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-2-add-the-redirect-uri" class="md-nav__link">Step 2 — Add the redirect URI</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-3-create-a-client-secret" class="md-nav__link">Step 3 — Create a client secret</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-4-add-api-permissions-and-grant-admin-consent" class="md-nav__link">Step 4 — Add API permissions and grant admin consent</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-5-enter-the-details-in-central-services" class="md-nav__link">Step 5 — Enter the details in Central Services</a>
+        </li>
+        <li class="md-nav__item"><a href="#step-6-test-the-connection-and-enable" class="md-nav__link">Step 6 — Test the connection and enable</a>
+        </li>
+        <li class="md-nav__item"><a href="#troubleshooting" class="md-nav__link">Troubleshooting</a>
+        </li></ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="microsoft-entra-id-setup-guide">
+<h1 id="en-entra-id-setup--page-root">Microsoft Entra ID setup guide<a class="headerlink" href="#en-entra-id-setup--page-root" title="Permalink to this heading">¶</a></h1>
+<p>This guide walks a Microsoft Entra ID (Azure AD) administrator through registering
+the application that lets your organisation sign in to Evam Central Services with
+Microsoft, and that keeps Central Services users in sync with your Entra ID
+security groups.</p>
+<p>You will do most of the work in the <strong>Microsoft Entra admin center</strong>
+(<a class="reference external" href="https://entra.microsoft.com">https://entra.microsoft.com</a>). The same screens are available in the Azure
+portal (<a class="reference external" href="https://portal.azure.com">https://portal.azure.com</a>) under <strong>Microsoft Entra ID</strong>.</p>
+<section id="before-you-start">
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permalink to this heading">¶</a></h2>
+<p>You need:</p>
+<ul class="simple">
+<li><p>An Entra ID account with permission to create app registrations and grant
+admin consent for the tenant (<strong>Application Administrator</strong>, <strong>Cloud
+Application Administrator</strong>, or <strong>Global Administrator</strong>).</p></li>
+<li><p>Access to the Central Services <strong>Admin app</strong> with the Admin role, so you can
+open <strong>Single sign-on → Entra ID setup</strong>. Keep that page open in another
+tab — you will copy the <strong>Redirect URI</strong> from it in Step 2, and paste your
+tenant, client, and secret values back into it at the end.</p></li>
+</ul>
+</section>
+<section id="what-you-will-create">
+<h2 id="what-you-will-create">What you will create<a class="headerlink" href="#what-you-will-create" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>An <strong>app registration</strong> in your Entra tenant.</p></li>
+<li><p>A <strong>redirect URI</strong> that points back to Central Services.</p></li>
+<li><p>A <strong>client secret</strong> for the backend to authenticate with.</p></li>
+<li><p>A set of <strong>API permissions</strong> (with admin consent).</p></li>
+</ol>
+<p>At the end you will have three values — <strong>Directory (tenant) ID</strong>,
+<strong>Application (client) ID</strong>, and <strong>client secret</strong> — which you enter in the
+Central Services SSO page.</p>
+</section>
+<section id="step-1-register-the-application">
+<h2 id="step-1-register-the-application">Step 1 — Register the application<a class="headerlink" href="#step-1-register-the-application" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>In the Microsoft Entra admin center, go to <strong>Identity → Applications → App
+registrations</strong> and select <strong>New registration</strong>.</p></li>
+<li><p><strong>Name</strong>: enter something recognisable, e.g. <code class="docutils literal notranslate"><span class="pre">Evam</span> <span class="pre">Central</span> <span class="pre">Services</span></code>.</p></li>
+<li><p><strong>Supported account types</strong>: choose <strong>Accounts in this organizational
+directory only (Single tenant)</strong>.</p></li>
+<li><p>Leave <strong>Redirect URI</strong> empty for now — you will add it in the next step.</p></li>
+<li><p>Select <strong>Register</strong>.</p></li>
+</ol>
+<p>On the app’s <strong>Overview</strong> page, copy these two values and keep them for the final
+step:</p>
+<ul class="simple">
+<li><p><strong>Directory (tenant) ID</strong></p></li>
+<li><p><strong>Application (client) ID</strong></p></li>
+</ul>
+</section>
+<section id="step-2-add-the-redirect-uri">
+<h2 id="step-2-add-the-redirect-uri">Step 2 — Add the redirect URI<a class="headerlink" href="#step-2-add-the-redirect-uri" title="Permalink to this heading">¶</a></h2>
+<p>The redirect URI is the address Microsoft sends the user back to after they sign
+in. It must match the value Central Services expects <strong>exactly</strong>, so copy it from
+Central Services rather than typing it by hand.</p>
+<ol class="arabic">
+<li><p>In Central Services, open <strong>Admin → Single sign-on → Entra ID setup</strong>.</p></li>
+<li><p>Under <strong>Redirect URI</strong>, use the copy button to copy the full value. It looks
+like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="o">.</span><span class="n">centralservices</span><span class="o">.</span><span class="n">evam</span><span class="o">.</span><span class="n">life</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">cs</span><span class="o">/</span><span class="n">broker</span><span class="o">/</span><span class="n">entra</span><span class="o">-</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="o">/</span><span class="n">endpoint</span>
+</pre></div>
+</div>
+</li>
+<li><p>Back in the Entra admin center, open your app registration and go to
+<strong>Manage → Authentication</strong>.</p></li>
+<li><p>Select <strong>Add a platform → Web</strong>.</p></li>
+<li><p>Paste the copied redirect URI into <strong>Redirect URIs</strong> and select <strong>Configure</strong>.</p></li>
+</ol>
+</section>
+<section id="step-3-create-a-client-secret">
+<h2 id="step-3-create-a-client-secret">Step 3 — Create a client secret<a class="headerlink" href="#step-3-create-a-client-secret" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Go to <strong>Manage → Certificates &amp; secrets → Client secrets</strong>.</p></li>
+<li><p>Select <strong>New client secret</strong>.</p></li>
+<li><p>Enter a description (e.g. <code class="docutils literal notranslate"><span class="pre">Central</span> <span class="pre">Services</span></code>) and choose an expiry. Pick a
+duration that fits your rotation policy — you will need to create a new secret
+and update Central Services before it expires.</p></li>
+<li><p>Select <strong>Add</strong>.</p></li>
+<li><p>Copy the secret <strong>Value</strong> immediately and keep it for the final step. Entra
+only shows the value once; after you leave the page it can no longer be read.</p></li>
+</ol>
+<blockquote>
+<div><p>Central Services stores the secret encrypted and never shows it back. To
+replace it later, create a new secret here and paste the new value into the SSO
+page — leaving the field blank keeps the existing one.</p>
+</div></blockquote>
+</section>
+<hr class="docutils"/>
+<section id="step-4-add-api-permissions-and-grant-admin-consent">
+<h2 id="step-4-add-api-permissions-and-grant-admin-consent">Step 4 — Add API permissions and grant admin consent<a class="headerlink" href="#step-4-add-api-permissions-and-grant-admin-consent" title="Permalink to this heading">¶</a></h2>
+<p>Central Services uses these permissions to sign users in and to read your
+security groups during group sync.</p>
+<ol class="arabic">
+<li><p>Go to <strong>Manage → API permissions</strong>.</p></li>
+<li><p>The delegated permission <strong>Microsoft Graph → User.Read</strong> is added by default —
+leave it in place. It, together with the standard <code class="docutils literal notranslate"><span class="pre">openid</span></code>, <code class="docutils literal notranslate"><span class="pre">profile</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">email</span></code> scopes, covers interactive sign-in.</p></li>
+<li><p>Select <strong>Add a permission → Microsoft Graph → Application permissions</strong>, then
+add:</p>
+<table>
+<thead>
+<tr class="row-odd"><th class="head"><p>Permission</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Why it is needed</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Group.Read.All</span></code></p></td>
+<td><p>Application</p></td>
+<td><p>List and search your groups when you map them to Central Services roles</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">GroupMember.Read.All</span></code></p></td>
+<td><p>Application</p></td>
+<td><p>Read the members of your mapped groups during group sync</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">User.ReadBasic.All</span></code></p></td>
+<td><p>Application</p></td>
+<td><p>Read the name and email of each group member so their Central Services account can be created</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Select <strong>Grant admin consent for &lt;your tenant&gt;</strong> and confirm. The status
+column must show a green tick for every application permission — without
+consent, group sync and the group picker will not work.</p></li>
+</ol>
+</section>
+<section id="step-5-enter-the-details-in-central-services">
+<h2 id="step-5-enter-the-details-in-central-services">Step 5 — Enter the details in Central Services<a class="headerlink" href="#step-5-enter-the-details-in-central-services" title="Permalink to this heading">¶</a></h2>
+<p>Return to <strong>Admin → Single sign-on → Entra ID setup</strong> in Central Services and,
+under <strong>Connection</strong>, enter:</p>
+<ul class="simple">
+<li><p><strong>Directory (tenant) ID</strong> — from Step 1</p></li>
+<li><p><strong>Application (client) ID</strong> — from Step 1</p></li>
+<li><p><strong>Client secret</strong> — the secret <strong>Value</strong> from Step 3</p></li>
+</ul>
+<p>Then select <strong>Save</strong>.</p>
+</section>
+<section id="step-6-test-the-connection-and-enable">
+<h2 id="step-6-test-the-connection-and-enable">Step 6 — Test the connection and enable<a class="headerlink" href="#step-6-test-the-connection-and-enable" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Select <strong>Test connection</strong>. Central Services verifies that the tenant ID,
+client ID, and secret are valid and can reach Microsoft Graph.</p>
+<p>Central Services can also check that the redirect URI is registered on the app,
+simply grant the <code class="docutils literal notranslate"><span class="pre">Application.Read.All</span></code> permission if you wish to have this
+verification done. If the permission is not granted the check is skipped.</p>
+</li>
+<li><p>When the credentials check passes, turn on <strong>Enabled</strong> and select <strong>Save</strong>.
+Users can now sign in with Microsoft.</p></li>
+<li><p>Open <strong>Manage group mappings</strong> to map your Entra security groups to Central
+Services apps and roles. Users receive access based on these mappings at the
+next group sync — select <strong>Sync groups</strong> to apply them immediately.</p></li>
+</ol>
+</section>
+<section id="troubleshooting">
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
+<p><strong>Test connection fails on “Credentials”.</strong>
+The tenant ID, client ID, or secret is wrong, or the secret has expired. Confirm
+the values against the app’s <strong>Overview</strong> page and create a fresh secret
+(Step 3) if in doubt.</p>
+<p><strong>Sign-in fails after choosing Microsoft.</strong>
+Microsoft rejects the sign-in when the redirect URI on the app registration does
+not match the one Central Services expects. Re-copy it from the SSO page and
+compare it with <strong>Authentication → Web → Redirect URIs</strong>. It must match <em>exactly</em> the one shown in the Central Services Admin App, SSO page.</p>
+<p><strong>A group sync error banner appears in the Admin app.</strong>
+The last sync could not reach Microsoft — most often because the client secret
+has expired or been revoked, or admin consent for the application permissions was
+withdrawn. Central Services leaves all user accounts unchanged when this happens;
+no one is disabled on a failed sync. Create a new client secret (Step 3), confirm
+admin consent (Step 4), update the secret in the SSO page, then select <strong>Sync
+groups</strong> to retry.</p>
+<p><strong>Users can sign in but have no access.</strong>
+Sign-in works but no mapped group applied. Check that the user is a member of a
+mapped security group, that the group is mapped under <strong>Manage group mappings</strong>,
+and that a group sync has run since the mapping was created — select <strong>Sync
+groups</strong> to apply mappings immediately.</p>
+<p><strong>Group sync has not added all users.</strong>
+External users are not supported. They will not show up in Central Services Admin app’s User list and will not be able to login. If you want to add users outside of your Entra ID tenant to Central Services, you should create them in Central Services Admin app instead as regular non-SSO users.</p>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2025, Evam.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
