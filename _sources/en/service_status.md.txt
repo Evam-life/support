@@ -9,8 +9,13 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 ### Active Incidents
 
-`````{note}
-All Systems Operational
+`````{note} ### Scheduled Maintenance 2026-09-08, 5:00-5:30AM BST.
+
+We will be carrying out a scheduled maintenance on the UK services during the 30 minute window stated above.
+The chosen time is based on mobilisation data from the last 2 months (least busiest time) to cause as little disruption as possible.
+
+Affected customers have been informed well in advance and have adapted accordingly.
+
 `````
 
 
