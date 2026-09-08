@@ -96,7 +96,12 @@ The maintenance worked as expected and everything was up and running according t
 
 
 `````{note}
-All Systems Operational
+## Scheduled Maintenance on Central Services Sweden , 9 September 2026 (04:00-04:30 UTC)
+> We will be carrying out a planned maintenance on Central Services Sweden according to the 30 minute window above.
+ This will NOT affect the general workflow such as ability to receive incidents, status-updates etc. it is purely a Central Services update.
+>
+>During the window, only Central Services will be unreachable.
+
 `````
 
 
