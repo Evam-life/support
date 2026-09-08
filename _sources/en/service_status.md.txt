@@ -20,9 +20,19 @@ Below you'll find a record of all incidents from the past 30 days.
 >
 >### Summary
 >
->A scheduled maintenance was carried out on UK Central Services at 8th of Setpember 2026, 04:00-04:30 UTC.
+>A scheduled maintenance was carried out on UK Central Services at 8th of September 2026, 04:00-04:30 UTC.
 The maintenance worked as expected and everything was up and running according to plan.
 >
+>### Timeline (UTC)
+>
+>- **04:00** — Maintenance starts, server goes down.
+>- **04:02** — Data transfer starts.
+>- **04:20** — Data transfer over, restarting services in new cluster.
+>- **04:22** — Everything is up and running, starting checks.
+>- **04:23** — CADs are connected again.
+>- **04:31** — All checks are green.
+>
+
 
 >## Post-Incident Report — UK Service Disruption, 18 June 2026
 >
