@@ -9,9 +9,17 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 ### Active Incidents
 
-`````{note}
-All Systems Operational
-`````
+>### Issues with chat-app UK, stop-messages not going through
+>
+>**Severity:** S3-Medium
+>
+>**Affected Services**: Chat-app is currently unable to send stop-messages to the Control Room.
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 14 September 2026, 07:10 UTC*
 
 
 ### Historical incidents
