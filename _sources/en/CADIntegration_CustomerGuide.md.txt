@@ -1,0 +1,39 @@
+# CAD integration — How it works and what Evam needs
+
+A CAD integration links your dispatch system to Evam, with information flowing both ways — for example incidents and updates out to the devices, and statuses back to the control room. This page gives an overview of how it is built, when each step happens, and what Evam needs from you.
+
+## How the systems connect
+
+Two options, decided together at step 2 below.
+
+- **Evam CAD Bridge** — you run a small Evam application inside your network. It connects outwards to Evam, so no inbound firewall opening is needed.
+- **Direct connection** — Evam connects to an endpoint your CAD exposes. You open a port and allow only the addresses Evam gives you.
+
+## The process
+
+| # | Step | Who | When |
+|---|---|---|---|
+| 1 | API/XML/Email documentation received | You | Week 1 |
+| 2 | Connection method agreed — Bridge or open port | Both | Week 1 |
+| 3 | Interface specification written — Which endpoints and fields Evam will use | Evam | Week 1 |
+| 4 | **Test 1 — Connection test and endpoint test** | Both | Week 2 |
+| 5 | Development round 1 — The full integration is built | Evam | Week 3–5 |
+| 6 | **Test 2 — Full integration test** | Both | Week 6 |
+| 7 | Development round 2 — Fixes from Test 2 | Evam | Week 7 |
+| 8 | **Test 3 — Full integration test** | Both | Week 8 |
+| 9 | Final development and test round, if Test 3 finds anything | Both | Week 9 |
+
+All testing is done together with your team, on your own CAD system (preferably a test environment that replicates the live version). The weeks above assume your team is available for the joint steps.
+
+At the end of this process, information flows both ways between your CAD and Evam.
+
+## What Evam needs from you
+
+| What | When |
+|---|---|
+| CAD API documentation | Step 1 |
+| A technical contact Evam can turn to with questions | Step 1 |
+| A decision on connection method | Step 2 |
+| *If direct connection:* a firewall opening so Evam can reach the CAD | Before step 4 |
+| *If CAD Bridge:* a server inside your network to run it on. Evam sends the full installation guide | Before step 4 |
+| People who can join each test: someone who can dispatch, and someone who knows your ways of working | Steps 4, 6, 8 and 9 |
