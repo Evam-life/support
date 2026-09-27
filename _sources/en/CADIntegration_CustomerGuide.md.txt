@@ -6,7 +6,7 @@ A CAD integration links your dispatch system to Evam, with information flowing b
 
 Two options, decided together at step 2 below.
 
-- **Evam CAD Bridge** — you run a small Evam application inside your network. It connects outwards to Evam, so no inbound firewall opening is needed.
+- **Evam CAD Bridge** — You run a small Evam application inside your network. It connects outwards to Evam, so no inbound firewall opening is needed ([Click for detailed description](#CAD_Bridge_InstallationGuide))
 - **Direct connection** — Evam connects to an endpoint your CAD exposes. You open a port and allow only the addresses Evam gives you.
 
 ## The process

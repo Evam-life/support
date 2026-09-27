@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="white">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Evam CAD Bridge &#8212; Evam Support  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=white data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#en/CAD_Bridge_InstallationGuide" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Evam Support  documentation"
+           class="md-header-nav__button md-logo">
+          
+              <img src="../_static/evam-black.png" height="26"
+                   alt="Evam Support documentation logo">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Evam Support  documentation</span>
+          <span class="md-header-nav__topic"> Evam CAD Bridge </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Evam Support  documentation</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Evam Support documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/evam-black.png" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Evam Support documentation">Evam Support  documentation</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="Welcome_to_the_support_portal.html" class="md-nav__link">Welcome to the Evam Support Portal!</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="user_guides_vehicle_services.html" class="md-nav__link">Vehicle Services - User Guides</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="self_service_setup_VS.html" class="md-nav__link">Self Service: Setup Vehicle Services for your organization</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="vehicle_installation.html" class="md-nav__link">Vehicle Installation Guides</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Connectivity_Setup_Guide_for_Vehicle_Services.html" class="md-nav__link">Connectivity Setup Guide for Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="update_vehicle_services.html" class="md-nav__link">Update Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="vs_fw_update.html" class="md-nav__link">Firmware Update of Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="guide_to_managing_kiosk_mode.html" class="md-nav__link">Guide to managing kiosk mode devices</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Enable_Keep_Alive_for_Vehicle_Services.html" class="md-nav__link">Guide to enable Keep-Alive for Vehicle Services</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CADIntegration_CustomerGuide.html" class="md-nav__link">CAD integration — How it works and what Evam needs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="change_log_VS.html" class="md-nav__link">Changelog</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="service_status.html" class="md-nav__link">Service Status</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#en-cad-bridge-installationguide--page-root" class="md-nav__link">Evam CAD Bridge</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#what-it-does" class="md-nav__link">What it does</a>
+        </li>
+        <li class="md-nav__item"><a href="#installation" class="md-nav__link">Installation</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#prerequisites" class="md-nav__link">Prerequisites</a>
+        </li>
+        <li class="md-nav__item"><a href="#option-1-docker-recommended" class="md-nav__link">Option 1 — Docker (recommended)</a>
+        </li>
+        <li class="md-nav__item"><a href="#option-2-jar" class="md-nav__link">Option 2 — JAR</a>
+        </li>
+        <li class="md-nav__item"><a href="#running-as-a-service-linux" class="md-nav__link">Running as a service (Linux)</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#configuration" class="md-nav__link">Configuration</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#sample-configuration" class="md-nav__link">Sample configuration</a>
+        </li>
+        <li class="md-nav__item"><a href="#websocket-and-oauth2-evam-central-services" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">websocket</span></code> and <code class="docutils literal notranslate"><span class="pre">oauth2</span></code> — Evam Central Services</a>
+        </li>
+        <li class="md-nav__item"><a href="#tcp-your-cad-side" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">tcp</span></code> — your CAD side</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#mode-server-vs-mode-client" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">server</span></code> vs <code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">client</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#tcp-tls" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">tcp.tls</span></code></a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#http-proxy-optional" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">http-proxy</span></code> — optional</a>
+        </li>
+        <li class="md-nav__item"><a href="#environment-variable-substitution" class="md-nav__link">Environment variable substitution</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#is-it-running" class="md-nav__link">Is it running?</a>
+        </li>
+        <li class="md-nav__item"><a href="#hardware-requirements" class="md-nav__link">Hardware requirements</a>
+        </li>
+        <li class="md-nav__item"><a href="#updates" class="md-nav__link">Updates</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#docker" class="md-nav__link">Docker</a>
+        </li>
+        <li class="md-nav__item"><a href="#jar" class="md-nav__link">JAR</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="evam-cad-bridge">
+<h1 id="en-cad-bridge-installationguide--page-root">Evam CAD Bridge<a class="headerlink" href="#en-cad-bridge-installationguide--page-root" title="Permalink to this heading">¶</a></h1>
+<p>The Evam CAD Bridge is a small process that runs on your infrastructure and connects your CAD system to Evam Central Services. It maintains a permanent, authenticated WebSocket connection to Evam so your CAD only has to talk to something on its own local network — no inbound firewall rules, no public exposure of CAD systems.</p>
+<p>Published artifacts:</p>
+<ul class="simple">
+<li><p><strong>Docker image</strong> — <a class="reference external" href="https://github.com/evam-life/cad-bridge/pkgs/container/cad-bridge"><code class="docutils literal notranslate"><span class="pre">ghcr.io/evam-life/cad-bridge</span></code></a></p></li>
+<li><p><strong>JAR</strong> — attached to each <a class="reference external" href="https://github.com/evam-life/cad-bridge/releases">GitHub Release</a> as <code class="docutils literal notranslate"><span class="pre">evam-cad-bridge-&lt;version&gt;-all.jar</span></code></p></li>
+</ul>
+<p>Latest version: <code class="docutils literal notranslate"><span class="pre">1.0.10</span></code>.</p>
+<section id="what-it-does">
+<h2 id="what-it-does">What it does<a class="headerlink" href="#what-it-does" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>                        ┌─────────────────────────┐
+                        │   Evam Central Services  │
+                        └────┬───────────────┬─────┘
+                             │               │
+               WebSocket (outbound, TLS)  ── same host, same auth ──
+                             │               │
+                     ┌───────┴───┐   ┌───────┴────────┐
+                     │ CAD Bridge│   │  CAD Bridge     │
+                     │  (TCP)    │   │  (HTTP proxy)   │
+                     └───────┬───┘   └───────┬────────┘
+                             │               │
+                             ▼               ▼
+                        Your CAD        Your internal
+                        system          HTTP services
+</pre></div>
+</div>
+<p>The bridge always initiates the connection outward to Evam — so you only need to make sure your firewall allows outbound connections towards Central Services, no inbound rule needed.</p>
+</section>
+<hr class="docutils"/>
+<section id="installation">
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<section id="prerequisites">
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Docker</strong> (recommended) — any recent version.</p></li>
+<li><p><strong>JVM 21+</strong> if you prefer running the JAR directly.</p></li>
+<li><p>A <strong>configuration file</strong> — copy the <a class="reference internal" href="#sample-configuration">sample below</a> into <code class="docutils literal notranslate"><span class="pre">config/application.yaml</span></code> and edit it. The values Evam provides during setup go into the <code class="docutils literal notranslate"><span class="pre">websocket</span></code> and <code class="docutils literal notranslate"><span class="pre">oauth2</span></code> sections.</p></li>
+</ul>
+</section>
+<section id="option-1-docker-recommended">
+<h3 id="option-1-docker-recommended">Option 1 — Docker (recommended)<a class="headerlink" href="#option-1-docker-recommended" title="Permalink to this heading">¶</a></h3>
+<p>Pull a specific release:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/evam-life/cad-bridge:&lt;version&gt;
+</pre></div>
+</div>
+<p>Or the rolling <code class="docutils literal notranslate"><span class="pre">latest</span></code> tag:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/evam-life/cad-bridge:latest
+</pre></div>
+</div>
+<p>Run it, mounting your config directory and passing sensitive values through environment variables:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>evam-cad-bridge<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/config:/app/config:ro<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">BRIDGE_PASSWORD</span><span class="o">=</span>secret<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span><span class="m">10987</span>:10987<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>ghcr.io/evam-life/cad-bridge:&lt;version&gt;
+</pre></div>
+</div>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>The container reads its config from <code class="docutils literal notranslate"><span class="pre">/app/config/application.yaml</span></code> — mount your local <code class="docutils literal notranslate"><span class="pre">config/</span></code> directory there.</p></li>
+<li><p>Port <code class="docutils literal notranslate"><span class="pre">10987</span></code> is the default TCP port from the sample config; adjust <code class="docutils literal notranslate"><span class="pre">-p</span></code> if you change <code class="docutils literal notranslate"><span class="pre">tcp.port</span></code>, and drop it entirely if you use <code class="docutils literal notranslate"><span class="pre">tcp.mode:</span> <span class="pre">client</span></code>.</p></li>
+</ul>
+</section>
+<section id="option-2-jar">
+<h3 id="option-2-jar">Option 2 — JAR<a class="headerlink" href="#option-2-jar" title="Permalink to this heading">¶</a></h3>
+<p>Download the release asset from the <a class="reference external" href="https://github.com/evam-life/cad-bridge/releases">Releases page</a> — or via <code class="docutils literal notranslate"><span class="pre">curl</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">VERSION</span><span class="o">=</span>&lt;version&gt;
+curl<span class="w"> </span>-L<span class="w"> </span>-o<span class="w"> </span>evam-cad-bridge.jar<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://github.com/evam-life/cad-bridge/releases/download/<span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span>/evam-cad-bridge-<span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span>-all.jar
+</pre></div>
+</div>
+<p>Run it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>java<span class="w"> </span>-jar<span class="w"> </span>evam-cad-bridge.jar<span class="w"> </span>--config<span class="w"> </span>config/application.yaml
+</pre></div>
+</div>
+<p>Pass secrets through the environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">BRIDGE_PASSWORD</span><span class="o">=</span>secret<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>java<span class="w"> </span>-jar<span class="w"> </span>evam-cad-bridge.jar<span class="w"> </span>--config<span class="w"> </span>config/application.yaml
+</pre></div>
+</div>
+</section>
+<section id="running-as-a-service-linux">
+<h3 id="running-as-a-service-linux">Running as a service (Linux)<a class="headerlink" href="#running-as-a-service-linux" title="Permalink to this heading">¶</a></h3>
+<p>For long-running deployments, wrap the JAR in a systemd unit:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1"># /etc/systemd/system/evam-cad-bridge.service</span>
+<span class="k">[Unit]</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">Evam CAD Bridge</span>
+<span class="na">After</span><span class="o">=</span><span class="s">network-online.target</span>
+
+<span class="k">[Service]</span>
+<span class="na">User</span><span class="o">=</span><span class="s">cadbridge</span>
+<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/opt/evam-cad-bridge</span>
+<span class="na">EnvironmentFile</span><span class="o">=</span><span class="s">/etc/evam-cad-bridge/env</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/java -jar /opt/evam-cad-bridge/evam-cad-bridge.jar </span>\
+<span class="w">          </span><span class="s">--config /etc/evam-cad-bridge/application.yaml</span>
+<span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
+<span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span>
+
+<span class="k">[Install]</span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</pre></div>
+</div>
+<p>Put your secrets in <code class="docutils literal notranslate"><span class="pre">/etc/evam-cad-bridge/env</span></code> (mode <code class="docutils literal notranslate"><span class="pre">0600</span></code>), then <code class="docutils literal notranslate"><span class="pre">systemctl</span> <span class="pre">enable</span> <span class="pre">--now</span> <span class="pre">evam-cad-bridge</span></code>.</p>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="configuration">
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<p>All configuration lives in a single YAML file. Pass its path with <code class="docutils literal notranslate"><span class="pre">--config</span> <span class="pre">&lt;file&gt;</span></code> — or, in Docker, mount it at <code class="docutils literal notranslate"><span class="pre">/app/config/application.yaml</span></code>.</p>
+<section id="sample-configuration">
+<h3 id="sample-configuration">Sample configuration<a class="headerlink" href="#sample-configuration" title="Permalink to this heading">¶</a></h3>
+<p>Copy this into <code class="docutils literal notranslate"><span class="pre">config/application.yaml</span></code>, then edit the values marked <em>(edit)</em> for your deployment. Anything wrapped in <code class="docutils literal notranslate"><span class="pre">${VAR:default}</span></code> can be overridden by an environment variable at runtime.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># evam-cad-bridge configuration</span>
+<span class="c1">#</span>
+<span class="c1"># Any string value can reference environment variables:</span>
+<span class="c1">#   "${VAR}"          -&gt; required, startup fails if unset</span>
+<span class="c1">#   "${VAR:default}"  -&gt; optional, falls back to `default`</span>
+
+<span class="c1"># --- Evam Central Services connection -----------------------------------------</span>
+<span class="c1"># The URLs and credentials below are provided by Evam during setup.</span>
+<span class="nt">websocket</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_WS_URL}"</span><span class="w">                </span><span class="c1"># (Evam-provided)</span>
+
+<span class="nt">oauth2</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">token-url</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_TOKEN_URL}"</span><span class="w">       </span><span class="c1"># (Evam-provided)</span>
+<span class="w">  </span><span class="nt">client-id</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_CLIENT_ID:web}"</span><span class="w">   </span><span class="c1"># (Evam-provided)</span>
+<span class="w">  </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_USERNAME}"</span><span class="w">         </span><span class="c1"># (Evam-provided)</span>
+<span class="w">  </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_PASSWORD}"</span><span class="w">         </span><span class="c1"># (Evam-provided; keep as env var)</span>
+
+<span class="c1"># --- Local CAD-facing side ----------------------------------------------------</span>
+<span class="c1"># This is the part you configure to match your CAD system's networking.</span>
+<span class="nt">tcp</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="s">"server"</span><span class="w">                         </span><span class="c1"># "server" or "client" — see below</span>
+<span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="s">"0.0.0.0"</span><span class="w">                        </span><span class="c1"># bind address (server) OR remote host (client)</span>
+<span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10987</span>
+<span class="w">  </span><span class="nt">tls</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="c1"># server-mode TLS:</span>
+<span class="w">    </span><span class="nt">keystore-path</span><span class="p">:</span><span class="w"> </span><span class="s">""</span>
+<span class="w">    </span><span class="nt">keystore-password</span><span class="p">:</span><span class="w"> </span><span class="s">""</span>
+<span class="w">    </span><span class="nt">key-password</span><span class="p">:</span><span class="w"> </span><span class="s">""</span>
+<span class="w">    </span><span class="c1"># client-mode TLS:</span>
+<span class="w">    </span><span class="nt">truststore-path</span><span class="p">:</span><span class="w"> </span><span class="s">""</span>
+<span class="w">    </span><span class="nt">truststore-password</span><span class="p">:</span><span class="w"> </span><span class="s">""</span>
+
+<span class="c1"># --- Optional HTTP proxy ------------------------------------------------------</span>
+<span class="c1"># Only enable if Evam has explicitly asked you to.</span>
+<span class="nt">http-proxy</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">websocket-url</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_HTTP_PROXY_WS_URL:}"</span><span class="w">   </span><span class="c1"># (Evam-provided if enabled)</span>
+</pre></div>
+</div>
+</section>
+<section id="websocket-and-oauth2-evam-central-services">
+<h3 id="websocket-and-oauth2-evam-central-services"><code class="docutils literal notranslate"><span class="pre">websocket</span></code> and <code class="docutils literal notranslate"><span class="pre">oauth2</span></code> — Evam Central Services<a class="headerlink" href="#websocket-and-oauth2-evam-central-services" title="Permalink to this heading">¶</a></h3>
+<p>Both sections describe how the bridge connects to Evam Central Services. The URLs, client ID, username, and password are <strong>all provided by Evam during setup</strong> — you don’t invent them. Once configured, the bridge:</p>
+<ul class="simple">
+<li><p>keeps a permanent authenticated WebSocket open to Evam,</p></li>
+<li><p>refreshes its OAuth2 token automatically (using <code class="docutils literal notranslate"><span class="pre">refresh_token</span></code> when available, falling back to re-authenticating),</p></li>
+<li><p>reconnects on its own if the link drops.</p></li>
+</ul>
+<p>You normally don’t need to touch these fields beyond pasting in what Evam sent you.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">websocket.reconnect</span></code> block has sensible defaults (<code class="docutils literal notranslate"><span class="pre">enabled:</span> <span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">delay-ms:</span> <span class="pre">5000</span></code>, <code class="docutils literal notranslate"><span class="pre">max-retries:</span> <span class="pre">-1</span></code> for unlimited) and can be omitted.</p>
+</section>
+<section id="tcp-your-cad-side">
+<h3 id="tcp-your-cad-side"><code class="docutils literal notranslate"><span class="pre">tcp</span></code> — your CAD side<a class="headerlink" href="#tcp-your-cad-side" title="Permalink to this heading">¶</a></h3>
+<p>This is the part <strong>you</strong> configure to match your CAD system’s networking. The bridge relays raw bytes between this TCP endpoint and Evam Central Services in both directions.</p>
+<section id="mode-server-vs-mode-client">
+<h4 id="mode-server-vs-mode-client"><code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">server</span></code> vs <code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">client</span></code><a class="headerlink" href="#mode-server-vs-mode-client" title="Permalink to this heading">¶</a></h4>
+<p>Which one to use depends on how your CAD system is set up to talk to a gateway:</p>
+<table>
+<thead>
+<tr class="row-odd"><th class="head"><p>Aspect</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">server</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">client</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Who initiates the TCP connection?</p></td>
+<td><p>Your <strong>CAD</strong> connects <strong>to</strong> the bridge</p></td>
+<td><p>The <strong>bridge</strong> connects <strong>to</strong> your CAD</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">host</span></code> field</p></td>
+<td><p>Address to <strong>bind</strong> to (<code class="docutils literal notranslate"><span class="pre">0.0.0.0</span></code> = all interfaces, <code class="docutils literal notranslate"><span class="pre">127.0.0.1</span></code> = localhost only)</p></td>
+<td><p>Address of your <strong>CAD system</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">port</span></code> field</p></td>
+<td><p>Port the bridge listens on</p></td>
+<td><p>Port your CAD is listening on</p></td>
+</tr>
+<tr class="row-odd"><td><p>Docker <code class="docutils literal notranslate"><span class="pre">-p</span></code> flag</p></td>
+<td><p><strong>Required</strong> — expose the port to the host</p></td>
+<td><p>Not needed</p></td>
+</tr>
+<tr class="row-even"><td><p>TLS material</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">tls.keystore-path</span></code> (bridge presents a cert)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">tls.truststore-path</span></code> (bridge verifies the CAD’s cert)</p></td>
+</tr>
+<tr class="row-odd"><td><p>When to pick this</p></td>
+<td><p>Most common. Your CAD is configured to “connect to a GD92 gateway.”</p></td>
+<td><p>Your CAD is running its own TCP listener and expects an inbound connection.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Only one TCP connection is active at a time in either mode. If the connection drops, the bridge reopens it (<code class="docutils literal notranslate"><span class="pre">client</span></code> mode) or waits for the CAD to reconnect (<code class="docutils literal notranslate"><span class="pre">server</span></code> mode). Traffic in both directions is logged at INFO level with a hex dump so you can inspect what’s flowing.</p>
+</section>
+<section id="tcp-tls">
+<h4 id="tcp-tls"><code class="docutils literal notranslate"><span class="pre">tcp.tls</span></code><a class="headerlink" href="#tcp-tls" title="Permalink to this heading">¶</a></h4>
+<p>Set <code class="docutils literal notranslate"><span class="pre">tls.enabled:</span> <span class="pre">true</span></code> if your CAD requires TLS on the TCP link.</p>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">server</span></code>, the bridge presents a certificate — configure <code class="docutils literal notranslate"><span class="pre">keystore-path</span></code>, <code class="docutils literal notranslate"><span class="pre">keystore-password</span></code>, and (if the key is separately protected) <code class="docutils literal notranslate"><span class="pre">key-password</span></code>. The keystore must be a JKS file.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">mode:</span> <span class="pre">client</span></code>, the bridge verifies the CAD’s certificate against a trust store — configure <code class="docutils literal notranslate"><span class="pre">truststore-path</span></code> and <code class="docutils literal notranslate"><span class="pre">truststore-password</span></code>. JKS format.</p></li>
+<li><p>If your CAD trusts a public CA, leave the truststore fields empty and the bridge uses the JVM default trust store.</p></li>
+</ul>
+</section>
+</section>
+<section id="http-proxy-optional">
+<h3 id="http-proxy-optional"><code class="docutils literal notranslate"><span class="pre">http-proxy</span></code> — optional<a class="headerlink" href="#http-proxy-optional" title="Permalink to this heading">¶</a></h3>
+<p>Only relevant if Evam has asked you to enable it. When enabled, the bridge opens a second connection to Evam so that specific backend services can make HTTP requests through the bridge into your local network (for example, to a downstream service that isn’t publicly reachable).</p>
+<table>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">enabled</span></code></p></td>
+<td><p>Enable the HTTP proxy</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">websocket-url</span></code></p></td>
+<td><p>WebSocket URL for the proxy connection (Evam-provided)</p></td>
+<td><p><em>required if enabled</em></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">timeout-ms</span></code></p></td>
+<td><p>Per-request HTTP timeout in milliseconds</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">30000</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max-concurrent-requests</span></code></p></td>
+<td><p>Maximum parallel in-flight HTTP requests</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">16</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="environment-variable-substitution">
+<h3 id="environment-variable-substitution">Environment variable substitution<a class="headerlink" href="#environment-variable-substitution" title="Permalink to this heading">¶</a></h3>
+<p>Any string value in the YAML can reference environment variables:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_PASSWORD}"</span><span class="w">           </span><span class="c1"># required — startup fails if the var is unset</span>
+<span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s">"${BRIDGE_PASSWORD:changeme}"</span><span class="w">  </span><span class="c1"># with a default fallback</span>
+</pre></div>
+</div>
+<p>Comment lines are not processed, so <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">${SOME_VAR}</span></code> is safe. This is the recommended way to keep secrets out of the YAML file.</p>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="is-it-running">
+<h2 id="is-it-running">Is it running?<a class="headerlink" href="#is-it-running" title="Permalink to this heading">¶</a></h2>
+<p>After starting the program with a proper configuration, this will be printed to STDOUT:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>13:53:05.157 [main] INFO  com.evam.bridge.Main - Loading configuration from config/application.yaml
+13:53:05.211 [main] INFO  com.evam.bridge.Main - Configuration loaded — WS: wss://(...)/v2/ws/integration/cad/gd92, TCP: SERVER 0.0.0.0:10987
+13:53:05.289 [main] INFO  com.evam.bridge.bridge.Bridge - Bridge starting
+13:53:05.293 [main] INFO  c.e.bridge.auth.OAuth2TokenProvider - Requesting OAuth2 token from https://(...)/realms/cs/protocol/openid-connect/token (grant=password)
+13:53:05.320 [main] INFO  com.evam.bridge.tcp.TcpServer - TCP server listening on 0.0.0.0:10987
+13:53:05.320 [main] INFO  com.evam.bridge.tcp.TcpServer - Waiting for TCP client ...
+13:53:05.580 [main] INFO  c.e.bridge.auth.OAuth2TokenProvider - OAuth2 token acquired, expires in 1800s (will refresh at 80%)
+13:53:05.580 [main] INFO  c.e.bridge.websocket.WebSocketBridge - Connecting to WebSocket wss://(...)/v2/ws/integration/cad/gd92 (attempt 1)
+13:53:05.613 [main] INFO  c.e.bridge.websocket.WebSocketBridge - WebSocket connected to wss://(...)/v2/ws/integration/cad/gd92
+</pre></div>
+</div>
+<p>You should <strong>not</strong> see any error, notably no connection issue towards Central Services, such as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">e</span><span class="o">.</span><span class="n">bridge</span><span class="o">.</span><span class="n">websocket</span><span class="o">.</span><span class="n">WebSocketBridge</span> <span class="o">-</span> <span class="n">Reconnecting</span> <span class="ow">in</span> <span class="mi">5000</span> <span class="n">ms</span> <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils"/>
+<section id="hardware-requirements">
+<h2 id="hardware-requirements">Hardware requirements<a class="headerlink" href="#hardware-requirements" title="Permalink to this heading">¶</a></h2>
+<p>The CAD bridge requires a minimum of 256MB of available memory to operate without HTTP proxy (<code class="docutils literal notranslate"><span class="pre">http-proxy.enabled:</span> <span class="pre">false</span></code>), 512MB if the HTTP proxy is enabled.</p>
+<p>One vCPU is enough for a deployment without HTTP proxy, consider using 2 vCPUS if the HTTP proxy is enabled.</p>
+<p>Ubuntu 24.04 LTS is the recommended Operating System for deployment.</p>
+</section>
+<hr class="docutils"/>
+<section id="updates">
+<h2 id="updates">Updates<a class="headerlink" href="#updates" title="Permalink to this heading">¶</a></h2>
+<section id="docker">
+<h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permalink to this heading">¶</a></h3>
+<p>Pull the new tag and restart the container:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/evam-life/cad-bridge:&lt;new-version&gt;
+
+docker<span class="w"> </span>stop<span class="w"> </span>evam-cad-bridge<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>docker<span class="w"> </span>rm<span class="w"> </span>evam-cad-bridge
+docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>--name<span class="w"> </span>evam-cad-bridge<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/config:/app/config:ro<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">BRIDGE_PASSWORD</span><span class="o">=</span>secret<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span><span class="m">10987</span>:10987<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>ghcr.io/evam-life/cad-bridge:&lt;new-version&gt;
+</pre></div>
+</div>
+<p>If you’re using Docker Compose or an orchestrator, update the image tag in your manifest and re-apply. Pin to a specific version in production — <code class="docutils literal notranslate"><span class="pre">latest</span></code> is convenient but reduces reproducibility.</p>
+</section>
+<section id="jar">
+<h3 id="jar">JAR<a class="headerlink" href="#jar" title="Permalink to this heading">¶</a></h3>
+<p>Download the new release asset, stop the running process, replace the JAR, and start again:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-L<span class="w"> </span>-o<span class="w"> </span>evam-cad-bridge.jar.new<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://github.com/evam-life/cad-bridge/releases/download/&lt;new-version&gt;/evam-cad-bridge-&lt;new-version&gt;-all.jar
+
+systemctl<span class="w"> </span>stop<span class="w"> </span>evam-cad-bridge<span class="w">      </span><span class="c1"># if you're using the systemd unit above</span>
+mv<span class="w"> </span>evam-cad-bridge.jar.new<span class="w"> </span>/opt/evam-cad-bridge/evam-cad-bridge.jar
+systemctl<span class="w"> </span>start<span class="w"> </span>evam-cad-bridge
+</pre></div>
+</div>
+<p>Config is loaded fresh on each startup — no migration is needed for the fields documented above. Breaking changes will be called out in the release notes on GitHub.</p>
+</section>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2025, Evam.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
