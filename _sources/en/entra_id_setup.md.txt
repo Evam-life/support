@@ -102,7 +102,8 @@ security groups during group sync.
    |---|---|---|
    | `Group.Read.All` | Application | List and search your groups when you map them to Central Services roles |
    | `GroupMember.Read.All` | Application | Read the members of your mapped groups during group sync |
-   | `User.ReadBasic.All` | Application | Read the name and email of each group member so their Central Services account can be created |
+   | `User.ReadBasic.All` | Application | Read the name and email of each group member so their Central Services account can be created. |
+   | `User.Read.All` | Application | *Optional.* Use instead of the one above if you need the users' job title to show in Central Services as well.  |
 
 4. Select **Grant admin consent for &lt;your tenant&gt;** and confirm. The status
    column must show a green tick for every application permission — without
