@@ -315,6 +315,15 @@ security groups.</p>
 portal (<a class="reference external" href="https://portal.azure.com">https://portal.azure.com</a>) under <strong>Microsoft Entra ID</strong>.</p>
 <section id="before-you-start">
 <h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permalink to this heading">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Existing regular (non-SSO) users in Central Services are converted to SSO users automatically when the group sync runs, if <strong>both</strong> of the following are true:</p>
+<ul class="simple">
+<li><p>Their email address in Central Services is the same as their Entra ID email address.</p></li>
+<li><p>They are direct members of at least one Entra group that is mapped to a Central Services User Group.</p></li>
+</ul>
+<p>You should <strong>not</strong> delete the existing “regular” users before the group sync. If you delete them, they will be recreated as new users and their settings (notification preferences, preferred apps, etc.) will be reset.</p>
+</div>
 <p>You need:</p>
 <ul class="simple">
 <li><p>An Entra ID account with permission to create app registrations and grant
