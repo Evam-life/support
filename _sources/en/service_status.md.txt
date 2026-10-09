@@ -116,9 +116,17 @@ The maintenance worked as expected and everything was up and running according t
 ### Active Incidents
 
 
-`````{note}
-All Systems Operational
-`````
+>### Active 5 Pro tablets are experienceing echo in COMS module
+>
+>**Severity:** S3 - Medium
+>
+>**Affected Services**: COMS module within Vehicle Services on Active 5 Pro tablets, not on Active 4 Pro.
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 9 October 2026, 08:12 UTC*
 
 
 
