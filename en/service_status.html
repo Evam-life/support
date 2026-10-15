@@ -349,58 +349,6 @@
 <section id="historical-incidents">
 <h3 id="historical-incidents">Historical incidents<a class="headerlink" href="#historical-incidents" title="Permalink to this heading">¶</a></h3>
 <p>Below you’ll find a record of all incidents from the past 30 days.</p>
-<blockquote>
-<div><h3 class="rubric" id="issues-with-chat-app-uk-stop-messages-not-going-through">Issues with chat-app UK, stop-messages not going through</h3>
-<p><strong>Severity:</strong> S3-Medium</p>
-<p><strong>Affected Services</strong>: Chat-app is currently unable to send stop-messages to the Control Room.</p>
-<h3 class="rubric" id="incident-updates">Incident Updates</h3>
-<p><strong>Investigating:</strong> We are currently investigating the issue and working to resolve it as quickly as possible.</p>
-<p><em>Posted: 14 September 2026, 07:10 UTC</em></p>
-<p><strong>Monitoring:</strong> A fix has been implemented, and we are closely monitoring to ensure everything is stable.</p>
-<p><em>Posted: 14 September 2026, 09:35 UTC</em></p>
-<p><strong>Resolved:</strong> The issue has been resolved, and all systems are operating normally.</p>
-<p><em>Posted: 14 September 2026, 11:15 UTC</em></p>
-</div></blockquote>
-<blockquote>
-<div><h2 class="rubric" id="post-incident-report-uk-service-disruption-18-june-2026">Post-Incident Report — UK Service Disruption, 18 June 2026</h2>
-<p><strong>Service affected:</strong> Central Services (UK production)
-<strong>Date:</strong> 18 June 2026
-<strong>Status:</strong> Resolved</p>
-<h3 class="rubric" id="summary">Summary</h3>
-<p>On the morning of 18 June 2026, our UK Central Services experienced two periods of disruption. The first was a period of intermittent instability during which the service generally remained available to users. The second was a short full outage of approximately 20 minutes, during which the service was unavailable. Service was fully restored and confirmed stable by late morning.</p>
-<p>We know how important reliable service is in the work our customers do, and we apologise for the disruption.</p>
-<h3 class="rubric" id="what-happened">What happened</h3>
-<p>During the first period, one part of our infrastructure began consuming more memory than expected. Because the service runs across more than one instance, traffic was automatically handled by the healthy instance, so most users were not affected during this time.</p>
-<p>While our team was resolving the underlying memory issue, a supporting component that routes incoming traffic did not restart as expected after maintenance actions were applied. This issue was not visible in our standard health checks at the time. As a result, when both instances were cycled, incoming traffic could no longer reach the service, which led to the full outage.</p>
-<p>Once our engineering team identified that this routing component was not running, it was restarted manually on both instances and the service was restored.</p>
-<h3 class="rubric" id="customer-impact">Customer impact</h3>
-<p>During the initial instability, the service remained available to the large majority of users and most customers would not have noticed an interruption. During the later full outage, Central Services in the UK was unavailable for approximately 20 minutes. No customer data was lost or compromised at any point.</p>
-<h3 class="rubric" id="timeline-utc">Timeline (UTC)</h3>
-<ul class="simple">
-<li><p><strong>06:40</strong> — First signs of instability began.</p></li>
-<li><p><strong>06:55</strong> — Service recovered and was operating normally.</p></li>
-<li><p><strong>07:30</strong> — Instability resumed and was detected by our team.</p></li>
-<li><p><strong>07:54</strong> — Engineering response began.</p></li>
-<li><p><strong>08:00</strong> — Service recovered again.</p></li>
-<li><p><strong>08:53</strong> — Full outage began; the service became unavailable.</p></li>
-<li><p><strong>09:13</strong> — Full service restored and confirmed stable.</p></li>
-<li><p><strong>10:02</strong> — Additional memory added as an immediate safeguard against recurrence.</p></li>
-</ul>
-<h3 class="rubric" id="how-we-fixed-it">How we fixed it</h3>
-<p>Our team manually restarted the traffic-routing component on both service instances to restore connectivity, then verified that traffic was flowing correctly. As an immediate safeguard against recurrence, we increased the memory available to the service the same day.</p>
-<h3 class="rubric" id="what-we-are-doing-to-prevent-recurrence">What we are doing to prevent recurrence</h3>
-<p>We have completed a full internal review of the incident and are taking the following actions:</p>
-<ul class="simple">
-<li><p><strong>Resolving the underlying cause.</strong> We have identified the source of the elevated memory usage and have work underway to fix it.</p></li>
-<li><p><strong>Strengthening our recovery procedures.</strong> We are improving how we verify that a service is fully restored after maintenance, so that a component failing to restart is detected immediately rather than later.</p></li>
-<li><p><strong>Improving monitoring and alerting.</strong> We are restoring and tuning our alerts so that early warning signs are caught faster and more reliably.</p></li>
-<li><p><strong>Upgrading our infrastructure.</strong> We are continuing a planned migration of our infrastructure to improve overall resilience.</p></li>
-<li><p><strong>Improving our incident response.</strong> We are formalising our on-call and escalation process and expanding incident-response training across our engineering teams so issues are owned and communicated clearly from the outset.</p></li>
-</ul>
-<h3 class="rubric" id="our-commitment">Our commitment</h3>
-<p>Reliability is fundamental to the service we provide. The steps above are aimed at both preventing this specific issue from happening again and making our service more resilient overall. We will continue to share updates on this page as our follow-up work progresses.</p>
-<p>Thank you for your patience and continued trust.</p>
-</div></blockquote>
 </section>
 </section>
 <section id="sweden">
@@ -420,7 +368,7 @@
 <div><h3 class="rubric" id="active-5-pro-tablets-are-experienceing-echo-in-coms-module">Active 5 Pro tablets are experienceing echo in COMS module</h3>
 <p><strong>Severity:</strong> S3 - Medium</p>
 <p><strong>Affected Services</strong>: COMS module within Vehicle Services on Active 5 Pro tablets, not on Active 4 Pro.</p>
-<h3 class="rubric" id="id3">Incident Updates</h3>
+<h3 class="rubric" id="incident-updates">Incident Updates</h3>
 <p><strong>Investigating:</strong> We are currently investigating the issue and working to resolve it as quickly as possible.</p>
 <p><em>Posted: 9 October 2026, 08:12 UTC</em></p>
 <p><strong>Monitoring:</strong> A fix has been implemented, and we are closely monitoring to ensure everything is stable.</p>
