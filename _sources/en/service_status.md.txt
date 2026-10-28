@@ -9,9 +9,23 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 ### Active Incidents
 
-`````{note}
-All Systems Operational
-`````
+>### We are currently experiencing issues with the Street View app in Vehicle Services.
+>
+>**Severity:** S3 - Medium
+>
+>**Affected Services**: The Street View app in Vehicle Services is currently not working.
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 28 October 2026, 16:01 UTC*
+>
+>**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
+>
+> **If you are affected**: A backend solution has been deployed, if you are affected by this, please restart Vehicle Services and it should work again.
+>
+>*Posted: 28 October 2026, 16:26 UTC*
 
 
 ### Historical incidents
@@ -22,9 +36,23 @@ Below you'll find a record of all incidents from the past 30 days.
 
 ### Active Incidents
 
-`````{note}
-All Systems Operational
-`````
+>### We are currently experiencing issues with the Street View app in Vehicle Services.
+>
+>**Severity:** S3 - Medium
+>
+>**Affected Services**: The Street View app in Vehicle Services is currently not working.
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 28 October 2026, 16:01 UTC*
+>
+>**Monitoring:** A fix has been implemented, and we are closely monitoring to ensure everything is stable.
+>
+> **If you are affected**: A backend solution has been deployed, if you are affected by this, please restart Vehicle Services and it should work again.
+>
+>*Posted: 28 October 2026, 16:26 UTC*
 
 
 
