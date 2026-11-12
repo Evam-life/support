@@ -7,9 +7,18 @@ Welcome to Evam Status page. Here you'll find live and historical data on system
 
 
 ### Active Incidents
-`````{note}
-All Systems Operational
-`````
+
+>### Staging Full Outage
+>
+>**Severity:** S1-Critical [Read more](#incident-categorisation)
+>
+>**Affected Services**: At the moment Steging is down
+>
+>### Incident Updates
+>
+>**Investigating:** We are currently investigating the issue and working to resolve it as quickly as possible. 
+>
+>*Posted: 12 November 2026, 14:40  UTC*
 
 ### Historical incidents
 Below you'll find a record of all incidents from the past 30 days.
